@@ -1,0 +1,254 @@
+<atelier>
+  <accueil>
+    <badge>
+      Atelier KHEM
+    </badge>
+    <titre>
+      Créer<br/>
+      Transformer<br/>
+      Révéler
+    </titre>
+    <intro>
+      Atelier de création graphique&lt;br&gt;
+	  et de transformation de matières premières
+    </intro>
+    <ctaTexte>
+      Découvre nos activités
+    </ctaTexte>
+    <ctaLien>
+      #activites
+    </ctaLien>
+	<ctaTexte2>
+      Contacte-nous
+    </ctaTexte2>
+    <ctaLien2>
+       https://wa.me/237693474253
+    </ctaLien2>
+  </accueil>
+  <activites>
+<activites>
+    <activite id="remk">
+      <nom>
+        remK
+      </nom>
+      <subtitle>
+        Rhums arrangés artisanaux
+      </subtitle>
+      <description>
+        Des assemblages artisanaux créés autour des fruits, des épices et du temps.
+      </description>
+      <whatsapp>
+        https://wa.me/237000000000
+      </whatsapp>
+      <whatsappText>
+        Commander maintenant
+      </whatsappText>
+      <next>
+        remk
+      </next>
+      <nextText>
+        Activité suivante →
+      </nextText>
+      <zone id="fruites">
+        <nom>
+          Rhums fruités
+        </nom>
+        <item>
+          <titre>Mangue Passion</titre>
+          <texte>Assemblage tropical intense.</texte>
+          <image>https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b</image>
+        </item>
+        <item>
+          <titre>Ananas Vanille</titre>
+          <texte>Macération ronde et chaleureuse.</texte>
+          <image>https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd</image>
+        </item>
+        <item>
+          <titre>Citron Gingembre</titre>
+          <texte>Fraîcheur épicée premium.</texte>
+          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+        </item>
+      </zone>
+      <zone id="premium">
+        <nom>
+          Assemblages premium
+        </nom>
+        <item>
+          <titre>Cuvée Signature</titre>
+          <texte>Assemblage premium complexe.</texte>
+          <image>https://images.unsplash.com/photo-1504674900247-0877df9cc836</image>
+        </item>
+        <item>
+          <titre>Collection Prestige</titre>
+          <texte>Création haut de gamme.</texte>
+          <image>https://images.unsplash.com/photo-1495474472287-4d71bcdd2085</image>
+        </item>
+        <item>
+          <titre>Edition Réserve</titre>
+          <texte>Macération longue.</texte>
+          <image>https://images.unsplash.com/photo-1510627498534-cf7e9002facc</image>
+        </item>
+      </zone>
+      <zone id="epices">
+        <nom>
+          Macérations épicées
+        </nom>
+        <item>
+          <titre>Cannelle Orange</titre>
+          <texte>Profil aromatique chaud.</texte>
+          <image>https://images.unsplash.com/photo-1502741338009-cac2772e18bc</image>
+        </item>
+        <item>
+          <titre>Vanille Noire</titre>
+          <texte>Notes profondes et rondes.</texte>
+          <image>https://images.unsplash.com/photo-1504674900247-0877df9cc836</image>
+        </item>
+        <item>
+          <titre>Gingembre Brut</titre>
+          <texte>Puissance épicée intense.</texte>
+          <image>https://images.unsplash.com/photo-1495474472287-4d71bcdd2085</image>
+        </item>
+      </zone>
+      <zone id="cadeaux">
+        <nom>
+          Formats cadeaux
+        </nom>
+        <item>
+          <titre>Coffret Duo</titre>
+          <texte>Format découverte premium.</texte>
+          <image>https://images.unsplash.com/photo-1510627498534-cf7e9002facc</image>
+        </item>
+        <item>
+          <titre>Coffret Prestige</titre>
+          <texte>Edition cadeau artisanale.</texte>
+          <image>https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b</image>
+        </item>
+        <item>
+          <titre>Coffret Collector</titre>
+          <texte>Packaging collector premium.</texte>
+          <image>https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd</image>
+        </item>
+      </zone>
+    </activite>
+    <activite id="remk2">
+      <nom>
+        remK
+      </nom>
+      <subtitle>
+        Rhums arrangés artisanaux
+      </subtitle>
+      <description>
+        Des assemblages artisanaux créés autour des fruits, des épices et du temps.
+      </description>
+      <whatsapp>
+        https://wa.me/237000000000
+      </whatsapp>
+      <whatsappText>
+        Commander maintenant
+      </whatsappText>
+      <next>
+        remk
+      </next>
+      <nextText>
+        Activité suivante →
+      </nextText>
+      <zone id="fruites">
+        <nom>
+          Rhums fruités
+        </nom>
+        <item>
+          <titre>Mangue Passion</titre>
+          <texte>Assemblage tropical intense.</texte>
+          <image>https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b</image>
+        </item>
+        <item>
+          <titre>Ananas Vanille</titre>
+          <texte>Macération ronde et chaleureuse.</texte>
+          <image>https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd</image>
+        </item>
+        <item>
+          <titre>Citron Gingembre</titre>
+          <texte>Fraîcheur épicée premium.</texte>
+          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+        </item>
+      </zone>
+      <zone id="premium">
+        <nom>
+          Assemblages premium
+        </nom>
+        <item>
+          <titre>Cuvée Signature</titre>
+          <texte>Assemblage premium complexe.</texte>
+          <image>https://images.unsplash.com/photo-1504674900247-0877df9cc836</image>
+        </item>
+        <item>
+          <titre>Collection Prestige</titre>
+          <texte>Création haut de gamme.</texte>
+          <image>https://images.unsplash.com/photo-1495474472287-4d71bcdd2085</image>
+        </item>
+        <item>
+          <titre>Edition Réserve</titre>
+          <texte>Macération longue.</texte>
+          <image>https://images.unsplash.com/photo-1510627498534-cf7e9002facc</image>
+        </item>
+      </zone>
+      <zone id="epices">
+        <nom>
+          Macérations épicées
+        </nom>
+        <item>
+          <titre>Cannelle Orange</titre>
+          <texte>Profil aromatique chaud.</texte>
+          <image>https://images.unsplash.com/photo-1502741338009-cac2772e18bc</image>
+        </item>
+        <item>
+          <titre>Vanille Noire</titre>
+          <texte>Notes profondes et rondes.</texte>
+          <image>https://images.unsplash.com/photo-1504674900247-0877df9cc836</image>
+        </item>
+        <item>
+          <titre>Gingembre Brut</titre>
+          <texte>Puissance épicée intense.</texte>
+          <image>https://images.unsplash.com/photo-1495474472287-4d71bcdd2085</image>
+        </item>
+      </zone>
+      <zone id="cadeaux">
+        <nom>
+          Formats cadeaux
+        </nom>
+        <item>
+          <titre>Coffret Duo</titre>
+          <texte>Format découverte premium.</texte>
+          <image>https://images.unsplash.com/photo-1510627498534-cf7e9002facc</image>
+        </item>
+        <item>
+          <titre>Coffret Prestige</titre>
+          <texte>Edition cadeau artisanale.</texte>
+          <image>https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b</image>
+        </item>
+        <item>
+          <titre>Coffret Collector</titre>
+          <texte>Packaging collector premium.</texte>
+          <image>https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd</image>
+        </item>
+      </zone>
+    </activite>
+  </activites>
+  <footer>
+    <titre>
+      Donnez vie à vos projets.
+    </titre>
+    <texte>
+      Création, transformation, artisanat et innovation locale.
+    </texte>
+    <whatsapp>
+      https://wa.me/237000000000
+    </whatsapp>
+    <whatsappText>
+      Nous contacter
+    </whatsappText>
+    <email>
+      contact@atelierkhem.com
+    </email>
+  </footer>
+</atelier>
