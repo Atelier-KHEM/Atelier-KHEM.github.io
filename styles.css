@@ -5,8 +5,8 @@
 }
 
 body{
-  background:#050505;
-  color:white;
+  background:#171C22;
+  color:#E8E3DD;
   font-family:Arial, Helvetica, sans-serif;
   overflow-x:hidden;
 }
@@ -94,9 +94,9 @@ body{
 }
 
 .zone-card{
-  background:#101010;
+  background:#2A3138;
 
-  border:1px solid rgba(255,255,255,.08);
+  border: 1px solid rgba(183, 176, 167, 0.08);
 
   border-radius:30px;
 
@@ -187,7 +187,7 @@ body{
 
   background:#C68346;
 
-  color:white;
+  color:#E8E3DD;
 
   cursor:pointer;
 
@@ -199,7 +199,7 @@ body{
 .zone-buttons button:hover{
   transform:scale(1.04);
 
-  background:#d9975a;
+  background:#C68346;
 }
 
 /* ANIM */

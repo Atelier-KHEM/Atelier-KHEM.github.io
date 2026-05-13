@@ -16,130 +16,144 @@
       Découvre nos activités
     </ctaTexte>
     <ctaLien>
-      #activites
+      #rhumsarrangesremk
     </ctaLien>
 	<ctaTexte2>
       Contacte-nous
     </ctaTexte2>
     <ctaLien2>
-       https://wa.me/237693474253
+       https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Accueil%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20...
     </ctaLien2>
   </accueil>
   <activites>
 <activites>
-    <activite id="remk">
+    <activite id="rhumsarrangesremk">
       <nom>
-        remK
+        Rhums arrangés remK
       </nom>
       <subtitle>
-        Rhums arrangés artisanaux
+        Rhums arrangés artisanaux 100% Camerounais
       </subtitle>
       <description>
-        Des assemblages artisanaux créés autour des fruits, des épices et du temps.
+        Des arrangés uniques au Monde à base de fruits, d'épices, de racines, de fleurs, de feuilles et de 30 années d'expérience
       </description>
-      <whatsapp>
-        https://wa.me/237000000000
-      </whatsapp>
+      <telephone>237693474253</telephone>
+      <whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20Rhums%20arrangés%20remK.%0A%0A</whatsapp>
       <whatsappText>
-        Commander maintenant
+        Commande maintenant
       </whatsappText>
-      <next>
-        remk
-      </next>
+      <next>guiahsongs</next>
       <nextText>
         Activité suivante →
       </nextText>
-      <zone id="fruites">
+      <zone id="remkfruit">
         <nom>
-          Rhums fruités
+          remK à base de fruits
         </nom>
-        <item>
-          <titre>Mangue Passion</titre>
+		<item>
+          <titre>Ananas</titre>
           <texte>Assemblage tropical intense.</texte>
           <image>https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b</image>
         </item>
         <item>
-          <titre>Ananas Vanille</titre>
+          <titre>Bissap (fleur d'hibiscus)</titre>
           <texte>Macération ronde et chaleureuse.</texte>
           <image>https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd</image>
         </item>
         <item>
-          <titre>Citron Gingembre</titre>
+          <titre>Citron noir</titre>
+          <texte>Fraîcheur épicée premium.</texte>
+          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+        </item>
+        <item>
+          <titre>Folérhum
+(fleur d'hibiscus, ananas)</titre>
+          <texte>Fraîcheur épicée premium.</texte>
+          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+        </item>
+        <item>
+          <titre>Gingembre - Passion</titre>
+          <texte>Fraîcheur épicée premium.</texte>
+          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+        </item>
+        <item>
+          <titre>Jaabi (graines de jujube)</titre>
+          <texte>Fraîcheur épicée premium.</texte>
+          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+        </item>
+        <item>
+          <titre>Jangolo
+(ananas, mangue, épices)</titre>
+          <texte>Fraîcheur épicée premium.</texte>
+          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+        </item>
+        <item>
+          <titre>Melon</titre>
+          <texte>Fraîcheur épicée premium.</texte>
+          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+        </item>
+        <item>
+          <titre>Mojirhum (citron, menthe)</titre>
+          <texte>Fraîcheur épicée premium.</texte>
+          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+        </item>
+        <item>
+          <titre>Noix de coco</titre>
+          <texte>Fraîcheur épicée premium.</texte>
+          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+        </item>
+        <item>
+          <titre>Salade de fruits</titre>
           <texte>Fraîcheur épicée premium.</texte>
           <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
         </item>
       </zone>
-      <zone id="premium">
+      <zone id="remkracine">
         <nom>
-          Assemblages premium
+          remK à base de racines
         </nom>
         <item>
-          <titre>Cuvée Signature</titre>
+          <titre>Souchet (graines de palmiste)</titre>
           <texte>Assemblage premium complexe.</texte>
           <image>https://images.unsplash.com/photo-1504674900247-0877df9cc836</image>
         </item>
         <item>
-          <titre>Collection Prestige</titre>
+          <titre>Bonbon café (mondia whitei)</titre>
+          <texte>Création haut de gamme.</texte>
+          <image>https://images.unsplash.com/photo-1495474472287-4d71bcdd2085</image>
+        </item>
+      </zone>
+      <zone id="remkepice">
+        <nom>
+          remK à base d'épices
+        </nom>
+        <item>
+          <titre>Mbongo
+(épices de la sauce noire)</titre>
+          <texte>Macération longue.</texte>
+          <image>https://images.unsplash.com/photo-1510627498534-cf7e9002facc</image>
+        </item>
+        <item>
+          <titre>Poivre de Penja - Curcuma</titre>
           <texte>Création haut de gamme.</texte>
           <image>https://images.unsplash.com/photo-1495474472287-4d71bcdd2085</image>
         </item>
         <item>
-          <titre>Edition Réserve</titre>
-          <texte>Macération longue.</texte>
-          <image>https://images.unsplash.com/photo-1510627498534-cf7e9002facc</image>
-        </item>
-      </zone>
-      <zone id="epices">
-        <nom>
-          Macérations épicées
-        </nom>
-        <item>
-          <titre>Cannelle Orange</titre>
-          <texte>Profil aromatique chaud.</texte>
-          <image>https://images.unsplash.com/photo-1502741338009-cac2772e18bc</image>
-        </item>
-        <item>
-          <titre>Vanille Noire</titre>
-          <texte>Notes profondes et rondes.</texte>
-          <image>https://images.unsplash.com/photo-1504674900247-0877df9cc836</image>
-        </item>
-        <item>
-          <titre>Gingembre Brut</titre>
-          <texte>Puissance épicée intense.</texte>
+          <titre>Zizi Pan Pan (aphrodisiaque)</titre>
+          <texte>Création haut de gamme.</texte>
           <image>https://images.unsplash.com/photo-1495474472287-4d71bcdd2085</image>
         </item>
       </zone>
-      <zone id="cadeaux">
-        <nom>
-          Formats cadeaux
-        </nom>
-        <item>
-          <titre>Coffret Duo</titre>
-          <texte>Format découverte premium.</texte>
-          <image>https://images.unsplash.com/photo-1510627498534-cf7e9002facc</image>
-        </item>
-        <item>
-          <titre>Coffret Prestige</titre>
-          <texte>Edition cadeau artisanale.</texte>
-          <image>https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b</image>
-        </item>
-        <item>
-          <titre>Coffret Collector</titre>
-          <texte>Packaging collector premium.</texte>
-          <image>https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd</image>
-        </item>
-      </zone>
     </activite>
-    <activite id="remk2">
-      <nom>
-        remK
-      </nom>
+    <activite id="guiahsongs">
+      <nom>Guiah Songs</nom>
       <subtitle>
         Rhums arrangés artisanaux
       </subtitle>
       <description>
         Des assemblages artisanaux créés autour des fruits, des épices et du temps.
       </description>
+      <telephone>237693474253</telephone>
       <whatsapp>
         https://wa.me/237000000000
       </whatsapp>

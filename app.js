@@ -52,6 +52,9 @@ fetch('data/atelier-khem.xml')
       const description =
         act.querySelector('description').textContent
 
+      const telephone =
+        act.querySelector('telephone').textContent
+
       const whatsapp =
         act.querySelector('whatsapp').textContent
 
@@ -114,7 +117,7 @@ fetch('data/atelier-khem.xml')
       const firstItem =
         dataStore[actId][firstZone][0]
 
-      const html = `
+	  const html = `
 
         <section
           id="${actId}"
@@ -202,8 +205,15 @@ fetch('data/atelier-khem.xml')
               >
                 ← Précédent
               </button>
+			  
+			   <button
+					onclick="window.open('https://wa.me/${telephone}?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%29%5D%0A%0ABonjour%2C%0A%0AJe%20souhaite%20commander%20un%20Rhum%20arrangés%20remK%20' + encodeURIComponent(document.getElementById('${actId}-title').innerText) + '%0A%0A');"
+				  class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
+				>
+			    Je commande
+			  </button>
 
-              <button
+			  <button
                 onclick="changeContent('${actId}', currentType['${actId}'], 1)"
                 class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
               >
@@ -307,7 +317,7 @@ function changeContent(section, type, direction = 0) {
 
   document.getElementById(`${section}-title`).innerText =
     current.title
-
+	
   document.getElementById(`${section}-description`).innerText =
     current.description
 
