@@ -34,6 +34,7 @@
       <subtitle>
         Rhums arrangés artisanaux 100% Camerounais
       </subtitle>
+	  <defaultVisual>img/Logo_Rhums_arranges_remK.png</defaultVisual>
       <description>
         Des arrangés uniques au Monde à base de fruits, d'épices, de racines, de fleurs, de feuilles et de 30 années d'expérience
       </description>
@@ -150,6 +151,7 @@
       <subtitle>
         Rhums arrangés artisanaux
       </subtitle>
+	  <defaultVisual>img/Logo_Guiah_Songs.png</defaultVisual>
       <description>
         Des assemblages artisanaux créés autour des fruits, des épices et du temps.
       </description>

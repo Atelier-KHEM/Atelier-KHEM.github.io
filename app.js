@@ -48,6 +48,9 @@ fetch('data/atelier-khem.xml')
 
       const subtitle =
         act.querySelector('subtitle').textContent
+		
+	 const defaultVisual =
+		act.querySelector('defaultVisual').textContent
 
       const description =
         act.querySelector('description').textContent
@@ -110,14 +113,11 @@ fetch('data/atelier-khem.xml')
         })
 
       })
+     const defaultImage = ''
+	 const defaultTitle = ''
+	 const defaultDescription = ''
 
-      const firstZone =
-        zones[0].getAttribute('id')
-
-      const firstItem =
-        dataStore[actId][firstZone][0]
-
-	  const html = `
+	 const html = `
 
         <section
           id="${actId}"
@@ -171,56 +171,19 @@ fetch('data/atelier-khem.xml')
 
             <div>
 
-              <div
-                id="${actId}-image"
-                class="dynamic-image rounded-[2rem] h-[320px] mb-8"
-                style="background-image:url('${firstItem.image}')"
-              ></div>
+              <div id="${actId}-content">
 
-              <div class="space-y-4">
+				  <div class="relative z-10 text-center">
 
-                <h3
-                  id="${actId}-title"
-                  class="text-4xl font-light"
-                >
-                  ${firstItem.title}
-                </h3>
+					<img
+					  src="${defaultVisual}"
+					  alt="${nom}"
+					  class="mx-auto rounded-[2rem] object-contain"
+					>
 
-                <p
-                  id="${actId}-description"
-                  class="text-[#B7B0A7] text-lg leading-relaxed"
-                >
-                  ${firstItem.description}
-                </p>
+				  </div>
 
-              </div>
-
-            </div>
-
-            <div class="flex justify-between pt-8">
-
-              <button
-                onclick="changeContent('${actId}', currentType['${actId}'], -1)"
-                class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
-              >
-                ← Précédent
-              </button>
-			  
-			   <button
-					onclick="window.open('https://wa.me/${telephone}?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%29%5D%0A%0ABonjour%2C%0A%0AJe%20souhaite%20commander%20un%20Rhum%20arrangés%20remK%20' + encodeURIComponent(document.getElementById('${actId}-title').innerText) + '%0A%0A');"
-				  class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
-				>
-			    Je commande
-			  </button>
-
-			  <button
-                onclick="changeContent('${actId}', currentType['${actId}'], 1)"
-                class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
-              >
-                Suivant →
-              </button>
-
-            </div>
+			  </div>
 
           </div>
 
@@ -230,10 +193,8 @@ fetch('data/atelier-khem.xml')
 
       container.innerHTML += html
 
-      currentType[actId] = firstZone
-
-      state[actId] = {}
-      state[actId][firstZone] = 0
+      currentType[actId] = null
+	  state[actId] = {}
 
     })
 
@@ -285,6 +246,10 @@ fetch('data/atelier-khem.xml')
 
 function changeContent(section, type, direction = 0) {
 
+	if (!type || !dataStore[section][type]) {
+	  return
+	}
+
   currentType[section] = type
 
   if(!state[section]) {
@@ -315,14 +280,71 @@ function changeContent(section, type, direction = 0) {
   const current =
     items[state[section][type]]
 
-  document.getElementById(`${section}-title`).innerText =
-    current.title
-	
-  document.getElementById(`${section}-description`).innerText =
-    current.description
+  document.getElementById(`${section}-content`).innerHTML = `
 
-  document.getElementById(`${section}-image`).style.backgroundImage =
-    `url('${current.image}')`
+<div>
+
+    <div
+      id="${section}-image"
+      class="dynamic-image rounded-[2rem] h-[320px] mb-8"
+      style="background-image:url('${current.image}')"
+    ></div>
+
+    <div class="space-y-4">
+
+      <h3
+        id="${section}-title"
+        class="text-4xl font-light"
+      >
+        ${current.title}
+      </h3>
+
+      <p
+        id="${section}-description"
+        class="text-[#B7B0A7] text-lg leading-relaxed"
+      >
+        ${current.description}
+      </p>
+
+    </div>
+
+    <div class="flex justify-between pt-8">
+
+      <button
+        onclick="changeContent('${section}', currentType['${section}'], -1)"
+        class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
+      >
+        ← Précédent
+      </button>
+
+      <button
+        onclick="window.open(
+          'https://wa.me/${telephone}?text=' +
+          encodeURIComponent(
+            '[En provenance du site Atelier KHEM]\\n\\n' +
+            'Bonjour,\\n\\n' +
+            'Je souhaite commander : ' +
+            document.getElementById('${section}-title').innerText
+          )
+        )"
+        class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
+      >
+        Je commande
+      </button>
+
+      <button
+        onclick="changeContent('${section}', currentType['${section}'], 1)"
+        class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
+      >
+        Suivant →
+      </button>
+
+    </div>
+
+  </div>
+
+`
+
 
   gsap.fromTo(
     `#${section}-image`,
