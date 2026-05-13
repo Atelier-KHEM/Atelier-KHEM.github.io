@@ -36,21 +36,25 @@ fetch('data/atelier-khem.xml')
     // ACTIVITES
     const container = document.getElementById('activities-container')
 
-    const activites = xml.querySelectorAll('activite')
+	const activites = xml.querySelectorAll('activite')
+	
+	const actIds = Array.from(activites).map(a => a.getAttribute('id'))
 
     activites.forEach((act) => {
 
       const actId =
         act.getAttribute('id')
+		
+		const actIndex = actIds.indexOf(actId)
 
       const nom =
         act.querySelector('nom').textContent
+		
+	const defaultVisual =
+  act.querySelector('defaultVisual').textContent
 
       const subtitle =
         act.querySelector('subtitle').textContent
-		
-	 const defaultVisual =
-		act.querySelector('defaultVisual').textContent
 
       const description =
         act.querySelector('description').textContent
@@ -69,6 +73,19 @@ fetch('data/atelier-khem.xml')
 
       const nextText =
         act.querySelector('nextText').textContent
+		
+	  const previousText =
+        act.querySelector('previousText').textContent
+
+		const prevId   = actIds[(actIndex - 1 + actIds.length) % actIds.length]
+
+const prevButton = actIndex === 0
+  ? `<a href="#" class="inline-block px-8 py-4 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${previousText}</a>`
+  : `<a href="#${prevId}" class="inline-block px-8 py-4 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${previousText}</a>`
+
+const nextButton = actIndex === actIds.length - 1
+  ? ''
+  : `<a href="#${next}" class="inline-block px-8 py-4 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${nextText}</a>`
 
       dataStore[actId] = {}
 
@@ -113,15 +130,21 @@ fetch('data/atelier-khem.xml')
         })
 
       })
-     const defaultImage = ''
-	 const defaultTitle = ''
-	 const defaultDescription = ''
 
-	 const html = `
+      const defaultImage =
+  'img/default-rhum.jpg'
+
+const defaultTitle =
+  'Découvrez nos créations'
+
+const defaultDescription =
+  'Sélectionnez une catégorie pour afficher nos créations artisanales.'
+
+	  const html = `
 
         <section
           id="${actId}"
-          class="grid lg:grid-cols-2 gap-16 items-start section-fade border-b border-white/10 pb-24"
+          class="grid lg:grid-cols-2 gap-16 items-start section-fade border-b border-white/10 pb-24 scroll-mt-24"
         >
 
           <div class="space-y-8">
@@ -148,42 +171,61 @@ fetch('data/atelier-khem.xml')
 
             <div class="flex flex-wrap gap-4 pt-4">
 
-              <a
-                href="${whatsapp}"
-                target="_blank"
-                class="inline-block px-8 py-4 rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300"
-              >
-                ${whatsappText}
-              </a>
+  ${prevButton}
 
-              <a
-                href="#${next}"
-                class="inline-block px-8 py-4 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300"
-              >
-                ${nextText}
-              </a>
+  <a
+    href="${whatsapp}"
+    target="_blank"
+    class="inline-block px-8 py-4 rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300"
+  >
+    ${whatsappText}
+  </a>
 
-            </div>
+  ${nextButton}
+
+</div>
 
           </div>
 
-          <div class="glass rounded-[3rem] p-8 min-h-[650px] flex flex-col justify-between">
+          <div class="glass rounded-[3rem] p-8 h-[650px] flex flex-col justify-between">
 
-            <div>
+            <div
+  id="${actId}-content"
+  style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center;"
+>
+  <img
+    src="${defaultVisual}"
+    alt="${nom}"
+    style="max-width:100%;max-height:100%;object-fit:contain;padding:2rem;"
+  >
+</div>
 
-              <div id="${actId}-content">
+            <div
+  id="${actId}-nav"
+  class="hidden justify-between pt-8"
+>
+              <button
+                onclick="changeContent('${actId}', currentType['${actId}'], -1)"
+                class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
+              >
+                ← Précédent
+              </button>
+			  
+			   <button
+					onclick="window.open('https://wa.me/${telephone}?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%29%5D%0A%0ABonjour%2C%0A%0AJe%20souhaite%20commander%20un%20Rhum%20arrangés%20remK%20' + encodeURIComponent(document.getElementById('${actId}-title').innerText) + '%0A%0A');"
+				  class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
+				>
+			    Je commande
+			  </button>
 
-				  <div class="relative z-10 text-center">
+			  <button
+                onclick="changeContent('${actId}', currentType['${actId}'], 1)"
+                class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
+              >
+                Suivant →
+              </button>
 
-					<img
-					  src="${defaultVisual}"
-					  alt="${nom}"
-					  class="mx-auto rounded-[2rem] object-contain"
-					>
-
-				  </div>
-
-			  </div>
+            </div>
 
           </div>
 
@@ -194,7 +236,7 @@ fetch('data/atelier-khem.xml')
       container.innerHTML += html
 
       currentType[actId] = null
-	  state[actId] = {}
+state[actId] = {}
 
     })
 
@@ -246,11 +288,27 @@ fetch('data/atelier-khem.xml')
 
 function changeContent(section, type, direction = 0) {
 
-	if (!type || !dataStore[section][type]) {
-	  return
-	}
+  if (!type || !dataStore[section][type]) {
+    return
+  }
 
   currentType[section] = type
+  
+  document
+  .getElementById(`${section}-nav`)
+  .classList
+  .remove('hidden')
+
+document
+  .getElementById(`${section}-nav`)
+  .classList
+  .add('flex')
+  
+  gsap.from(`#${section}-nav`, {
+  opacity: 0,
+  y: 20,
+  duration: 2
+})
 
   if(!state[section]) {
     state[section] = {}
@@ -282,7 +340,7 @@ function changeContent(section, type, direction = 0) {
 
   document.getElementById(`${section}-content`).innerHTML = `
 
-<div>
+  <div>
 
     <div
       id="${section}-image"
@@ -308,43 +366,9 @@ function changeContent(section, type, direction = 0) {
 
     </div>
 
-    <div class="flex justify-between pt-8">
-
-      <button
-        onclick="changeContent('${section}', currentType['${section}'], -1)"
-        class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
-      >
-        ← Précédent
-      </button>
-
-      <button
-        onclick="window.open(
-          'https://wa.me/${telephone}?text=' +
-          encodeURIComponent(
-            '[En provenance du site Atelier KHEM]\\n\\n' +
-            'Bonjour,\\n\\n' +
-            'Je souhaite commander : ' +
-            document.getElementById('${section}-title').innerText
-          )
-        )"
-        class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
-      >
-        Je commande
-      </button>
-
-      <button
-        onclick="changeContent('${section}', currentType['${section}'], 1)"
-        class="px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition"
-      >
-        Suivant →
-      </button>
-
-    </div>
-
   </div>
 
 `
-
 
   gsap.fromTo(
     `#${section}-image`,
@@ -355,7 +379,7 @@ function changeContent(section, type, direction = 0) {
     {
       opacity:1,
       scale:1,
-      duration:.7
+      duration:1
     }
   )
 

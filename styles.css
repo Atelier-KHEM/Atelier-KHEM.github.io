@@ -228,3 +228,85 @@ body{
     line-height:1;
   }
 }
+
+.alchemic-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.12;
+  animation: rise linear infinite;
+}
+
+.blob-1 {
+  width: 600px;
+  height: 600px;
+  background: #1FAF8C;
+  bottom: -200px;
+  left: -100px;
+  animation-duration: 18s;
+  animation-delay: 0s;
+}
+
+.blob-2 {
+  width: 500px;
+  height: 500px;
+  background: #FF8A3D;
+  bottom: -150px;
+  right: -80px;
+  animation-duration: 22s;
+  animation-delay: -6s;
+}
+
+.blob-3 {
+  width: 400px;
+  height: 400px;
+  background: #2D6CDF;
+  bottom: -100px;
+  left: 40%;
+  animation-duration: 26s;
+  animation-delay: -12s;
+}
+
+.blob-4 {
+  width: 300px;
+  height: 300px;
+  background: #1FAF8C;
+  bottom: -100px;
+  right: 25%;
+  animation-duration: 20s;
+  animation-delay: -4s;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.12;
+  }
+  50% {
+    transform: translateY(-60vh) translateX(80px) scale(1.3);
+    opacity: 0.08;
+  }
+  85% {
+    opacity: 0.04;
+  }
+  100% {
+    transform: translateY(-110vh) translateX(-40px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+section, footer, .hero-bg {
+  position: relative;
+  z-index: 1;
+}

@@ -31,21 +31,24 @@
       <nom>
         Rhums arrangés remK
       </nom>
+	  <defaultVisual>img/Logo_Rhums_arranges_remK.png</defaultVisual>
       <subtitle>
         Rhums arrangés artisanaux 100% Camerounais
       </subtitle>
-	  <defaultVisual>img/Logo_Rhums_arranges_remK.png</defaultVisual>
       <description>
         Des arrangés uniques au Monde à base de fruits, d'épices, de racines, de fleurs, de feuilles et de 30 années d'expérience
       </description>
       <telephone>237693474253</telephone>
       <whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20Rhums%20arrangés%20remK.%0A%0A</whatsapp>
       <whatsappText>
-        Commande maintenant
+        Je commande
       </whatsappText>
       <next>guiahsongs</next>
-      <nextText>
-        Activité suivante →
+      <previousText>
+        ← Précédente
+      </previousText>
+	  <nextText>
+        Suivante →
       </nextText>
       <zone id="remkfruit">
         <nom>
@@ -148,10 +151,10 @@
     </activite>
     <activite id="guiahsongs">
       <nom>Guiah Songs</nom>
+      <defaultVisual>img/Logo_Guiah_Songs.png</defaultVisual>
       <subtitle>
         Rhums arrangés artisanaux
       </subtitle>
-	  <defaultVisual>img/Logo_Guiah_Songs.png</defaultVisual>
       <description>
         Des assemblages artisanaux créés autour des fruits, des épices et du temps.
       </description>
@@ -160,13 +163,16 @@
         https://wa.me/237000000000
       </whatsapp>
       <whatsappText>
-        Commander maintenant
+        Je commande
       </whatsappText>
       <next>
         remk
       </next>
+      <previousText>
+        ← Précédente
+      </previousText>
       <nextText>
-        Activité suivante →
+        Suivante →
       </nextText>
       <zone id="fruites">
         <nom>
