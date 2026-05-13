@@ -310,3 +310,38 @@ section, footer, .hero-bg {
   position: relative;
   z-index: 1;
 }
+
+#activities-container a,
+#activities-container button {
+  position: relative;
+  z-index: 10000;
+  pointer-events: auto;
+}
+
+#activities-container{
+  position:relative;
+  z-index:1;
+}
+
+.rainbow-link{
+  font-weight:700;
+  text-decoration:none;
+  animation: rainbowLink 3s linear infinite;
+}
+
+@keyframes rainbowLink {
+
+  0%   { color:#ff0000; }
+  16%  { color:#ff8800; }
+  32%  { color:#ffff00; }
+  48%  { color:#00ff00; }
+  64%  { color:#00ffff; }
+  80%  { color:#0000ff; }
+  100% { color:#ff00ff; }
+
+}
+.noise,
+.alchemic-bg,
+.blob {
+  pointer-events: none !important;
+}

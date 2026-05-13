@@ -1,12 +1,11 @@
 <atelier>
   <accueil>
+	<sound>sounds/accueil.mp3</sound>
     <badge>
       Atelier KHEM
     </badge>
     <titre>
-      Créer<br/>
-      Transformer<br/>
-      Révéler
+      Créer&lt;br&gt;Transformer&lt;br&gt;Révéler
     </titre>
     <intro>
       Atelier de création graphique&lt;br&gt;
@@ -26,8 +25,8 @@
     </ctaLien2>
   </accueil>
   <activites>
-<activites>
     <activite id="rhumsarrangesremk">
+		<sound>sounds/remk.mp3</sound>
       <nom>
         Rhums arrangés remK
       </nom>
@@ -36,7 +35,7 @@
         Rhums arrangés artisanaux 100% Camerounais
       </subtitle>
       <description>
-        Des arrangés uniques au Monde à base de fruits, d'épices, de racines, de fleurs, de feuilles et de 30 années d'expérience
+        Rhums arrangés remK transforme fruits, épices, racines, fleurs et feuilles en arrangés uniques au monde, issus de 30 années d’expérience et de création artisanale.
       </description>
       <telephone>237693474253</telephone>
       <whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20Rhums%20arrangés%20remK.%0A%0A</whatsapp>
@@ -50,66 +49,119 @@
 	  <nextText>
         Suivante →
       </nextText>
+	  <zone id="rhumarrange">
+        <nom>
+          Le rhum arrangé
+        </nom>
+        <item>
+          <titre>Le rhum arrangé, c'est quoi ?</titre>
+          <texte>Le rhum arrangé est une préparation de rhum et sucre dans laquelle macèrent fruits, épices, racines, feuilles ou fleurs afin de révéler des arômes uniques. Nos rhums macèrent 5 ans pour offrir un produit intense, raffiné et authentique.</texte>
+          <image>img/rhum_arrange.png</image>
+        </item>
+        <item>
+          <titre>L'histoire du rhum arrangé</titre>
+          <texte>Il y a deux versions de l’histoire... La première raconte que les marins de la route des Indes utilisaient le rhum pour conserver fruits et épices durant leurs voyages. Le rhum arrangé était né ! Une fois les fruits conservés, les marins n’allaient pas gâcher...</texte>
+          <image>img/histoire_1.png</image>
+        </item>
+        <item>
+          <titre>L'histoire du rhum arrangé</titre>
+          <texte>La seconde histoire raconte que l’eau-de-vie fabriquée à partir de la canne à sucre (le rhum) n’était pas de très bonne qualité au commencement. Afin de la rendre meilleure, on y ajouta du sucre et des fruits, des épices ou même des feuilles.</texte>
+          <image>img/histoire_2.png</image>
+        </item>
+        <item>
+          <titre>Comment le consomme t-on ?</titre>
+          <texte>Le rhum arrangé se consomme principalement pur, à température ambiante, frais ou même glacé. Pour ce faire, vous pouvez conserver votre bouteille de rhum arrangé remK au congélateur ou le servir sur glace, glace pilée ou au shaker.</texte>
+          <image>img/comment_1.png</image>
+        </item>
+        <item>
+          <titre>Comment le consomme t-on ?</titre>
+          <texte>Il est possible de diluer le rhum arrangé dans un soda comme le tonic ou l’eau gazeuse. Si vous utilisez un soda plus fort, vous risquerez de ne plus retrouver le goût du rhum arrangé. Certains rhums arrangés se marient très bien entre eux !</texte>
+          <image>img/comment_2.png</image>
+        </item>
+        <item>
+          <titre>Comment le consomme ?</titre>
+          <texte>Ils sont aussi très appréciés avec un bon cigare !&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</texte>
+          <image>img/comment_3.png</image>
+        </item>
+        <item>
+          <titre>Pourquoi ce logo ?</titre>
+          <texte>Le rhum et les pirates sont liés depuis toujours. C’est pourquoi nous avons choisi cette symbole pirate : une illustration forte et emblématique de nos produits, malgré les interrogations qu’elle peut susciter chez certains Camerounais.</texte>
+          <image>img/pourquoi_logo.png</image>
+        </item>
+        <item>
+          <titre>Que signifie « remK » ?</titre>
+          <texte>En ce qui concerne le nom de notre marque, « remK » signifie tout simplement « Kmer » écrit à l’envers. C’est d’ailleurs pour cela que le « K » est en majuscule à la fin du nom.&lt;br&gt;&lt;br&gt;</texte>
+          <image>img/pourquoi_remk.png</image>
+        </item>
+        <item>
+          <titre>Les engagements de remK</titre>
+          <texte>Forts de 30 années d’expérience, nous garantissons une découverte gustative inoubliable ! Nous travaillons chaque jour pour vous offrir un produit de qualité : le rhum arrangé bien entendu, mais aussi le packaging et le service.</texte>
+          <image>img/engagements_remk.png</image>
+        </item>
+        <item>
+          <titre>remK protège la planète !</titre><texte>Nous vous proposons de reprendre chaque bouteille retournée pour la somme de 500 FCFA. C’est un geste écologique qui contribue également à la lutte contre la contrefaçon.&lt;br&gt;&lt;br&gt;</texte>
+          <image>img/remk_pense_a_la_planete.png</image>
+        </item>
+      </zone>
       <zone id="remkfruit">
         <nom>
           remK à base de fruits
         </nom>
 		<item>
           <titre>Ananas</titre>
-          <texte>Assemblage tropical intense.</texte>
-          <image>https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b</image>
+          <texte>Classique mais incontournable, ce rhum arrangé est apprécié de tous pour sa douceur et son goût très fruité. Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
+          <image>img/ananas.png</image>
         </item>
         <item>
           <titre>Bissap (fleur d'hibiscus)</titre>
-          <texte>Macération ronde et chaleureuse.</texte>
-          <image>https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd</image>
+          <texte>Une magnifique robe bordeaux et un goût fruité… mais avec du caractère !&lt;br&gt;Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
+          <image>img/bissap.png</image>
         </item>
         <item>
           <titre>Citron noir</titre>
-          <texte>Fraîcheur épicée premium.</texte>
-          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+          <texte>Des citrons lentement séchés sous le soleil de Kribi, pour un rhum arrangé intense et parfumé. Une saveur acidulée qui rappelle les célèbres bonbons au citron. Idéal en apéritif, en digestif et en accompagnement de desserts.</texte>
+          <image>img/citron_noir.png</image>
         </item>
         <item>
-          <titre>Folérhum
-(fleur d'hibiscus, ananas)</titre>
-          <texte>Fraîcheur épicée premium.</texte>
-          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+          <titre>Folérhum (hibiscus, ananas)</titre>
+          <texte>Le rhum arrangé remK Bissap mais plus fruité et plus doux grâce à l’ananas. Une recette inspirée du Foléré.&lt;br&gt;Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
+          <image>img/folerhum.png</image>
         </item>
         <item>
           <titre>Gingembre - Passion</titre>
-          <texte>Fraîcheur épicée premium.</texte>
-          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+          <texte>Un mélange de fruit de la passion et de gingembre réveille l’exotisme dans votre verre&lt;br&gt;Idéal en apéritif et en accompagnement de desserts fruités ou chocolatés.</texte>
+          <image>img/gingembre_passion.png</image>
         </item>
         <item>
           <titre>Jaabi (graines de jujube)</titre>
-          <texte>Fraîcheur épicée premium.</texte>
-          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+          <texte>La graine de jujube donne à ce rhum arrangé des saveurs uniques de caramel.&lt;br&gt;Idéal en digestif et en accompagnement de desserts sucrés.&lt;br&gt;&lt;br&gt;</texte>
+          <image>img/jaabi.png</image>
         </item>
         <item>
           <titre>Jangolo
-(ananas, mangue, épices)</titre>
-          <texte>Fraîcheur épicée premium.</texte>
-          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+				(ananas, mangue, épices)</titre>
+          <texte>Un mariage parfait qui dévoile des notes exotiques et fruitées pour une dégustation chaleureuse et intense.&lt;br&gt;</texte>
+          <image>img/jangolo.png</image>
         </item>
         <item>
           <titre>Melon</titre>
-          <texte>Fraîcheur épicée premium.</texte>
-          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+          <texte>À base de melon (fruit), peu connu au Cameroun. Ce rhum arrangé a un goût très subtil tout en restant doux. Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
+          <image>img/melon.png</image>
         </item>
         <item>
           <titre>Mojirhum (citron, menthe)</titre>
-          <texte>Fraîcheur épicée premium.</texte>
-          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+          <texte>Un rhum arrangé inspiré du mojito, du citron, du lemon, de la menthe et du sucre. C’est un rhum arrangé très rafraîchissant surtout servi glacé, shake ou sur glace pilée. Idéal en apéritif et en accompagnement de desserts fruités ou chocolatés.</texte>
+          <image>img/mojirhum.png</image>
         </item>
         <item>
           <titre>Noix de coco</titre>
-          <texte>Fraîcheur épicée premium.</texte>
-          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+          <texte>Fermez les yeux, prenez une petite gorgée. Ça y est, vous êtes sur la plage de Kribi !&lt;br&gt;Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
+          <image>img/noix_de_coco.png</image>
         </item>
         <item>
           <titre>Salade de fruits</titre>
-          <texte>Fraîcheur épicée premium.</texte>
-          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+          <texte>Un mélange équilibré de fruits pour une saveur façon cocktail ou salade de fruits.&lt;br&gt;Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
+          <image>img/salade_de_fruits.png</image>
         </item>
       </zone>
       <zone id="remkracine">
@@ -118,13 +170,13 @@
         </nom>
         <item>
           <titre>Souchet (graines de palmiste)</titre>
-          <texte>Assemblage premium complexe.</texte>
-          <image>https://images.unsplash.com/photo-1504674900247-0877df9cc836</image>
+          <texte>Ce rhum arrangé à base de graines de palmiste et de miel camerounais est unique et très doux. Il sera apprécié de tous. Idéal en apéritif, en digestif et en accompagnement de desserts sucrés et au miel.</texte>
+          <image>img/souchet.png</image>
         </item>
         <item>
           <titre>Bonbon café (mondia whitei)</titre>
-          <texte>Création haut de gamme.</texte>
-          <image>https://images.unsplash.com/photo-1495474472287-4d71bcdd2085</image>
+          <texte>La « racine » donne à ce rhum arrangé tout son goût et sa force, le miel l’adoucit. Malgré son nom il n’y a pas de café ni même de saveur café dans cette préparation. C’est un rhum arrangé pour les hommes forts ! Idéal en apéritif et en digestif.</texte>
+          <image>img/bonbon_cafe.png</image>
         </item>
       </zone>
       <zone id="remkepice">
@@ -132,145 +184,276 @@
           remK à base d'épices
         </nom>
         <item>
-          <titre>Mbongo
-(épices de la sauce noire)</titre>
-          <texte>Macération longue.</texte>
-          <image>https://images.unsplash.com/photo-1510627498534-cf7e9002facc</image>
+          <titre>Mbongo (sauce noire)</titre>
+          <texte>Ce rhum arrangé c’est la magie pour certains, la chimamiture pour d’autres ! Mais ce qui est sûr c’est que son goût de sauce noire ne vous laissera pas indifférent ! Idéal avec une viande de brousse ou un bon plat de Mbongo, évidemment.</texte>
+          <image>img/mbongo.png</image>
         </item>
         <item>
           <titre>Poivre de Penja - Curcuma</titre>
-          <texte>Création haut de gamme.</texte>
-          <image>https://images.unsplash.com/photo-1495474472287-4d71bcdd2085</image>
+          <texte>Le curcuma adit parfaitement au poivre de Penja dans ce rhum arrangé au goût bien relevé. Saurez-vous lui résister ? Idéal en digestif.&lt;br&gt;&lt;br&gt;</texte>
+          <image>img/poivre_de_penja_curcuma.png</image>
         </item>
         <item>
           <titre>Zizi Pan Pan (aphrodisiaque)</titre>
-          <texte>Création haut de gamme.</texte>
-          <image>https://images.unsplash.com/photo-1495474472287-4d71bcdd2085</image>
+          <texte>Le rhum arrangé pour les hommes forts par excellence !!! De multiples aphrodisiaques, retardateurs et démarreurs ont été sélectionnés pour créer cette préparation. Messieurs, n’oubliez pas de prendre bien soin de Madame, c’est de ça qu’il s’agit ! Idéal à tout moment de la journée.</texte>
+          <image>img/zizi_pan_pan.png</image>
+        </item>
+      </zone>
+	  <zone id="remkprix">
+        <nom>
+          Prix et formats
+        </nom>
+        <item>
+          <titre>Prix et formats</titre>
+          <texte>Nous proposons les rhums arrangés remK en bouteilles de 70 cl à 20.000 FCFA, au format flask de 20 cl à 7.000 FCFA, ou en mignonettes de 6 cl à 2.500 FCFA. Les bouteilles en verre sont consignées à 500 FCFA (prix incluant la consigne).</texte>
+          <image>img/formats.png</image>
         </item>
       </zone>
     </activite>
     <activite id="guiahsongs">
+	  <sound>sounds/guiahsongs.mp3</sound>
       <nom>Guiah Songs</nom>
       <defaultVisual>img/Logo_Guiah_Songs.png</defaultVisual>
       <subtitle>
-        Rhums arrangés artisanaux
+        Branding, Infographies, Vidéos publicitaire, ...
       </subtitle>
       <description>
-        Des assemblages artisanaux créés autour des fruits, des épices et du temps.
+        Guiah Songs transforme les idées en contenus percutants : chansons personnalisées, créations visuelles, vidéos, identité de marque et communication digitale sur mesure.
       </description>
       <telephone>237693474253</telephone>
-      <whatsapp>
-        https://wa.me/237000000000
-      </whatsapp>
+      <whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Guiah%20Songs%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20services%20de%20Guiah%20Songs.%0A%0A</whatsapp>
       <whatsappText>
         Je commande
       </whatsappText>
-      <next>
-        remk
-      </next>
+      <next>kokolux</next>
       <previousText>
         ← Précédente
       </previousText>
       <nextText>
         Suivante →
       </nextText>
-      <zone id="fruites">
+      <zone id="decouvrenous">
         <nom>
-          Rhums fruités
+          Découvre-nous
         </nom>
         <item>
-          <titre>Mangue Passion</titre>
-          <texte>Assemblage tropical intense.</texte>
-          <image>https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b</image>
+          <titre>Notre philosophie</titre>
+          <texte>Nous croyons qu’une création de qualité doit être accessible. Guiah Songs mise sur l’écoute, le détail, l’originalité et un accompagnement humain afin de proposer des réalisations premium, modernes et impactantes à des tarifs raisonnables.</texte>
+          <image>img/notre_philosophie.png</image>
         </item>
         <item>
-          <titre>Ananas Vanille</titre>
-          <texte>Macération ronde et chaleureuse.</texte>
-          <image>https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd</image>
-        </item>
-        <item>
-          <titre>Citron Gingembre</titre>
-          <texte>Fraîcheur épicée premium.</texte>
-          <image>https://images.unsplash.com/photo-1470337458703-46ad1756a187</image>
+          <titre>Processus de création</titre>
+          <texte>Chaque projet suit une méthode simple : comprendre votre besoin, imaginer un concept fort, créer des visuels ou contenus adaptés puis ajuster chaque détail jusqu’au résultat final. Une approche pensée pour allier créativité, efficacité et rapidité.</texte>
+          <image>img/processus_de_creation.png</image>
         </item>
       </zone>
-      <zone id="premium">
+	  <zone id="nosservices">
         <nom>
-          Assemblages premium
+          Nos services
         </nom>
         <item>
-          <titre>Cuvée Signature</titre>
-          <texte>Assemblage premium complexe.</texte>
-          <image>https://images.unsplash.com/photo-1504674900247-0877df9cc836</image>
+          <titre>Les services de Guiah Songs</titre>
+          <texte>Guiah Songs réunit création graphique, vidéo, branding et contenus digitaux dans une seule structure. Nous concevons des solutions visuelles complètes pour développer votre image, attirer votre public et renforcer votre communication.</texte>
+          <image>img/nos_services.png</image>
         </item>
         <item>
-          <titre>Collection Prestige</titre>
-          <texte>Création haut de gamme.</texte>
-          <image>https://images.unsplash.com/photo-1495474472287-4d71bcdd2085</image>
+          <titre>Logos</titre>
+          <texte>Nous créons des logos modernes, mémorables et adaptés à votre activité. Chaque identité visuelle est pensée pour transmettre une image professionnelle, cohérente et forte, capable de marquer durablement vos clients et partenaires.</texte>
+          <image>img/creation_de_logos.png</image>
         </item>
         <item>
-          <titre>Edition Réserve</titre>
-          <texte>Macération longue.</texte>
-          <image>https://images.unsplash.com/photo-1510627498534-cf7e9002facc</image>
+          <titre>Chartes graphiques</titre>
+          <texte>Couleurs, typographies, styles visuels et cohérence graphique : nous développons des chartes graphiques complètes pour donner une identité claire, homogène et professionnelle à votre entreprise sur tous vos supports de communication.</texte>
+          <image>img/charte_graphique.png</image>
+        </item>
+        <item>
+          <titre>Etiquettes et Packaging</titre>
+          <texte>Guiah Songs conçoit étiquettes et packagings modernes pour tous vos produits artisanaux. Chaque création associe design, cohérence visuelle et finition professionnelle afin de valoriser votre produit et renforcer votre image de marque.</texte>
+          <image>img/etiquettes_et_packaging.png</image>
+        </item>
+        <item>
+          <titre>Impression d’étiquettes</titre>
+          <texte>Nous proposons l’impression d’étiquettes premium avec une qualité de finition comparable aux standards européens. Couleurs précises, excellente tenue, matériaux professionnels et rendu haut de gamme pour valoriser vos produits.</texte>
+          <image>img/impression_etiquettes_haute_qualite.png</image>
+        </item>
+        <item>
+          <titre>Flyers</titre>
+          <texte>Nous réalisons des flyers modernes et percutants conçus pour attirer l’attention rapidement. Promotion, événement, lancement ou publicité locale : chaque création est pensée pour transmettre votre message efficacement et donner envie d’agir.</texte>
+          <image>img/flyers.png</image>
+        </item>
+        <item>
+          <titre>Cartes de visite</titre>
+          <texte>Plus qu’un simple contact, une carte de visite reflète votre image. Nous concevons des cartes élégantes, modernes et professionnelles qui valorisent votre activité et renforcent la crédibilité de votre entreprise dès le premier échange.</texte>
+          <image>img/cartes_de_visite.png</image>
+        </item>
+        <item>
+          <titre>Vidéos publicitaires</titre>
+          <texte>Nous créons des vidéos courtes, dynamiques et immersives adaptées aux réseaux sociaux et à la communication moderne. Storytelling, animation, concepts visuels et montage rythmé : des contenus pensés pour captiver rapidement votre audience.</texte>
+          <image>img/videos_publicitaires.png</image>
+        </item>
+        <item>
+          <titre>Publicités radio</titre>
+          <texte>Nous créons des publicités radio dynamiques et professionnelles : écriture du message, voix, ambiance sonore et montage. Des spots pensés pour capter rapidement l’attention et transmettre efficacement votre message au public.</texte>
+          <image>img/publicites_radio.png</image>
+        </item>
+        <item>
+          <titre>Concepts marketing</titre>
+          <texte>Nous imaginons des concepts publicitaires originaux capables d’attirer l’attention et de provoquer une réaction immédiate. Messages forts, idées créatives et stratégies visuelles : des campagnes conçues pour être vues, comprises et retenues.</texte>
+          <image>img/concepts_marketing.png</image>
+        </item>
+        <item>
+          <titre>Chansons personnalisées</titre>
+          <texte>Guiah Songs crée des chansons personnalisées, jingles et identités sonores pour particuliers et entreprises. Anniversaire, publicité ou communication professionnelle : des créations originales pensées pour marquer les esprits.</texte>
+          <image>img/chansons_personnalisees.png</image>
+        </item>
+        <item>
+          <titre>Livres personnalisés</titre>
+          <texte>Guiah Songs crée des livres personnalisés racontant une histoire unique autour d’un enfant, d’une entreprise ou d’un projet. Chaque ouvrage associe narration, univers visuel et émotion afin de créer un souvenir original et marquant.</texte>
+          <image>img/creation_livres_d_histoire_personnalises.png</image>
+        </item>
+        <item>
+          <titre>Livres personnalisés 3D</titre>
+          <texte>Guiah Songs réalise également des livres entièrement conçus en 3D. Personnages, décors, objets et mises en scène prennent vie dans un univers immersif et spectaculaire pensé pour renforcer l’impact visuel du récit.</texte>
+          <image>img/creation_livres_d_histoire_personnalises_3d.png</image>
+        </item>
+        <item>
+          <titre>Vidéos éducatives</titre>
+          <texte>Chaque jour, une vidéo éducative autour du business, du marketing, de la communication et de l’entrepreneuriat. Des contenus courts, modernes et accessibles conçus pour apprendre, inspirer et développer son activité.</texte>
+          <image>img/videos_educatives.png</image>
+        </item>
+        <item>
+          <titre>Guides pratiques</titre>
+          <texte>Nous rédigeons des guides pratiques clairs, modernes et structurés destinés aux artisans et entrepreneurs. Formation, conseils, méthodes et vulgarisation : des contenus utiles pensés pour transmettre efficacement un savoir.</texte>
+          <image>img/guides_pratiques.png</image>
+        </item>
+        <item>
+          <titre>Modélisation 3D</titre>
+          <texte>La modélisation 3D permet de donner vie à vos idées avant leur réalisation. Produits, concepts, objets ou mises en scène : nous créons des visuels réalistes et modernes capables de renforcer fortement votre communication visuelle.</texte>
+          <image>img/modelisation_3d.png</image>
         </item>
       </zone>
-      <zone id="epices">
+      <zone id="nosrealisations">
         <nom>
-          Macérations épicées
+          Nos réalisations
         </nom>
         <item>
-          <titre>Cannelle Orange</titre>
-          <texte>Profil aromatique chaud.</texte>
-          <image>https://images.unsplash.com/photo-1502741338009-cac2772e18bc</image>
+          <titre>Laissez-nous vous convaincre</titre>
+          <texte>Avant de confier votre image à un infographiste, prenez le temps de découvrir ses réalisations. Son style, sa créativité et la qualité de ses visuels parlent mieux que de longs discours. Prennez le temps de parcourirr les créations de Guiah Songs.</texte>
+          <image>img/nos_realisations.png</image>
         </item>
         <item>
-          <titre>Vanille Noire</titre>
-          <texte>Notes profondes et rondes.</texte>
-          <image>https://images.unsplash.com/photo-1504674900247-0877df9cc836</image>
+          <titre>TikTok</titre>
+          <texte><![CDATA[
+Retrouvez sur TikTok nos vidéos créatives, concepts publicitaires, démonstrations visuelles et contenus courts pensés pour capter l’attention immédiatement.
+<br>
+<span
+  class="rainbow-link"
+  style="cursor:pointer;"
+  onclick="window.open('https://www.tiktok.com/@guiah.songs','_blank')"
+>
+  Découvre notre TikTok
+</span>
+]]></texte>
+          <image>img/tiktok.png</image>
         </item>
         <item>
-          <titre>Gingembre Brut</titre>
-          <texte>Puissance épicée intense.</texte>
-          <image>https://images.unsplash.com/photo-1495474472287-4d71bcdd2085</image>
+          <titre>Laissez-nous vous convaincre</titre>
+          <texte><![CDATA[
+Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, présentations de projets et contenus immersifs.
+<br>
+<span
+  class="rainbow-link"
+  style="cursor:pointer;"
+  onclick="window.open('https://www.youtube.com/@GuiahSongs','_blank')"
+>
+  Découvre notre YouTube
+</span>
+]]></texte>
+          <image>img/youtube.png</image>
         </item>
-      </zone>
-      <zone id="cadeaux">
+	  </zone>
+	</activite>
+	<activite id="kokolux">
+	  <sound>sounds/kokolux.mp3</sound>
+      <nom>KOKOLUX by Schouama</nom>
+      <defaultVisual>img/Logo_KOKOLUX_bySchouama.png</defaultVisual>
+      <subtitle>
+        En construction...
+      </subtitle>
+      <description>
+        En constrcution
+      </description>
+      <telephone>237687097558</telephone>
+      <whatsapp>https://wa.me/237687097558?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28KOKOLUX%20by%20Schouama%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20huiles%20KOKOLUX%0A%0A</whatsapp>
+      <whatsappText>
+        Je commande
+      </whatsappText>
+      <next>btcs</next>
+      <previousText>
+        ← Précédente
+      </previousText>
+      <nextText>
+        Suivante →
+      </nextText>
+      <zone id="decouvrenous">
         <nom>
-          Formats cadeaux
+          En construction
         </nom>
         <item>
-          <titre>Coffret Duo</titre>
-          <texte>Format découverte premium.</texte>
-          <image>https://images.unsplash.com/photo-1510627498534-cf7e9002facc</image>
+          <titre>En construction</titre>
+          <texte>En construction</texte>
+          <image>img/en_chantier.png</image>
         </item>
+	  </zone>
+	</activite>
+	<activite id="btcs">
+	  <sound>sounds/btcs.mp3</sound>
+      <nom>BTCS</nom>
+      <defaultVisual>img/Logo_BTCS.png</defaultVisual>
+      <subtitle>
+        En construction...
+      </subtitle>
+      <description>
+        En constrcution
+      </description>
+      <telephone>237693474253</telephone>
+      <whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28BTCS%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20briques%20de%20terre%20compressées%20stabilisées%0A%0A</whatsapp>
+      <whatsappText>
+        Je commande
+      </whatsappText>
+      <next>rhumsarrangesremk</next>
+      <previousText>
+        ← Précédente
+      </previousText>
+      <nextText>
+        Suivante →
+      </nextText>
+      <zone id="decouvrenous">
+        <nom>
+          En construction
+        </nom>
         <item>
-          <titre>Coffret Prestige</titre>
-          <texte>Edition cadeau artisanale.</texte>
-          <image>https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b</image>
+          <titre>En construction</titre>
+          <texte>En construction</texte>
+          <image>img/en_chantier.png</image>
         </item>
-        <item>
-          <titre>Coffret Collector</titre>
-          <texte>Packaging collector premium.</texte>
-          <image>https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd</image>
-        </item>
-      </zone>
-    </activite>
+	  </zone>
+	</activite>
   </activites>
   <footer>
+    <sound>sounds/footer.mp3</sound>
     <titre>
       Donnez vie à vos projets.
     </titre>
     <texte>
       Création, transformation, artisanat et innovation locale.
     </texte>
-    <whatsapp>
-      https://wa.me/237000000000
-    </whatsapp>
+    <whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Footer%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20l'Atelier%20KHEM%0A%0A</whatsapp>
     <whatsappText>
-      Nous contacter
+      W: +237 693 47 42 53
     </whatsappText>
     <email>
-      contact@atelierkhem.com
+      atelier.khem@gmail.com
     </email>
   </footer>
 </atelier>
