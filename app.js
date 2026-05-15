@@ -773,11 +773,11 @@ if (!AUDIO_ENABLED)
 
 	<!-- ═══ COLONNE DROITE : PANNEAU VITRINE ═══ -->
 	<!-- Le style inline est nécessaire pour les valeurs non supportées par Tailwind -->
-	<div style="background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);border-radius:3rem;padding:2rem;height:650px;display:flex;flex-direction:column;justify-content:space-between;">
+	<div style="background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);border-radius:3rem;height:650px;display:flex;flex-direction:column;justify-content:space-between;">
 
 		<!-- Zone de contenu : affiche l'image par défaut, puis le contenu dynamique -->
 		<div id="${actId}-content" style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center;">
-			<img src="${defaultVisual}" alt="${nom}" style="max-width:100%;max-height:100%;object-fit:contain;padding:2rem;">
+			<img src="${defaultVisual}" alt="${nom}" style="max-width:100%;max-height:100%;object-fit:contain;">
 		</div>
 
 		<!-- Barre de navigation items : cachée par défaut, affichée lors du 1er clic sur une zone -->
