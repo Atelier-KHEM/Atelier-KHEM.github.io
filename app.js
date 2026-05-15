@@ -777,7 +777,7 @@ if (!AUDIO_ENABLED)
 
 		<!-- Zone de contenu : affiche l'image par défaut, puis le contenu dynamique -->
 		<div id="${actId}-content" style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center;">
-			<img src="${defaultVisual}" alt="${nom}" style="max-width:100%;max-height:100%;object-fit:contain;">
+			<img src="${defaultVisual}" alt="${nom}" style="height:100%;">
 		</div>
 
 		<!-- Barre de navigation items : cachée par défaut, affichée lors du 1er clic sur une zone -->
