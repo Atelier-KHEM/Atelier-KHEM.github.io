@@ -1,288 +1,291 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atelier KHEM</title>
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
+	<head>
 
-    html {
-      scroll-behavior: smooth;
-    }
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #171C22;
-      color: #E8E3DD;
-      overflow-x: hidden;
-    }
+		<!-- =========================================================
+			 DONNÉES DYNAMIQUES
+			 Ces valeurs sont remplacées automatiquement
+			 par app.js depuis le fichier XML.
+			 ========================================================= -->
 
-    /* ── BRUIT ── */
-    .noise {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      opacity: .03;
-      z-index: 9999;
-      background-image: repeating-radial-gradient(
-        circle at 0 0,
-        transparent 0,
-        #fff 1px,
-        transparent 2px
-      );
-    }
+		<title id="dynamic-title">Nom du site</title>
 
-    /* ── EFFLUVES ALCHIMIQUES ── */
-    .alchemic-bg {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 0;
-      overflow: hidden;
-    }
+		<meta name="robots" content="index, follow">
 
-    .blob {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(100px);
-      animation: blobRise linear infinite;
-    }
+		<!-- Couleur navigateur mobile -->
+		<meta name="theme-color" content="#000000" id="dynamic-theme-color">
 
-    .blob-1 {
-      width: 700px;
-      height: 700px;
-      background: radial-gradient(circle, #1FAF8C, transparent 70%);
-      opacity: 0.18;
-      bottom: -300px;
-      left: -150px;
-      animation-duration: 5s;
-      animation-delay: 0s;
-    }
+		<!-- URL canonique -->
+		<link rel="canonical" href="" id="dynamic-canonical">
 
-    .blob-2 {
-      width: 550px;
-      height: 550px;
-      background: radial-gradient(circle, #FF8A3D, transparent 70%);
-      opacity: 0.15;
-      bottom: -200px;
-      right: -100px;
-      animation-duration: 1s;
-      animation-delay: -1s;
-    }
+		<!-- =========================================================
+			 FAVICONS
+			 ========================================================= -->
 
-    .blob-3 {
-      width: 450px;
-      height: 450px;
-      background: radial-gradient(circle, #2D6CDF, transparent 70%);
-      opacity: 0.5;
-      bottom: -150px;
-      left: 38%;
-      animation-duration: 3s;
-      animation-delay: -2s;
-    }
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
-    .blob-4 {
-      width: 350px;
-      height: 350px;
-      background: radial-gradient(circle, #1FAF8C, transparent 70%);
-      opacity: 0.10;
-      bottom: -120px;
-      right: 50%;
-      animation-duration: 8s;
-      animation-delay: -3s;
-    }
+		<!-- Manifest PWA -->
+		<link rel="manifest" href="/site.webmanifest" />
 
-    .blob-5 {
-      width: 150px;
-      height: 150px;
-      background: radial-gradient(circle, #FF8A3D, transparent 70%);
-      opacity: 0.05;
-      bottom: -200px;
-      right: 38%;
-      animation-duration: 3s;
-      animation-delay: -4s;
-    }
+		<!-- =========================================================
+			 SCHEMA.ORG DYNAMIQUE
+			 Remplacé automatiquement par app.js
+			 ========================================================= -->
 
-    .blob-6 {
-      width: 150px;
-      height: 150px;
-      background: radial-gradient(circle, #2D6CDF, transparent 70%);
-      opacity: 0.35;
-      bottom: -50px;
-      right: 18%;
-      animation-duration: 8s;
-      animation-delay: -5s;
-    }
+		<script type="application/ld+json" id="dynamic-ld-json">
+		{
+			"@context": "https://schema.org",
+			"@type":    "Organization",
+			"name":     "",
+			"url":      "",
+			"logo":     ""
+		}
+		</script>
 
-    .blob-7 {
-      width: 550px;
-      height: 550px;
-      background: radial-gradient(circle, #1FAF8C, transparent 70%);
-      opacity: 0.10;
-      bottom: -150px;
-      right: 12%;
-      animation-duration: 2s;
-      animation-delay: -6s;
-    }
-	
-	.blob-8 {
-      width: 450px;
-      height: 450px;
-      background: radial-gradient(circle, #FF8A3D, transparent 70%);
-      opacity: 0.9;
-      bottom: -150px;
-      left: 15%;
-      animation-duration: 7s;
-      animation-delay: -7s;
-    }
+		<!-- =========================================================
+			 LIBRAIRIES
+			 ========================================================= -->
 
-    @keyframes blobRise {
-      0% {
-        transform: translateY(0) translateX(0) scale(1);
-        opacity: 0;
-      }
-      10% {
-        opacity: inherit;
-      }
-      50% {
-        transform: translateY(-55vh) translateX(60px) scale(1.25);
-      }
-      90% {
-        opacity: inherit;
-      }
-      100% {
-        transform: translateY(-115vh) translateX(-50px) scale(0.75);
-        opacity: 0;
-      }
-    }
+		<script src="https://cdn.tailwindcss.com"></script>
 
-    /* ── VERRE ── */
-    .glass {
-      background: rgba(255,255,255,.04);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255,255,255,.08);
-    }
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-    .gradient-text {
-      background: linear-gradient(90deg, #C68346, #1FAF8C);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-    .hero-bg {
-      background:
-        radial-gradient(circle at top left, rgba(198,131,70,.15), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(31,175,140,.15), transparent 35%),
-        #171C22;
-    }
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
 
-    .card-hover {
-      transition: all .4s ease;
-    }
+		<!-- Police -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    .card-hover:hover {
-      transform: translateY(-8px);
-      border-color: rgba(198,131,70,.4);
-      background: rgba(255,255,255,.06);
-    }
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    .section-fade {
-      opacity: 0;
-      transform: translateY(80px);
-    }
+		<!-- =========================================================
+			 STYLES
+			 ========================================================= -->
 
-    .dynamic-image {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      transition: all .6s ease;
-    }
+		<link rel="stylesheet" href="telma.css">
+		<link rel="stylesheet" href="styles.css">
 
-    /* Tout le contenu passe au-dessus des blobs */
-    body > *:not(.alchemic-bg):not(.noise) {
-      position: relative;
-      z-index: 1;
-    }
-	
-	@keyframes rainbowLink {
+	</head>
 
-	  0%   { color:#ff0000; }
-	  16%  { color:#ff8800; }
-	  32%  { color:#ffff00; }
-	  48%  { color:#00ff00; }
-	  64%  { color:#00ffff; }
-	  80%  { color:#0000ff; }
-	  100% { color:#ff00ff; }
+	<body>
+		<!-- =========================================================
+			 LOADER CINÉMATIQUE
+			 ========================================================= -->
 
-	}
+		<div id="startup-loader">
 
-	.rainbow-link{
-	  font-weight:700;
-	  text-decoration:none;
-	  animation: rainbowLink 3s linear infinite;
-	}
+			<div class="startup-loader-content">
 
-  </style>
-</head>
-<body>
+				<!-- Logo dynamique -->
+				<img data-site-logo src="img/Logo.png" alt="Logo" class="mx-auto rounded-[2rem] object-contain w-72 h-72"/>
 
-  <div class="noise"></div>
+				<div class="startup-loader-line"></div>
 
-  <div class="alchemic-bg">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-    <div class="blob blob-4"></div>
-    <div class="blob blob-5"></div>
-    <div class="blob blob-6"></div>
-    <div class="blob blob-7"></div>
-    <div class="blob blob-8"></div>
-  </div>
+				<!-- Texte dynamique -->
+				<div id="startup-loader-text"></div>
 
-  <!-- HERO -->
-  <section id="hero" class="grid min-h-screen flex items-center px-6 py-24 border-b border-white/10">
-    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center w-full">
-      <div class="space-y-8 section-fade">
-        <div id="hero-badge" class="inline-block border border-[#C68346]/30 rounded-full px-5 py-2 text-sm tracking-[0.35em] uppercase text-[#C68346]"></div>
-        <h1 id="hero-title" class="text-6xl md:text-8xl font-light leading-none tracking-tight"></h1>
-        <p id="hero-description" class="text-xl text-[#B7B0A7] leading-relaxed max-w-2xl"></p>
-        <div class="flex flex-wrap gap-4 pt-4">
-          <a id="hero-button"  href="#" class="px-8 py-4 rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300"></a>
-          <a id="hero-button2" href="#" class="px-8 py-4 rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300"></a>
-        </div>
-      </div>
-      <div class="section-fade">
-        <div class="glass rounded-[3rem] aspect-square flex items-center justify-center relative overflow-hidden">
-          <div class="absolute w-96 h-96 rounded-full bg-[#C68346]/20 blur-3xl"></div>
-          <div class="absolute w-72 h-72 rounded-full bg-[#1FAF8C]/20 blur-3xl"></div>
-          <div class="relative z-10 text-center">
-            <img src="img/Logo.png" alt="Logo Atelier KHEM" class="mx-auto rounded-[2rem] object-contain">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+			</div>
 
-  <!-- ACTIVITES -->
-  <section id="activites" class="py-24 px-6">
-    <div id="activities-container" class="max-w-7xl mx-auto space-y-32"></div>
-  </section>
+		</div>
 
-  <!-- FOOTER CTA -->
-  <footer id="footer-cta" class="py-32 px-6 border-t border-white/10 section-fade scroll-mt-24"></footer>
+		<!-- =========================================================
+			 GRAIN
+			 ========================================================= -->
 
-  <script src="app.js"></script>
-</body>
+		<div class="noise"></div>
+
+		<!-- =========================================================
+			 BLOBS ANIMÉS
+			 ========================================================= -->
+
+		<div id="alchemic-bg" class="alchemic-bg">
+
+			<div class="blob blob-1"></div>
+			<div class="blob blob-2"></div>
+			<div class="blob blob-3"></div>
+			<div class="blob blob-4"></div>
+			<div class="blob blob-5"></div>
+			<div class="blob blob-6"></div>
+			<div class="blob blob-7"></div>
+			<div class="blob blob-8"></div>
+
+		</div>
+
+		<!-- =========================================================
+			 HERO
+			 ========================================================= -->
+
+		<section id="hero" class="grid min-h-screen flex items-center px-6 py-24 border-b border-white/10">
+
+			<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center w-full">
+
+				<!-- =================================================
+					 COLONNE GAUCHE
+					 ================================================= -->
+
+				<div class="space-y-8 section-fade relative text-left">
+
+					<div id="hero-anchor" class="scroll-offset"></div>
+
+					<!-- Badge -->
+					<div
+						id="hero-badge"
+						class="inline-block border rounded-full px-12 py-6 text-3xl tracking-[0.6em] uppercase font-extralight"
+						style="
+							border-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
+							color: var(--color-primary);
+							box-shadow: 0 0 40px rgba(198,131,70,.15);
+						">
+					</div>
+
+					<!-- Titre -->
+					<h1
+						id="hero-title"
+						class="titre text-6xl md:text-8xl font-light leading-none tracking-tight">
+					</h1>
+
+					<!-- Description -->
+					<p
+						id="hero-description"
+						class="text-xl leading-relaxed max-w-2xl"
+						style="color: var(--color-text-soft);">
+					</p>
+
+					<!-- Boutons -->
+					<div class="flex flex-wrap gap-4 pt-4">
+
+						<a
+							id="hero-button"
+							href="#"
+							class="px-8 py-4 rounded-2xl text-black font-semibold hover:scale-105 transition duration-300"
+							style="background: var(--color-primary);"
+						></a>
+
+						<a
+							id="hero-button2"
+							href="#"
+							target="_blank"
+							class="px-8 py-4 rounded-2xl text-black font-semibold hover:scale-105 transition duration-300"
+							style="background: var(--color-primary);"
+						></a>
+
+					</div>
+
+				</div>
+
+				<!-- =================================================
+					 COLONNE DROITE
+					 ================================================= -->
+
+				<div class="section-fade">
+
+					<div class="glass rounded-[3rem] aspect-square flex items-center justify-center relative overflow-hidden">
+
+						<!-- Halo principal -->
+						<div
+							class="absolute w-96 h-96 rounded-full blur-3xl"
+							style="
+								background:
+								color-mix(
+									in srgb,
+									var(--color-primary) 20%,
+									transparent
+								);
+							">
+						</div>
+
+						<!-- Halo secondaire -->
+						<div
+							class="absolute w-72 h-72 rounded-full blur-3xl"
+							style="
+								background:
+								color-mix(
+									in srgb,
+									var(--color-secondary) 20%,
+									transparent
+								);
+							">
+						</div>
+
+						<!-- Logo -->
+						<div class="relative z-10 text-center">
+
+							<img
+								data-site-logo
+								src="img/Logo.png"
+								alt="Logo"
+								class="mx-auto rounded-[2rem] object-contain">
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- =========================================================
+			 ACTIVITÉS
+			 ========================================================= -->
+
+		<section id="activites" class="py-24 px-6">
+
+			<div
+				id="activities-container"
+				class="max-w-7xl mx-auto space-y-32">
+			</div>
+
+		</section>
+
+		<!-- =========================================================
+			 FOOTER
+			 ========================================================= -->
+
+		<footer
+			id="footer-cta"
+			class="py-32 px-6 border-t border-white/10 section-fade scroll-mt-24">
+		</footer>
+
+		<!-- =========================================
+			 FLOATING CONTROLS
+		========================================= -->
+
+		<div
+			id="floating-controls"
+			class="fixed bottom-6 right-6 z-[99999] flex flex-col gap-3"
+		>
+
+			<button
+				id="audio-toggle"
+				class="hidden w-14 h-14 rounded-full glass text-xl"
+			>
+				🔇
+			</button>
+
+			<button
+				id="blob-toggle"
+				class="hidden w-14 h-14 rounded-full glass text-xl"
+			>
+				✨
+			</button>
+
+		</div>
+
+		<!-- =========================================================
+			 APP
+			 ========================================================= -->
+
+		<script src="app.js"></script>
+
+	</body>
+
 </html>
