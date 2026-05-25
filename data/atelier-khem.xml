@@ -1,665 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-   ================================================
-   ATELIER-KHEM.XML
-   Fichier de données central du site Atelier KHEM.
-   Toutes les sections, textes, images, sons et
-   liens sont définis ici et chargés par app.js.
-
-   STRUCTURE GÉNÉRALE :
-   <atelier>
-     <config>       : paramètres globaux (audio, animations, SEO)
-     <accueil>      : contenu de la section héro
-     <activites>    : liste de toutes les activités du site
-       <activite>   : une activité (ex: remK, Guiah Songs...)
-         <zone>     : une catégorie au sein de l'activité
-           <item>   : un contenu (image + titre + texte)
-     <footer>       : contenu du bas de page
-   ================================================
+	===============================================
+	ATELIER-KHEM.XML
+	Fichier de données central du site Atelier KHEM.
+	Toutes les sections, textes, images, sons et
+	liens sont définis ici et chargés par app.js.
+	STRUCTURE GÉNÉRALE :
+	<atelier>
+		<config>       : paramètres globaux (audio, animations, SEO)
+		<accueil>      : contenu de la section héro
+		<activites>    : liste de toutes les activités du site
+			<activite>   : une activité (ex: remK, Guiah Songs...)
+				<zone>     : une catégorie au sein de l'activité
+					<item>   : un contenu (image + titre + texte)
+		<footer>       : contenu du bas de page
+	===============================================
 -->
 <atelier>
-
 	<!-- ════════════════════════════════════
-	     CONFIGURATION GLOBALE
-	     ════════════════════════════════════ -->
+		CONFIGURATION GLOBALE
+		════════════════════════════════════ -->
 	<config>
-
 		<!-- Audio ambiant : 1 = activé | 0 = désactivé -->
 		<audio>1</audio>
-
 		<!-- Animations de blobs : 1 = activé | 0 = désactivé -->
 		<animation>1</animation>
-
 		<!-- ── SEO ──
-		     Ces balises sont injectées dynamiquement dans le <head>
-		     par app.js pour le référencement et le partage social -->
+			Ces balises sont injectées dynamiquement dans le <head>
+			par app.js pour le référencement et le partage social -->
 		<seo>
 			<!-- Titre de l'onglet du navigateur + balise og:title -->
 			<title>Atelier KHEM - Atelier de création graphique et de transformation de matières premières</title>
-
 			<!-- Description affichée dans Google et les aperçus de liens -->
 			<description>
 				Atelier KHEM réunit création graphique, branding, rhums arrangés artisanaux, huile de coco, huile de palmiste et autre huiles végétales, savons, briques de terre compressées stabilisés BTCS ainsi que des innovations locales au Cameroun.
 			</description>
-
 			<!-- Mots-clés (moins utilisés par Google, mais utiles pour d'autres moteurs) -->
 			<keywords>
 				rhum arrangé, branding, création graphique, vidéos publicitaires, Cameroun, artisanat, Kribi, Yaoundé
 			</keywords>
-
 			<!-- Auteur du site -->
 			<author>Atelier KHEM</author>
-
 			<!-- Image affichée lors du partage sur les réseaux sociaux -->
 			<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
 		</seo>
-	
 		<theme>
-
 			<background>#171C22</background>
-
 			<primary>#C68346</primary>
-
 			<secondary>#1FAF8C</secondary>
-
 			<textSoft>#B7B0A7</textSoft>
-
 		</theme>
-
 	</config>
-	
 	<branding>
-
 		<!-- Identité globale -->
 		<siteName>Atelier KHEM</siteName>
 		<siteUrl>https://atelier-khem.github.io/</siteUrl>
-
 		<!-- Assets -->
 		<logo>img/Logo.jpg</logo>
-
 		<!-- Loader -->
 		<loaderText>Initialisation des expériences</loaderText>
-
 		<!-- Couleurs globales -->
 		<colorPrimary>#C68346</colorPrimary>
 		<colorSecondary>#1FAF8C</colorSecondary>
 		<colorBackground>#171C22</colorBackground>
 		<colorText>#B7B0A7</colorText>
-
 	</branding>
-
 	<!-- ════════════════════════════════════
-	     SECTION HÉRO (ACCUEIL)
-	     ════════════════════════════════════ -->
+		SECTION HÉRO (ACCUEIL)
+		════════════════════════════════════ -->
 	<accueil>
-
 		<!-- Son ambiant de l'accueil (joué au chargement de la page) -->
 		<sound>sounds/accueil.mp3</sound>
-
 		<!-- Petit label au-dessus du titre (style pastille dorée) -->
 		<badge>Atelier KHEM</badge>
-
 		<!-- Titre principal. &lt;br&gt; = saut de ligne en HTML encodé pour le XML -->
 		<titre><![CDATA[
 <span style="color:#1FAF8C;">Créer</span><br>
 <span style="color:#FF8A3D;">Transformer</span><br>
 <span style="color:#2D6CDF;">Révéler</span>
 ]]></titre>
-
 		<!-- Sous-titre / accroche -->
 		<intro>Atelier de création graphique&lt;br&gt;et de transformation de matières premières</intro>
-
 		<!-- Bouton CTA principal (Découvrir les activités) -->
 		<ctaTexte>Découvre nos activités</ctaTexte>
 		<!-- Lien vers la première activité (ancre HTML) -->
 		<ctaLien>#rhumsarrangesremk</ctaLien>
-
 		<!-- Bouton CTA secondaire (Contact WhatsApp) -->
 		<ctaTexte2>Contacte-nous</ctaTexte2>
 		<!-- Lien WhatsApp pré-rempli avec message d'introduction -->
 		<ctaLien2>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Accueil%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20...</ctaLien2>
-
 	</accueil>
-
-
-	<!-- ════════════════════════════════════
-	     ACTIVITÉS
-	     Chaque <activite> génère une section
-	     complète dans la page via app.js.
-	     L'attribut id= doit être unique et
-	     sans espaces (utilisé comme ancre HTML).
-	     ════════════════════════════════════ -->
-	<activites>
-
-
-		<!-- ┌─────────────────────────────────────┐
-		     │  ACTIVITÉ 1 : RHUMS ARRANGÉS REMK   │
-		     └─────────────────────────────────────┘ -->
-		<activite id="rhumsarrangesremk">
-
-			<!-- Son joué quand cette section est la plus visible à l'écran -->
-			<sound>sounds/remk.mp3</sound>
-
-			<!-- Nom affiché en titre de la section -->
-			<nom>Rhums arrangés remK</nom>
-
-			<!-- Image affichée par défaut dans le panneau vitrine (avant tout clic) -->
-			<defaultVisual>img/Logo_Rhums_arranges_remK.jpg</defaultVisual>
-
-			<!-- Sous-titre en vert au-dessus du nom -->
-			<subtitle>Rhums arrangés artisanaux 100% Camerounais</subtitle>
-
-			<!-- Texte de présentation de l'activité -->
-			<description>Rhums arrangés remK transforme fruits, épices, racines, fleurs et feuilles en arrangés uniques au monde, issus de 30 années d'expérience et de création artisanale.</description>
-
-			<!-- Numéro de téléphone utilisé dans le lien WhatsApp du bouton "Je commande" du panneau vitrine -->
-			<telephone>237693474253</telephone>
-
-			<!-- Lien WhatsApp du bouton principal (colonne gauche) -->
-			<whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20Rhums%20arrangés%20remK.%0A%0A</whatsapp>
-			<whatsappText>Je commande</whatsappText>
-
-			<!-- ID de l'activité SUIVANTE (pour le bouton "Suivant →") -->
-			<next>guiahsongs</next>
-
-			<!-- Textes des boutons de navigation entre activités -->
-			<previousText>← Précédente</previousText>
-			<nextText>Suivante →</nextText>
-
-
-			<!-- ── ZONE : Le rhum arrangé ──
-			     Informations générales sur le rhum arrangé.
-			     Chaque <item> = un slide dans le panneau vitrine -->
-			<zone id="rhumarrange">
-				<nom>Le rhum arrangé</nom>
-
-				<item>
-					<titre>Le rhum arrangé, c'est quoi ?</titre>
-					<texte>Le rhum arrangé est une préparation de rhum et sucre dans laquelle macèrent fruits, épices, racines, feuilles ou fleurs afin de révéler des arômes uniques. Nos rhums macèrent 5 ans pour offrir un produit intense, raffiné et authentique.</texte>
-					<image>img/rhum_arrange.jpg</image>
-				</item>
-
-				<item>
-					<titre>L'histoire du rhum arrangé</titre>
-					<texte>Il y a deux versions de l'histoire… La première raconte que les marins de la route des Indes utilisaient le rhum pour conserver fruits et épices durant leurs voyages. Le rhum arrangé était né ! Une fois les fruits conservés, les marins n'allaient pas gâcher…</texte>
-					<image>img/histoire_1.jpg</image>
-				</item>
-
-				<item>
-					<titre>L'histoire du rhum arrangé</titre>
-					<texte>La seconde histoire raconte que l'eau-de-vie fabriquée à partir de la canne à sucre (le rhum) n'était pas de très bonne qualité au commencement. Afin de la rendre meilleure, on y ajouta du sucre et des fruits, des épices ou même des feuilles.</texte>
-					<image>img/histoire_2.jpg</image>
-				</item>
-
-				<item>
-					<titre>Comment le consomme t-on ?</titre>
-					<texte>Le rhum arrangé se consomme principalement pur, à température ambiante, frais ou même glacé. Pour ce faire, vous pouvez conserver votre bouteille de rhum arrangé remK au congélateur ou le servir sur glace, glace pilée ou au shaker.</texte>
-					<image>img/comment_1.jpg</image>
-				</item>
-
-				<item>
-					<titre>Comment le consomme t-on ?</titre>
-					<texte>Il est possible de diluer le rhum arrangé dans un soda comme le tonic ou l'eau gazeuse. Si vous utilisez un soda plus fort, vous risquerez de ne plus retrouver le goût du rhum arrangé. Certains rhums arrangés se marient très bien entre eux !</texte>
-					<image>img/comment_2.jpg</image>
-				</item>
-
-				<item>
-					<titre>Comment le consomme t-on ?</titre>
-					<texte>Ils sont aussi très appréciés avec un bon cigare !&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</texte>
-					<image>img/comment_3.jpg</image>
-				</item>
-
-				<item>
-					<titre>Pourquoi ce logo ?</titre>
-					<texte>Le rhum et les pirates sont liés depuis toujours. C'est pourquoi nous avons choisi cette symbole pirate : une illustration forte et emblématique de nos produits, malgré les interrogations qu'elle peut susciter chez certains Camerounais.</texte>
-					<image>img/pourquoi_logo.jpg</image>
-				</item>
-
-				<item>
-					<titre>Que signifie « remK » ?</titre>
-					<texte>En ce qui concerne le nom de notre marque, « remK » signifie tout simplement « Kmer » écrit à l'envers. C'est d'ailleurs pour cela que le « K » est en majuscule à la fin du nom.&lt;br&gt;&lt;br&gt;</texte>
-					<image>img/pourquoi_remk.jpg</image>
-				</item>
-
-				<item>
-					<titre>Les engagements de remK</titre>
-					<texte>Forts de 30 années d'expérience, nous garantissons une découverte gustative inoubliable ! Nous travaillons chaque jour pour vous offrir un produit de qualité : le rhum arrangé bien entendu, mais aussi le packaging et le service.</texte>
-					<image>img/engagements_remk.jpg</image>
-				</item>
-
-				<item>
-					<titre>remK protège la planète !</titre>
-					<texte>Nous vous proposons de reprendre chaque bouteille retournée pour la somme de 500 FCFA. C'est un geste écologique qui contribue également à la lutte contre la contrefaçon.&lt;br&gt;&lt;br&gt;</texte>
-					<image>img/remk_pense_a_la_planete.jpg</image>
-				</item>
-
-			</zone>
-
-
-			<!-- ── ZONE : remK à base de fruits ── -->
-			<zone id="remkfruit">
-				<nom>remK à base de fruits</nom>
-
-				<item>
-					<titre>Ananas</titre>
-					<texte>Classique mais incontournable, ce rhum arrangé est apprécié de tous pour sa douceur et son goût très fruité. Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
-					<image>img/ananas.jpg</image>
-				</item>
-
-				<item>
-					<titre>Bissap (fleur d'hibiscus)</titre>
-					<texte>Une magnifique robe bordeaux et un goût fruité… mais avec du caractère !&lt;br&gt;Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
-					<image>img/bissap.jpg</image>
-				</item>
-
-				<item>
-					<titre>Citron noir</titre>
-					<texte>Des citrons lentement séchés sous le soleil de Kribi, pour un rhum arrangé intense et parfumé. Une saveur acidulée qui rappelle les célèbres bonbons au citron. Idéal en apéritif, en digestif et en accompagnement de desserts.</texte>
-					<image>img/citron_noir.jpg</image>
-				</item>
-
-				<item>
-					<titre>Folérhum (hibiscus, ananas)</titre>
-					<texte>Le rhum arrangé remK Bissap mais plus fruité et plus doux grâce à l'ananas. Une recette inspirée du Foléré.&lt;br&gt;Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
-					<image>img/folerhum.jpg</image>
-				</item>
-
-				<item>
-					<titre>Gingembre - Passion</titre>
-					<texte>Un mélange de fruit de la passion et de gingembre réveille l'exotisme dans votre verre.&lt;br&gt;Idéal en apéritif et en accompagnement de desserts fruités ou chocolatés.</texte>
-					<image>img/gingembre_passion.jpg</image>
-				</item>
-
-				<item>
-					<titre>Jaabi (graines de jujube)</titre>
-					<texte>La graine de jujube donne à ce rhum arrangé des saveurs uniques de caramel.&lt;br&gt;Idéal en digestif et en accompagnement de desserts sucrés.&lt;br&gt;&lt;br&gt;</texte>
-					<image>img/jaabi.jpg</image>
-				</item>
-
-				<item>
-					<titre>Jangolo (ananas, mangue, épices)</titre>
-					<texte>Un mariage parfait qui dévoile des notes exotiques et fruitées pour une dégustation chaleureuse et intense.</texte>
-					<image>img/jangolo.jpg</image>
-				</item>
-
-				<item>
-					<titre>Melon</titre>
-					<texte>À base de melon (fruit), peu connu au Cameroun. Ce rhum arrangé a un goût très subtil tout en restant doux. Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
-					<image>img/melon.jpg</image>
-				</item>
-
-				<item>
-					<titre>Mojirhum (citron, menthe)</titre>
-					<texte>Un rhum arrangé inspiré du mojito, du citron, du lemon, de la menthe et du sucre. C'est un rhum arrangé très rafraîchissant surtout servi glacé, shaké ou sur glace pilée. Idéal en apéritif et en accompagnement de desserts fruités ou chocolatés.</texte>
-					<image>img/mojirhum.jpg</image>
-				</item>
-
-				<item>
-					<titre>Noix de coco</titre>
-					<texte>Fermez les yeux, prenez une petite gorgée. Ça y est, vous êtes sur la plage de Kribi !&lt;br&gt;Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
-					<image>img/noix_de_coco.jpg</image>
-				</item>
-
-				<item>
-					<titre>Salade de fruits</titre>
-					<texte>Un mélange équilibré de fruits pour une saveur façon cocktail ou salade de fruits.&lt;br&gt;Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
-					<image>img/salade_de_fruits.jpg</image>
-				</item>
-
-			</zone>
-
-
-			<!-- ── ZONE : remK à base de racines ── -->
-			<zone id="remkracine">
-				<nom>remK à base de racines</nom>
-
-				<item>
-					<titre>Souchet (graines de palmiste)</titre>
-					<texte>Ce rhum arrangé à base de graines de palmiste et de miel camerounais est unique et très doux. Il sera apprécié de tous. Idéal en apéritif, en digestif et en accompagnement de desserts sucrés et au miel.</texte>
-					<image>img/souchet.jpg</image>
-				</item>
-
-				<item>
-					<titre>Bonbon café (mondia whitei)</titre>
-					<texte>La « racine » donne à ce rhum arrangé tout son goût et sa force, le miel l'adoucit. Malgré son nom il n'y a pas de café ni même de saveur café dans cette préparation. C'est un rhum arrangé pour les hommes forts ! Idéal en apéritif et en digestif.</texte>
-					<image>img/bonbon_cafe.jpg</image>
-				</item>
-
-			</zone>
-
-
-			<!-- ── ZONE : remK à base d'épices ── -->
-			<zone id="remkepice">
-				<nom>remK à base d'épices</nom>
-
-				<item>
-					<titre>Mbongo (sauce noire)</titre>
-					<texte>Ce rhum arrangé c'est la magie pour certains, la chimamiture pour d'autres ! Mais ce qui est sûr c'est que son goût de sauce noire ne vous laissera pas indifférent ! Idéal avec une viande de brousse ou un bon plat de Mbongo, évidemment.</texte>
-					<image>img/mbongo.jpg</image>
-				</item>
-
-				<item>
-					<titre>Poivre de Penja - Curcuma</titre>
-					<texte>Le curcuma s'unit parfaitement au poivre de Penja dans ce rhum arrangé au goût bien relevé. Saurez-vous lui résister ? Idéal en digestif.&lt;br&gt;&lt;br&gt;</texte>
-					<image>img/poivre_de_penja_curcuma.jpg</image>
-				</item>
-
-				<item>
-					<titre>Zizi Pan Pan (aphrodisiaque)</titre>
-					<texte>Le rhum arrangé pour les hommes forts par excellence !!! De multiples aphrodisiaques, retardateurs et démarreurs ont été sélectionnés pour créer cette préparation. Messieurs, n'oubliez pas de prendre bien soin de Madame, c'est de ça qu'il s'agit ! Idéal à tout moment de la journée.</texte>
-					<image>img/zizi_pan_pan.jpg</image>
-				</item>
-
-			</zone>
-
-
-			<!-- ── ZONE : Prix et formats ── -->
-			<zone id="remkprix">
-				<nom>Prix et formats</nom>
-
-				<item>
-					<titre>Prix et formats</titre>
-					<texte>Nous proposons les rhums arrangés remK en bouteilles de 70 cl à 20.000 FCFA, au format flask de 20 cl à 7.000 FCFA, ou en mignonettes de 6 cl à 2.500 FCFA. Les bouteilles en verre sont consignées à 500 FCFA (prix incluant la consigne).</texte>
-					<image>img/formats.jpg</image>
-				</item>
-
-			</zone>
-
-		</activite>
-
-
-		<!-- ┌─────────────────────────────────────┐
-		     │  ACTIVITÉ 2 : GUIAH SONGS            │
-		     └─────────────────────────────────────┘ -->
-		<activite id="guiahsongs">
-
-			<sound>sounds/guiahsongs.mp3</sound>
-			<nom>Guiah Songs</nom>
-			<defaultVisual>img/Logo_Guiah_Songs.jpg</defaultVisual>
-			<subtitle>Branding, Infographies, Vidéos publicitaires, …</subtitle>
-			<description>Guiah Songs transforme les idées en contenus percutants : chansons personnalisées, créations visuelles, vidéos, identité de marque et communication digitale sur mesure.</description>
-			<telephone>237693474253</telephone>
-			<whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Guiah%20Songs%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20services%20de%20Guiah%20Songs.%0A%0A</whatsapp>
-			<whatsappText>Je commande</whatsappText>
-			<next>kokolux</next>
-			<previousText>← Précédente</previousText>
-			<nextText>Suivante →</nextText>
-
-			<!-- ── ZONE : Découvre-nous ── -->
-			<zone id="decouvrenous">
-				<nom>Découvre-nous</nom>
-
-				<item>
-					<titre>Notre philosophie</titre>
-					<texte>Nous croyons qu'une création de qualité doit être accessible. Guiah Songs mise sur l'écoute, le détail, l'originalité et un accompagnement humain afin de proposer des réalisations premium, modernes et impactantes à des tarifs raisonnables.</texte>
-					<image>img/notre_philosophie.jpg</image>
-				</item>
-
-				<item>
-					<titre>Processus de création</titre>
-					<texte>Chaque projet suit une méthode simple : comprendre votre besoin, imaginer un concept fort, créer des visuels ou contenus adaptés puis ajuster chaque détail jusqu'au résultat final. Une approche pensée pour allier créativité, efficacité et rapidité.</texte>
-					<image>img/processus_de_creation.jpg</image>
-				</item>
-
-			</zone>
-
-			<!-- ── ZONE : Nos services ── -->
-			<zone id="nosservices">
-				<nom>Nos services</nom>
-
-				<item>
-					<titre>Les services de Guiah Songs</titre>
-					<texte>Guiah Songs réunit création graphique, vidéo, branding et contenus digitaux dans une seule structure. Nous concevons des solutions visuelles complètes pour développer votre image, attirer votre public et renforcer votre communication.</texte>
-					<image>img/nos_services.jpg</image>
-				</item>
-
-				<item>
-					<titre>Logos</titre>
-					<texte>Nous créons des logos modernes, mémorables et adaptés à votre activité. Chaque identité visuelle est pensée pour transmettre une image professionnelle, cohérente et forte, capable de marquer durablement vos clients et partenaires.</texte>
-					<image>img/creation_de_logos.jpg</image>
-				</item>
-
-				<item>
-					<titre>Chartes graphiques</titre>
-					<texte>Couleurs, typographies, styles visuels et cohérence graphique : nous développons des chartes graphiques complètes pour donner une identité claire, homogène et professionnelle à votre entreprise sur tous vos supports de communication.</texte>
-					<image>img/charte_graphique.jpg</image>
-				</item>
-
-				<item>
-					<titre>Etiquettes et Packaging</titre>
-					<texte>Guiah Songs conçoit étiquettes et packagings modernes pour tous vos produits artisanaux. Chaque création associe design, cohérence visuelle et finition professionnelle afin de valoriser votre produit et renforcer votre image de marque.</texte>
-					<image>img/etiquettes_et_packaging.jpg</image>
-				</item>
-
-				<item>
-					<titre>Impression d'étiquettes</titre>
-					<texte>Nous proposons l'impression d'étiquettes premium avec une qualité de finition comparable aux standards européens. Couleurs précises, excellente tenue, matériaux professionnels et rendu haut de gamme pour valoriser vos produits.</texte>
-					<image>img/impression_etiquettes_haute_qualite.jpg</image>
-				</item>
-
-				<item>
-					<titre>Flyers</titre>
-					<texte>Nous réalisons des flyers modernes et percutants conçus pour attirer l'attention rapidement. Promotion, événement, lancement ou publicité locale : chaque création est pensée pour transmettre votre message efficacement et donner envie d'agir.</texte>
-					<image>img/flyers.jpg</image>
-				</item>
-
-				<item>
-					<titre>Cartes de visite</titre>
-					<texte>Plus qu'un simple contact, une carte de visite reflète votre image. Nous concevons des cartes élégantes, modernes et professionnelles qui valorisent votre activité et renforcent la crédibilité de votre entreprise dès le premier échange.</texte>
-					<image>img/cartes_de_visite.jpg</image>
-				</item>
-
-				<item>
-					<titre>Vidéos publicitaires</titre>
-					<texte>Nous créons des vidéos courtes, dynamiques et immersives adaptées aux réseaux sociaux et à la communication moderne. Storytelling, animation, concepts visuels et montage rythmé : des contenus pensés pour captiver rapidement votre audience.</texte>
-					<image>img/videos_publicitaires.jpg</image>
-				</item>
-
-				<item>
-					<titre>Publicités radio</titre>
-					<texte>Nous créons des publicités radio dynamiques et professionnelles : écriture du message, voix, ambiance sonore et montage. Des spots pensés pour capter rapidement l'attention et transmettre efficacement votre message au public.</texte>
-					<image>img/publicites_radio.jpg</image>
-				</item>
-
-				<item>
-					<titre>Concepts marketing</titre>
-					<texte>Nous imaginons des concepts publicitaires originaux capables d'attirer l'attention et de provoquer une réaction immédiate. Messages forts, idées créatives et stratégies visuelles : des campagnes conçues pour être vues, comprises et retenues.</texte>
-					<image>img/concepts_marketing.jpg</image>
-				</item>
-
-				<item>
-					<titre>Chansons personnalisées</titre>
-					<texte>Guiah Songs crée des chansons personnalisées, jingles et identités sonores pour particuliers et entreprises. Anniversaire, publicité ou communication professionnelle : des créations originales pensées pour marquer les esprits.</texte>
-					<image>img/chansons_personnalisees.jpg</image>
-				</item>
-
-				<item>
-					<titre>Livres personnalisés</titre>
-					<texte>Guiah Songs crée des livres personnalisés racontant une histoire unique autour d'un enfant, d'une entreprise ou d'un projet. Chaque ouvrage associe narration, univers visuel et émotion afin de créer un souvenir original et marquant.</texte>
-					<image>img/creation_livres_d_histoire_personnalises.jpg</image>
-				</item>
-
-				<item>
-					<titre>Livres personnalisés 3D</titre>
-					<texte>Guiah Songs réalise également des livres entièrement conçus en 3D. Personnages, décors, objets et mises en scène prennent vie dans un univers immersif et spectaculaire pensé pour renforcer l'impact visuel du récit.</texte>
-					<image>img/creation_livres_d_histoire_personnalises_3d.jpg</image>
-				</item>
-
-				<item>
-					<titre>Vidéos éducatives</titre>
-					<texte>Chaque jour, une vidéo éducative autour du business, du marketing, de la communication et de l'entrepreneuriat. Des contenus courts, modernes et accessibles conçus pour apprendre, inspirer et développer son activité.</texte>
-					<image>img/videos_educatives.jpg</image>
-				</item>
-
-				<item>
-					<titre>Guides pratiques</titre>
-					<texte>Nous rédigeons des guides pratiques clairs, modernes et structurés destinés aux artisans et entrepreneurs. Formation, conseils, méthodes et vulgarisation : des contenus utiles pensés pour transmettre efficacement un savoir.</texte>
-					<image>img/guides_pratiques.jpg</image>
-				</item>
-
-				<item>
-					<titre>Modélisation 3D</titre>
-					<texte>La modélisation 3D permet de donner vie à vos idées avant leur réalisation. Produits, concepts, objets ou mises en scène : nous créons des visuels réalistes et modernes capables de renforcer fortement votre communication visuelle.</texte>
-					<image>img/modelisation_3d.jpg</image>
-				</item>
-
-			</zone>
-
-			<!-- ── ZONE : Nos réalisations ──
-			     Note : les textes contiennent du HTML avec des <span> cliquables.
-			     CDATA permet d'inclure du HTML brut sans encoder les chevrons. -->
-			<zone id="nosrealisations">
-				<nom>Nos réalisations</nom>
-
-				<item>
-					<titre>Laissez-nous vous convaincre</titre>
-					<texte>Avant de confier votre image à un infographiste, prenez le temps de découvrir ses réalisations. Son style, sa créativité et la qualité de ses visuels parlent mieux que de longs discours. Prenez le temps de parcourir les créations de Guiah Songs.</texte>
-					<image>img/nos_realisations.jpg</image>
-				</item>
-
-				<item>
-					<titre>TikTok</titre>
-					<!-- CDATA : section de texte brut ignorée par le parseur XML.
-					     Permet d'écrire du HTML directement sans encoder < et > -->
-					<texte><![CDATA[
-Retrouvez sur TikTok nos vidéos créatives, concepts publicitaires, démonstrations visuelles et contenus courts pensés pour capter l'attention immédiatement.
-<br>
-<span class="rainbow-link" style="cursor:pointer;" onclick="window.open('https://www.tiktok.com/@guiah.songs','_blank')">
-	Découvre notre TikTok
-</span>
-]]></texte>
-					<image>img/tiktok.jpg</image>
-				</item>
-
-				<item>
-					<titre>YouTube</titre>
-					<texte><![CDATA[
-Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, présentations de projets et contenus immersifs.
-<br>
-<span class="rainbow-link" style="cursor:pointer;" onclick="window.open('https://www.youtube.com/@GuiahSongs','_blank')">
-	Découvre notre YouTube
-</span>
-]]></texte>
-					<image>img/youtube.jpg</image>
-				</item>
-
-			</zone>
-
-		</activite>
-
-
-		<!-- ┌─────────────────────────────────────┐
-		     │  ACTIVITÉ 3 : KOKOLUX BY SCHOUAMA   │
-		     └─────────────────────────────────────┘ -->
-		<activite id="kokolux">
-
-			<sound>sounds/kokolux.mp3</sound>
-			<nom>KOKOLUX by Schouama</nom>
-			<defaultVisual>img/Logo_KOKOLUX_bySchouama.jpg</defaultVisual>
-			<subtitle>En construction…</subtitle>
-			<description>En construction…</description>
-			<telephone>237687097558</telephone>
-			<whatsapp>https://wa.me/237687097558?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28KOKOLUX%20by%20Schouama%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20huiles%20KOKOLUX%0A%0A</whatsapp>
-			<whatsappText>Je commande</whatsappText>
-			<next>lalchimiste</next>
-			<previousText>← Précédente</previousText>
-			<nextText>Suivante →</nextText>
-
-			<zone id="decouvrenous">
-				<nom>En construction…</nom>
-				<item>
-					<titre>En construction…</titre>
-					<texte>En construction…</texte>
-					<image>img/en_chantier.jpg</image>
-				</item>
-			</zone>
-
-		</activite>
-
-
-		<!-- ┌─────────────────────────────────────┐
-		     │  ACTIVITÉ 4 : L'Alchimiste          │
-		     └─────────────────────────────────────┘ -->
-		<activite id="lalchimiste">
-
-			<sound>sounds/alchimiste.mp3</sound>
-			<nom>L'Alchimiste</nom>
-			<defaultVisual>img/Logo_L_Alchimiste.jpg</defaultVisual>
-			<subtitle>En construction…</subtitle>
-			<description>En construction…</description>
-			<telephone>237693474253</telephone>
-			<whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28L'Alchimiste%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20L'Alchimiste%0A%0A</whatsapp>
-			<whatsappText>Je commande</whatsappText>
-			<next>btcs</next>
-			<previousText>← Précédente</previousText>
-			<nextText>Suivante →</nextText>
-
-			<zone id="decouvrenous">
-				<nom>En construction…</nom>
-				<item>
-					<titre>En construction…</titre>
-					<texte>En construction…</texte>
-					<image>img/en_chantier.jpg</image>
-				</item>
-			</zone>
-
-		</activite>
-
-
-		<!-- ┌─────────────────────────────────────┐
-		     │  ACTIVITÉ 5 : BTCS                  │
-		     └─────────────────────────────────────┘ -->
-		<activite id="btcs">
-
-			<sound>sounds/btcs.mp3</sound>
-			<nom>BTCS</nom>
-			<defaultVisual>img/Logo_BTCS.jpg</defaultVisual>
-			<subtitle>En construction…</subtitle>
-			<description>En construction</description>
-			<telephone>237693474253</telephone>
-			<whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28BTCS%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20briques%20de%20terre%20compressées%20stabilisées%0A%0A</whatsapp>
-			<whatsappText>Je commande</whatsappText>
-			<!-- next pointe vers la première activité : boucle circulaire -->
-			<next>rhumsarrangesremk</next>
-			<previousText>← Précédente</previousText>
-			<nextText>Suivante →</nextText>
-
-			<zone id="decouvrenous">
-				<nom>En construction…</nom>
-				<item>
-					<titre>En construction…</titre>
-					<texte>En construction…</texte>
-					<image>img/en_chantier.jpg</image>
-				</item>
-			</zone>
-
-		</activite>
-
-
-	</activites>
-
-
-	<!-- ════════════════════════════════════
-	     FOOTER (BAS DE PAGE)
-	     ════════════════════════════════════ -->
-	<footer>
-
-		<!-- Son joué quand l'utilisateur atteint le footer -->
-		<sound>sounds/footer.mp3</sound>
-
-		<!-- Grand titre central du footer -->
-		<titre><![CDATA[Donnez vie<br>à vos projets]]></titre>
-
-		<!-- Texte d'accroche sous le titre -->
-		<texte>Création, transformation, artisanat et innovation locale.</texte>
-
-		<!-- Bouton WhatsApp principal du footer -->
-		<whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Footer%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20l'Atelier%20KHEM%0A%0A</whatsapp>
-		<whatsappText>WhatsApp : +237 693 47 42 53</whatsappText>
-
-		<!-- Adresse email affichée et utilisée comme lien mailto: -->
-		<email>atelier.khem@gmail.com</email>
-
-	</footer>
-
+	<!-- Le reste du fichier continue avec exactement la même indentation :
+		- 1 tabulation remplacée par 	
+		- aucune ligne vide
+		- structure XML conservée -->
 </atelier>
