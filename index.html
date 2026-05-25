@@ -1,42 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 	<head>
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="index, follow" />
 
-		<!-- =========================================================
-			 DONNÉES DYNAMIQUES
-			 Ces valeurs sont remplacées automatiquement
-			 par app.js depuis le fichier XML.
-			 ========================================================= -->
+		<!-- =====================================================
+		     MÉTADONNÉES DYNAMIQUES
+		     Ces éléments sont remplis automatiquement par app.js
+		     depuis le fichier data/atelier-khem.xml.
+		     Ne pas modifier les attributs id= ni les balises.
+		     ===================================================== -->
 
+		<!-- Titre de l'onglet du navigateur -->
 		<title id="dynamic-title">Nom du site</title>
 
-		<meta name="robots" content="index, follow">
+		<!-- Couleur de la barre du navigateur mobile -->
+		<meta name="theme-color" content="#000000" id="dynamic-theme-color" />
 
-		<!-- Couleur navigateur mobile -->
-		<meta name="theme-color" content="#000000" id="dynamic-theme-color">
+		<!-- URL canonique (évite le contenu dupliqué pour le SEO) -->
+		<link rel="canonical" href="" id="dynamic-canonical" />
 
-		<!-- URL canonique -->
-		<link rel="canonical" href="" id="dynamic-canonical">
-
-		<!-- =========================================================
-			 FAVICONS
-			 ========================================================= -->
-
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-
-		<!-- Manifest PWA -->
-		<link rel="manifest" href="/site.webmanifest" />
-
-		<!-- =========================================================
-			 SCHEMA.ORG DYNAMIQUE
-			 Remplacé automatiquement par app.js
-			 ========================================================= -->
+		<!-- =====================================================
+		     SCHEMA.ORG
+		     Données structurées pour les moteurs de recherche.
+		     Remplies automatiquement par app.js depuis le XML.
+		     ===================================================== -->
 
 		<script type="application/ld+json" id="dynamic-ld-json">
 		{
@@ -48,65 +39,85 @@
 		}
 		</script>
 
-		<!-- =========================================================
-			 LIBRAIRIES
-			 ========================================================= -->
+		<!-- =====================================================
+		     FAVICONS
+		     ===================================================== -->
 
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+		<!-- Manifest PWA (permet l'installation sur mobile comme une app) -->
+		<link rel="manifest" href="/site.webmanifest" />
+
+		<!-- =====================================================
+		     LIBRAIRIES
+		     ===================================================== -->
+
+		<!-- Tailwind CSS : classes utilitaires (flex, grid, px-6...) -->
 		<script src="https://cdn.tailwindcss.com"></script>
 
+		<!-- GSAP Core : moteur d'animations -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
+		<!-- ScrollTrigger : déclenche les animations quand une section entre dans l'écran -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
+		<!-- ScrollToPlugin : scroll animé vers un élément via goToSection() -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
 
-		<!-- Police -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<!-- Police Inter (corps de texte) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-		<!-- =========================================================
-			 STYLES
-			 ========================================================= -->
-		<link rel="stylesheet" href="styles.css">
+		<!-- Feuille de styles du site -->
+		<link rel="stylesheet" href="styles.css" />
 
 	</head>
 
 	<body>
-		<!-- =========================================================
-			 LOADER CINÉMATIQUE
-			 ========================================================= -->
+
+		<!-- =====================================================
+		     LOADER (ÉCRAN D'ACCUEIL)
+		     Affiché pendant le chargement du site.
+		     app.js lui ajoute la classe .hidden une fois prêt.
+		     ===================================================== -->
 
 		<div id="startup-loader">
-
 			<div class="startup-loader-content">
 
-				<!-- Logo dynamique -->
-				<!-- img data-site-logo src="img/Logo.jpg" alt="Logo" class="mx-auto rounded-[2rem] object-contain w-606 h-606"/ -->
-				<img data-site-logo="" src="img/Logo.jpg" alt="Logo" class="startup-loader-logo">
+				<!-- Logo : src et alt injectés par app.js depuis <branding> du XML -->
+				<img data-site-logo src="img/Logo.jpg" alt="Logo" class="startup-loader-logo" />
 
+				<!-- Ligne lumineuse de scan animée -->
 				<div class="startup-loader-line"></div>
 
-				<!-- Texte dynamique -->
+				<!-- Texte d'état : injecté par app.js depuis <loaderText> du XML -->
 				<div id="startup-loader-text"></div>
 
 			</div>
-
 		</div>
 
-		<!-- =========================================================
-			 GRAIN
-			 ========================================================= -->
+
+		<!-- =====================================================
+		     GRAIN (TEXTURE DE FOND)
+		     Div fixé, invisible aux clics, au-dessus de tout.
+		     Stylisé dans styles.css (.noise).
+		     ===================================================== -->
 
 		<div class="noise"></div>
 
-		<!-- =========================================================
-			 BLOBS ANIMÉS
-			 ========================================================= -->
+
+		<!-- =====================================================
+		     BLOBS ANIMÉS
+		     Cercles colorés flous en arrière-plan.
+		     app.js supprime tout ce bloc si <animation>0</animation>
+		     est défini dans le XML.
+		     ===================================================== -->
 
 		<div id="alchemic-bg" class="alchemic-bg">
-
 			<div class="blob blob-1"></div>
 			<div class="blob blob-2"></div>
 			<div class="blob blob-3"></div>
@@ -115,26 +126,26 @@
 			<div class="blob blob-6"></div>
 			<div class="blob blob-7"></div>
 			<div class="blob blob-8"></div>
-
 		</div>
 
-		<!-- =========================================================
-			 HERO
-			 ========================================================= -->
 
-		<section id="hero" class="grid min-h-screen flex items-center px-6 py-24 border-b border-white/10">
+		<!-- =====================================================
+		     SECTION HÉRO (ACCUEIL)
+		     Tous les textes sont injectés par app.js depuis
+		     le nœud <accueil> du XML.
+		     ===================================================== -->
+
+		<section id="hero" class="min-h-screen flex items-center px-6 py-24 border-b border-white/10">
 
 			<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center w-full">
 
-				<!-- =================================================
-					 COLONNE GAUCHE
-					 ================================================= -->
-
+				<!-- ── COLONNE GAUCHE : texte ── -->
 				<div class="space-y-8 section-fade relative text-left">
 
+					<!-- Ancre de scroll ciblée par goToSection('hero') dans app.js -->
 					<div id="hero-anchor" class="scroll-offset"></div>
 
-					<!-- Badge -->
+					<!-- Badge : petite pastille au-dessus du titre (ex : "Atelier KHEM") -->
 					<div
 						id="hero-badge"
 						class="inline-block border rounded-full px-12 py-6 text-3xl tracking-[0.6em] uppercase font-extralight"
@@ -145,143 +156,122 @@
 						">
 					</div>
 
-					<!-- Titre -->
+					<!-- Titre principal (balise <titre> du XML, peut contenir du HTML) -->
 					<h1
 						id="hero-title"
 						class="titre text-6xl md:text-8xl font-light leading-none tracking-tight">
 					</h1>
 
-					<!-- Description -->
+					<!-- Description courte (balise <intro> du XML) -->
 					<p
 						id="hero-description"
 						class="text-xl leading-relaxed max-w-2xl"
 						style="color: var(--color-text-soft);">
 					</p>
 
-					<!-- Boutons -->
+					<!-- Boutons CTA (texte et liens viennent du XML) -->
 					<div class="flex flex-wrap gap-4 pt-4">
 
+						<!-- Bouton 1 : "Découvre nos activités" — scroll vers la 1ère activité -->
 						<a
 							id="hero-button"
 							href="#"
 							class="px-8 py-4 rounded-2xl text-black font-semibold hover:scale-105 transition duration-300"
-							style="background: var(--color-primary);"
-						></a>
+							style="background: var(--color-primary);">
+						</a>
 
+						<!-- Bouton 2 : "Contacte-nous" — lien WhatsApp externe -->
 						<a
 							id="hero-button2"
 							href="#"
 							target="_blank"
 							class="px-8 py-4 rounded-2xl text-black font-semibold hover:scale-105 transition duration-300"
-							style="background: var(--color-primary);"
-						></a>
+							style="background: var(--color-primary);">
+						</a>
 
 					</div>
 
 				</div>
 
-				<!-- =================================================
-					 COLONNE DROITE
-					 ================================================= -->
-
+				<!-- ── COLONNE DROITE : logo dans un cadre glassmorphism ── -->
 				<div class="section-fade">
-
 					<div class="glass rounded-[3rem] aspect-square flex items-center justify-center relative overflow-hidden">
 
-						<!-- Halo principal -->
+						<!-- Halo lumineux couleur primaire (doré) -->
 						<div
 							class="absolute w-96 h-96 rounded-full blur-3xl"
-							style="
-								background:
-								color-mix(
-									in srgb,
-									var(--color-primary) 20%,
-									transparent
-								);
-							">
+							style="background: color-mix(in srgb, var(--color-primary) 20%, transparent);">
 						</div>
 
-						<!-- Halo secondaire -->
+						<!-- Halo lumineux couleur secondaire (vert) -->
 						<div
 							class="absolute w-72 h-72 rounded-full blur-3xl"
-							style="
-								background:
-								color-mix(
-									in srgb,
-									var(--color-secondary) 20%,
-									transparent
-								);
-							">
+							style="background: color-mix(in srgb, var(--color-secondary) 20%, transparent);">
 						</div>
 
-						<!-- Logo -->
+						<!-- Logo centré, au-dessus des halos -->
 						<div class="relative z-10 text-center">
-
 							<img
 								data-site-logo
 								src="img/Logo.jpg"
 								alt="Logo"
-								class="mx-auto rounded-[2rem] object-contain">
+								class="mx-auto rounded-[2rem] object-contain" />
 						</div>
 
 					</div>
-
 				</div>
 
 			</div>
 
 		</section>
 
-		<!-- =========================================================
-			 ACTIVITÉS
-			 ========================================================= -->
+
+		<!-- =====================================================
+		     ACTIVITÉS
+		     Ce conteneur est rempli entièrement par app.js.
+		     Chaque <activite> du XML génère une section complète
+		     avec sa colonne texte et son panneau vitrine.
+		     ===================================================== -->
 
 		<section id="activites" class="py-24 px-6">
-
-			<div
-				id="activities-container"
-				class="max-w-7xl mx-auto space-y-32">
-			</div>
-
+			<div id="activities-container" class="max-w-7xl mx-auto space-y-32"></div>
 		</section>
 
-		<!-- =========================================================
-			 FOOTER
-			 ========================================================= -->
+
+		<!-- =====================================================
+		     FOOTER
+		     Rempli entièrement par app.js depuis <footer> du XML.
+		     ===================================================== -->
 
 		<footer
 			id="footer-cta"
 			class="py-32 px-6 border-t border-white/10 section-fade scroll-mt-24">
 		</footer>
 
-		<!-- =========================================
-			 FLOATING CONTROLS
-		========================================= -->
 
-		<div
-			id="floating-controls"
-			class="fixed bottom-6 right-6 z-[99999] flex flex-col gap-3"
-		>
+		<!-- =====================================================
+		     BOUTONS FLOTTANTS (coin bas-droit)
+		     Cachés par défaut (.hidden), rendus visibles par app.js
+		     une fois le site chargé.
+		     ===================================================== -->
 
-			<button
-				id="audio-toggle"
-				class="hidden w-14 h-14 rounded-full glass text-xl"
-			>
-				🔇
-			</button>
+		<div id="floating-controls" class="fixed bottom-6 right-6 z-[99999] flex flex-col gap-3">
 
-			<button
-				id="blob-toggle"
-				class="hidden w-14 h-14 rounded-full glass text-xl"
-			>
-				✨
-			</button>
+			<!-- Bouton son : active / coupe la musique d'ambiance -->
+			<button id="audio-toggle" class="hidden w-14 h-14 rounded-full glass text-xl">🔇</button>
+
+			<!-- Bouton blobs : affiche / masque les blobs animés -->
+			<button id="blob-toggle" class="hidden w-14 h-14 rounded-full glass text-xl">✨</button>
 
 		</div>
 
-		<!-- =========================================================
-			 APP
-			 ========================================================= -->
+
+		<!-- =====================================================
+		     SCRIPT PRINCIPAL
+		     Chargé en dernier pour que le DOM soit prêt.
+		     app.js lit le XML, construit toute la page et
+		     gère les animations, l'audio et la navigation.
+		     ===================================================== -->
 
 		<script src="app.js"></script>
 

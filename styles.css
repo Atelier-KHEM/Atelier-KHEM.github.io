@@ -1,426 +1,93 @@
 /* ================================================
    STYLES.CSS — Atelier KHEM
 
-   ⚠️  ATTENTION : CE FICHIER N'EST PAS RÉFÉRENCÉ
-   dans index.html (aucun <link rel="stylesheet">).
-   Il est donc totalement INACTIF sur le site.
+   Ce fichier contient tous les styles personnalisés.
+   Tailwind CSS (CDN) gère les classes utilitaires.
+   Ces règles complètent ce que Tailwind ne peut pas
+   exprimer nativement.
 
-   Il s'agit d'une version antérieure du projet,
-   conservée pour référence mais remplacée par :
-   - Les classes Tailwind CSS (via CDN dans index.html)
-   - Les styles <style> inline dans index.html
-
-   RÈGLES OBSOLÈTES identifiées (anciennes versions) :
-   - .hero-bg         : ancienne version fond d'image (Tailwind prend le relais)
-   - .activity        : ancienne mise en page des activités
-   - .activity-header : idem
-   - .zones           : grille d'anciennes "zone-card"
-   - .zone-card       : ancienne carte de zone
-   - .zone-image      : image dans l'ancienne carte
-   - .zone-content    : texte dans l'ancienne carte
-   - .zone-buttons    : boutons dans l'ancienne carte
-   - .blob-1 à .blob-4 + @keyframes rise : remplacés par
-     8 blobs + @keyframes blobRise dans index.html
-   - .anchor          : remplacé par .scroll-offset
-
-   RÈGLES ENCORE PERTINENTES (si le fichier était lié) :
-   - Reset * (margin/padding/box-sizing)
-   - body (base)
-   - .alchemic-bg / .blob (base commune avec index.html)
-   - .section-fade (version simplifiée, index.html en a une plus complète)
-   - .rainbow-link (identique à index.html)
-   - .scroll-offset (identique à index.html)
-   - .no-animations .blob (utilisé par app.js, mais l'élément est de
-     toute façon supprimé du DOM, donc redondant)
-   - Les règles z-index de #activities-container
+   STRUCTURE :
+   1.  Variables du thème (:root)
+   2.  Police personnalisée (Telma)
+   3.  Base de la page (html, body)
+   4.  Grain (texture de fond)
+   5.  Blobs animés (conteneur + blobs individuels)
+   6.  Composants réutilisables
+   7.  Sections et navigation
+   8.  Boutons flottants
+   9.  Loader (écran d'accueil)
+   10. Utilitaires
    ================================================ */
 
 
-/* ── RESET CSS ──
-   Supprime les marges/paddings par défaut de tous les éléments.
-   box-sizing:border-box = le padding et la bordure sont inclus dans la largeur */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+/* ════════════════════════════════════════════
+   1. VARIABLES DU THÈME
+   Injectées dynamiquement par app.js depuis le XML.
+   Pour changer une couleur sur tout le site,
+   il suffit de modifier la valeur correspondante
+   dans le nœud <theme> du fichier XML.
+   ════════════════════════════════════════════ */
 
-
-/* ── BODY ──
-   Styles de base du corps de la page */
-body {
-	background: #171C22;
-	color: #E8E3DD;
-	font-family: Arial, Helvetica, sans-serif;
-	overflow-x: hidden; /* Empêche le scroll horizontal causé par les blobs */
+:root {
+	--color-bg:        #171C22; /* Fond sombre principal */
+	--color-primary:   #C68346; /* Doré — boutons, accents */
+	--color-secondary: #1FAF8C; /* Vert — accents secondaires */
+	--color-text-soft: #B7B0A7; /* Gris clair — sous-titres, textes secondaires */
 }
 
 
 /* ════════════════════════════════════════════
-   SECTION HÉRO
-   ⚠️ OBSOLÈTE : remplacée par les classes Tailwind
-   et les styles inline de index.html
+   2. POLICE PERSONNALISÉE
+   Telma-Regular est utilisée pour les grands titres
+   via la classe .titre. font-display:swap garantit
+   que le texte reste lisible pendant le chargement
+   de la police (la police système s'affiche d'abord).
    ════════════════════════════════════════════ */
 
-#hero {
-	position: relative;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	overflow: hidden;
-}
-
-/* Ancienne version : fond avec image en background-image, floutée et assombrie */
-.hero-bg {
-	position: absolute;
-	inset: 0;
-	background-size: cover;
-	background-position: center;
-	transform: scale(1.05);
-	filter: brightness(.35);
-}
-
-.hero-content {
-	position: relative;
-	z-index: 2;
-	width: 90%;
-	max-width: 900px;
-}
-
-.hero-content h1 {
-	font-size: clamp(3rem, 8vw, 7rem);
-	margin-bottom: 20px;
-	letter-spacing: 3px;
-}
-
-.hero-content h2 {
-	font-size: clamp(1.2rem, 3vw, 2rem);
-	color: #C68346;
-	margin-bottom: 20px;
-}
-
-.hero-content p {
-	font-size: 1.1rem;
-	line-height: 1.8;
-	opacity: .8;
-}
-
-/* ════════════════════════════════════════════
-   ACTIVITÉS
-   ⚠️ OBSOLÈTE : remplacée par les sections générées
-   dynamiquement avec des classes Tailwind dans app.js
-   ════════════════════════════════════════════ */
-
-.activity {
-	padding: 120px 8vw;
-}
-
-.activity-header {
-	margin-bottom: 60px;
-}
-
-.activity-header h2 {
-	font-size: 3rem;
-	margin-bottom: 20px;
-}
-
-.activity-header p {
-	opacity: .75;
-	max-width: 700px;
-	line-height: 1.7;
+@font-face {
+	font-family: 'Telma-Regular';
+	src: url('/fonts/Telma-Regular.woff2') format('woff2'),
+	     url('/fonts/Telma-Regular.woff') format('woff'),
+	     url('/fonts/Telma-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 
 /* ════════════════════════════════════════════
-   ZONES (anciennes cartes)
-   ⚠️ OBSOLÈTE : l'affichage des zones est désormais
-   géré par le panneau vitrine et les boutons de la
-   colonne gauche, générés dynamiquement dans app.js
+   3. BASE DE LA PAGE
+   overflow-x:hidden — empêche les blobs animés
+   de créer une scrollbar horizontale fantôme.
+   isolation:isolate — crée un nouveau contexte
+   de rendu pour éviter les bugs z-index entre
+   les éléments fixed/animés et le contenu.
+   position:relative — stabilise les calculs
+   de layout avec les éléments positionnés.
    ════════════════════════════════════════════ */
 
-.zones {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	gap: 40px;
-}
-
-.zone-card {
-	background: #2A3138;
-	border: 1px solid rgba(183, 176, 167, 0.08);
-	border-radius: 30px;
-	overflow: hidden;
-	transition: .4s;
-	min-height: 650px;
-	display: flex;
-	flex-direction: column;
-}
-
-.zone-card:hover {
-	transform: translateY(-10px);
-	border-color: #C68346;
-}
-
-.zone-image {
-	height: 340px;
-	background-size: cover;
-	background-position: center;
-	transition: .6s;
-}
-
-.zone-content {
-	padding: 30px;
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-}
-
-.zone-content h3 {
-	color: #C68346;
-	margin-bottom: 15px;
-	font-size: 1rem;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
-
-.zone-content h4 {
-	font-size: 2rem;
-	margin-bottom: 20px;
-	line-height: 1.2;
-}
-
-.zone-content p {
-	opacity: .75;
-	line-height: 1.8;
-	flex: 1;
-}
-
-.zone-buttons {
-	display: flex;
-	gap: 15px;
-	margin-top: 30px;
-}
-
-.zone-buttons button {
-	flex: 1;
-	padding: 15px;
-	border: none;
-	border-radius: 14px;
-	background: #C68346;
-	color: #E8E3DD;
-	cursor: pointer;
-	font-size: 1rem;
-	transition: .3s;
-}
-
-.zone-buttons button:hover {
-	transform: scale(1.04);
-	background: #C68346;
-}
-
-
-/* ── SECTION FADE ──
-   ⚠️ VERSION SIMPLIFIÉE : index.html définit une version
-   plus complète avec transform:translateY(80px) en plus.
-   Celle-ci ne fait que masquer l'élément (opacity:0) */
-.section-fade {
-	opacity: 0;
-}
-
-
-/* ── RESPONSIVE MOBILE ──
-   ⚠️ OBSOLÈTE pour les classes .activity et .zone-card
-   qui ne sont plus utilisées */
-@media (max-width: 768px) {
-	.activity {
-		padding: 80px 20px;
-	}
-	.zone-card {
-		min-height: auto;
-	}
-	.zone-image {
-		height: 260px;
-	}
-	.hero-content h1 {
-		line-height: 1;
-	}
-}
-
-
-/* ════════════════════════════════════════════
-   BLOBS (ANCIENNE VERSION)
-   ⚠️ OBSOLÈTE : remplacée par 8 blobs avec
-   @keyframes blobRise dans le <style> de index.html.
-   Cette version n'a que 4 blobs et utilise @keyframes rise.
-   ════════════════════════════════════════════ */
-
-.alchemic-bg {
-	position: fixed;
-	inset: 0;
-	pointer-events: none;
-	z-index: 0;
-	overflow: hidden;
-}
-
-.blob {
-	position: absolute;
-	border-radius: 50%;
-	filter: blur(80px);
-	opacity: 0.12;
-	animation: rise linear infinite;
-}
-
-/* ⚠️ OBSOLÈTE : seulement 4 blobs ici, index.html en a 8 */
-.blob-1 {
-	width: 600px; height: 600px;
-	background: #1FAF8C;
-	bottom: -200px; left: -100px;
-	animation-duration: 18s;
-	animation-delay: 0s;
-}
-
-.blob-2 {
-	width: 500px; height: 500px;
-	background: #FF8A3D;
-	bottom: -150px; right: -80px;
-	animation-duration: 22s;
-	animation-delay: -6s;
-}
-
-.blob-3 {
-	width: 400px; height: 400px;
-	background: #2D6CDF;
-	bottom: -100px; left: 40%;
-	animation-duration: 26s;
-	animation-delay: -12s;
-}
-
-.blob-4 {
-	width: 300px; height: 300px;
-	background: #1FAF8C;
-	bottom: -100px; right: 25%;
-	animation-duration: 20s;
-	animation-delay: -4s;
-}
-
-/* ⚠️ OBSOLÈTE : remplacée par @keyframes blobRise dans index.html */
-@keyframes rise {
-	0% {
-		transform: translateY(0) translateX(0) scale(1);
-		opacity: 0;
-	}
-	15% {
-		opacity: 0.12;
-	}
-	50% {
-		transform: translateY(-60vh) translateX(80px) scale(1.3);
-		opacity: 0.08;
-	}
-	85% {
-		opacity: 0.04;
-	}
-	100% {
-		transform: translateY(-110vh) translateX(-40px) scale(0.8);
-		opacity: 0;
-	}
-}
-
-
-/* ── Z-INDEX : CONTENU AU-DESSUS DES BLOBS ──
-   Toujours pertinent si le fichier était lié */
-section, footer, .hero-bg {
-	position: relative;
-	z-index: 1;
-}
-
-/* Assure que les liens et boutons dans les activités restent cliquables */
-#activities-container a,
-#activities-container button {
-	position: relative;
-	z-index: 10000;
-	pointer-events: auto;
-}
-
-#activities-container {
-	position: relative;
-	z-index: 1;
-}
-
-
-/* ── LIEN ARC-EN-CIEL ──
-   Identique à la version dans index.html */
-@keyframes rainbowLink {
-	0%   { color: #ff0000; }
-	16%  { color: #ff8800; }
-	32%  { color: #ffff00; }
-	48%  { color: #00ff00; }
-	64%  { color: #00ffff; }
-	80%  { color: #0000ff; }
-	100% { color: #ff00ff; }
-}
-
-.rainbow-link {
-	font-weight: 700;
-	text-decoration: none;
-	animation: rainbowLink 3s linear infinite;
-}
-
-
-/* ── DÉSACTIVATION DES ANIMATIONS ──
-   app.js ajoute la classe .no-animations sur le body quand
-   <animation>0</animation> dans le XML.
-   Note : app.js supprime aussi #alchemic-bg du DOM,
-   donc cette règle CSS est en pratique redondante.
-   Elle n'a de toute façon aucun effet (fichier non lié). */
-.no-animations .blob {
-	animation: none !important;
-	display: none;
-}
-
-
-/* ── ANCRE DE SCROLL ──
-   Identique à la version dans index.html */
-.scroll-offset {
-	position: relative;
-	top: -30px;
-	visibility: hidden;
-}
-
-/* ── ANCRE CLASSIQUE ──
-   ⚠️ OBSOLÈTE : remplacée par .scroll-offset.
-   La classe .anchor n'est plus utilisée dans le HTML ou le JS */
-.anchor {
-	position: relative;
-	top: -20px;
-}
-
-
-/* ── DÉBORDEMENT HORIZONTAL ──
-   Empêche le scroll horizontal sur toute la page */
 html,
 body {
 	overflow-x: hidden;
 }
 
-/* ================================================
-   STYLES GLOBAUX
-   Note : Tailwind est chargé via CDN et gère la
-   majorité des styles via des classes utilitaires.
-   Ces styles inline complètent ce que Tailwind
-   ne peut pas exprimer nativement.
-   ================================================ */
-
 body {
 	font-family: 'Inter', sans-serif;
-	background: #171C22;   /* Fond sombre principal */
-	color: #E8E3DD;        /* Texte blanc cassé */
-	overflow-x: hidden;    /* Empêche le scroll horizontal causé par les blobs */
+	background: #171C22;
+	color: #E8E3DD;
+	position: relative;
+	isolation: isolate;
 }
 
-/* ── BRUIT DE GRAIN ──
-   Texture de grain photographique en superposition sur toute la page.
-   pointer-events:none = invisible aux clics, z-index élevé = au-dessus de tout */
+
+/* ════════════════════════════════════════════
+   4. GRAIN (TEXTURE DE FOND)
+   Légère texture photographique en superposition
+   sur toute la page (opacité 3%).
+   pointer-events:none — ne bloque pas les clics.
+   z-index:9999 — au-dessus de tout le contenu.
+   ════════════════════════════════════════════ */
+
 .noise {
 	position: fixed;
 	inset: 0;
@@ -435,19 +102,30 @@ body {
 	);
 }
 
-/* ── CONTENEUR DES BLOBS ──
-   Fixé sur toute la page, en dessous du contenu (z-index:0) */
+
+/* ════════════════════════════════════════════
+   5. BLOBS ANIMÉS
+   Cercles colorés et flous qui montent lentement
+   depuis le bas de l'écran pour créer une ambiance
+   visuelle. Activables/désactivables depuis le XML.
+   ════════════════════════════════════════════ */
+
+/* Conteneur fixé sur toute la page, sous le contenu.
+   overflow:hidden — coupe les blobs qui dépassent.
+   width:100% — évite les débordements liés à 100vw
+   (qui inclut parfois la largeur de la scrollbar). */
 .alchemic-bg {
 	position: fixed;
 	inset: 0;
 	pointer-events: none;
 	z-index: 0;
 	overflow: hidden;
+	width: 100%;
 }
 
-/* ── BLOB DE BASE ──
-   Chaque blob est un cercle flou coloré qui monte depuis le bas de l'écran.
-   Les propriétés spécifiques (taille, couleur, durée) sont sur chaque .blob-N */
+/* Style de base commun à tous les blobs.
+   Les propriétés spécifiques (taille, couleur,
+   durée) sont définies sur chaque .blob-N. */
 .blob {
 	position: absolute;
 	border-radius: 50%;
@@ -456,16 +134,15 @@ body {
 }
 
 /* ── BLOBS INDIVIDUELS ──
-   Chaque blob a sa propre taille, couleur, position, opacité et timing
-   pour créer un effet de bulles colorées aléatoires et organiques */
+   Chaque blob a sa taille, couleur, position, opacité
+   et timing propres pour un effet organique et unique. */
 
 .blob-1 {
 	width: 700px; height: 700px;
 	background: radial-gradient(circle, #1FAF8C, transparent 70%);
 	opacity: 0.18;
 	bottom: -300px; left: -150px;
-	animation-duration: 5s;
-	animation-delay: 0s;
+	animation-duration: 5s; animation-delay: 0s;
 }
 
 .blob-2 {
@@ -473,8 +150,7 @@ body {
 	background: radial-gradient(circle, #FF8A3D, transparent 70%);
 	opacity: 0.15;
 	bottom: -200px; right: -100px;
-	animation-duration: 1s;
-	animation-delay: -1s;
+	animation-duration: 1s; animation-delay: -1s;
 }
 
 .blob-3 {
@@ -482,8 +158,7 @@ body {
 	background: radial-gradient(circle, #2D6CDF, transparent 70%);
 	opacity: 0.5;
 	bottom: -150px; left: 38%;
-	animation-duration: 3s;
-	animation-delay: -2s;
+	animation-duration: 3s; animation-delay: -2s;
 }
 
 .blob-4 {
@@ -491,8 +166,7 @@ body {
 	background: radial-gradient(circle, #1FAF8C, transparent 70%);
 	opacity: 0.10;
 	bottom: -120px; right: 50%;
-	animation-duration: 8s;
-	animation-delay: -3s;
+	animation-duration: 8s; animation-delay: -3s;
 }
 
 .blob-5 {
@@ -500,8 +174,7 @@ body {
 	background: radial-gradient(circle, #FF8A3D, transparent 70%);
 	opacity: 0.05;
 	bottom: -200px; right: 38%;
-	animation-duration: 3s;
-	animation-delay: -4s;
+	animation-duration: 3s; animation-delay: -4s;
 }
 
 .blob-6 {
@@ -509,8 +182,7 @@ body {
 	background: radial-gradient(circle, #2D6CDF, transparent 70%);
 	opacity: 0.35;
 	bottom: -50px; right: 18%;
-	animation-duration: 8s;
-	animation-delay: -5s;
+	animation-duration: 8s; animation-delay: -5s;
 }
 
 .blob-7 {
@@ -518,8 +190,7 @@ body {
 	background: radial-gradient(circle, #1FAF8C, transparent 70%);
 	opacity: 0.10;
 	bottom: -150px; right: 12%;
-	animation-duration: 2s;
-	animation-delay: -6s;
+	animation-duration: 2s; animation-delay: -6s;
 }
 
 .blob-8 {
@@ -527,20 +198,20 @@ body {
 	background: radial-gradient(circle, #FF8A3D, transparent 70%);
 	opacity: 0.9;
 	bottom: -150px; left: 15%;
-	animation-duration: 7s;
-	animation-delay: -7s;
+	animation-duration: 7s; animation-delay: -7s;
 }
 
-/* Animation des blobs : montée depuis le bas de l'écran,
-   avec translation horizontale et variation de taille,
-   apparition et disparition en fondu */
+/* Animation de montée depuis le bas de l'écran avec
+   légère dérive horizontale et variation de taille.
+   opacity:inherit reprend l'opacité propre à chaque blob
+   définie dans les règles .blob-N ci-dessus. */
 @keyframes blobRise {
 	0% {
 		transform: translateY(0) translateX(0) scale(1);
 		opacity: 0;
 	}
 	10% {
-		opacity: inherit; /* Reprend l'opacité définie sur le blob */
+		opacity: inherit;
 	}
 	50% {
 		transform: translateY(-55vh) translateX(60px) scale(1.25);
@@ -554,9 +225,23 @@ body {
 	}
 }
 
+/* Désactivation des blobs via app.js :
+   la classe .no-animations est ajoutée sur <body>
+   quand <animation>0</animation> est défini dans le XML. */
+.no-animations .blob {
+	animation: none !important;
+	display: none;
+}
+
+
+/* ════════════════════════════════════════════
+   6. COMPOSANTS RÉUTILISABLES
+   ════════════════════════════════════════════ */
+
 /* ── VERRE DÉPOLI (glassmorphism) ──
    Utilisé sur les cartes et certains conteneurs.
-   backdrop-filter:blur = flou de l'arrière-plan visible à travers l'élément */
+   backdrop-filter:blur = flou de ce qui est visible
+   à travers l'élément (fond, blobs...). */
 .glass {
 	background: rgba(255,255,255,.04);
 	backdrop-filter: blur(20px);
@@ -564,25 +249,22 @@ body {
 }
 
 /* ── TEXTE DÉGRADÉ ──
-   Technique CSS : on applique un dégradé en background,
-   puis on le "découpe" à la forme du texte */
+   Le dégradé est appliqué en background, puis découpé
+   à la forme exacte du texte avec background-clip. */
 .gradient-text {
 	background: linear-gradient(90deg, #C68346, #1FAF8C);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-/* ── FOND DU HÉRO ──
-   Deux halos lumineux colorés dans les coins + fond sombre */
-.hero-bg {
-	background:
-		radial-gradient(circle at top left,    rgba(198,131,70,.15), transparent 35%),
-		radial-gradient(circle at bottom right, rgba(31,175,140,.15), transparent 35%),
-		#171C22;
+/* ── POLICE TITRE ──
+   Appliquer sur les titres pour utiliser Telma-Regular. */
+.titre {
+	font-family: 'Telma-Regular', sans-serif;
 }
 
 /* ── EFFET SURVOL DES CARTES ──
-   Soulève légèrement la carte et change la bordure au survol */
+   Soulève la carte et modifie sa bordure au survol. */
 .card-hover {
 	transition: all .4s ease;
 }
@@ -592,17 +274,10 @@ body {
 	background: rgba(255,255,255,.06);
 }
 
-/* ── SECTIONS ANIMÉES AU SCROLL ──
-   État initial (invisible + décalé vers le bas).
-   GSAP les anime vers opacity:1 + translateY:0 via initAnimations() */
-.section-fade {
-	opacity: 0;
-	transform: translateY(80px);
-}
-
 /* ── IMAGE DYNAMIQUE ──
-   Utilisée dans le panneau vitrine pour afficher les images des items.
-   La transition permet un fondu lors du changement d'image */
+   Utilisée dans le panneau vitrine des activités.
+   La transition crée un fondu lors du changement
+   d'image (géré par changeContent() dans app.js). */
 .dynamic-image {
 	background-size: cover;
 	background-position: center;
@@ -610,17 +285,10 @@ body {
 	transition: all .6s ease;
 }
 
-/* ── PRIORITÉ Z-INDEX ──
-   Tout le contenu de la page passe au-dessus des blobs (z-index:0).
-   Le sélecteur exclut les blobs et le bruit pour éviter les conflits */
-body > *:not(.alchemic-bg):not(.noise) {
-	position: relative;
-	z-index: 1;
-}
-
 /* ── LIEN ARC-EN-CIEL ──
-   Utilisé dans les items TikTok / YouTube du XML via CDATA.
-   L'animation fait défiler les couleurs en continu */
+   Utilisé dans les items TikTok/YouTube du XML via CDATA.
+   L'animation fait défiler les couleurs du spectre
+   en continu (3 secondes par cycle). */
 @keyframes rainbowLink {
 	0%   { color: #ff0000; }
 	16%  { color: #ff8800; }
@@ -630,269 +298,104 @@ body > *:not(.alchemic-bg):not(.noise) {
 	80%  { color: #0000ff; }
 	100% { color: #ff00ff; }
 }
+
 .rainbow-link {
 	font-weight: 700;
 	text-decoration: none;
 	animation: rainbowLink 3s linear infinite;
 }
 
+
+/* ════════════════════════════════════════════
+   7. SECTIONS ET NAVIGATION
+   ════════════════════════════════════════════ */
+
+/* ── FOND DU HÉRO ──
+   Deux halos lumineux dans les coins opposés
+   (doré en haut-gauche, vert en bas-droite). */
+.hero-bg {
+	background:
+		radial-gradient(circle at top left,     rgba(198,131,70,.15), transparent 35%),
+		radial-gradient(circle at bottom right, rgba(31,175,140,.15),  transparent 35%),
+		#171C22;
+}
+
+/* ── SECTIONS ANIMÉES AU SCROLL ──
+   État initial : invisible + décalé de 80px vers le bas.
+   GSAP anime vers opacity:1 + translateY:0 via
+   initAnimations() dans app.js. */
+.section-fade {
+	opacity: 0;
+	transform: translateY(80px);
+}
+
 /* ── ANCRE DE SCROLL ──
    Div invisible placé en haut de chaque section.
    Cible du scroll animé via goToSection() dans app.js.
-   Le top:-30px compense la hauteur éventuelle d'un header fixe */
+   top:-30px compense la hauteur d'un éventuel header fixe. */
 .scroll-offset {
 	position: relative;
 	top: -30px;
 	visibility: hidden;
 }
 
-/* ================================================
-   CORRECTION : DOUBLE BARRE DE DÉFILEMENT
-
-   Certains éléments animés (blobs GSAP + blur +
-   translateX + scale) débordent légèrement du
-   viewport et provoquent une scrollbar fantôme.
-
-   overflow-x:hidden :
-   Empêche tout débordement horizontal.
-
-   isolation:isolate :
-   Crée un nouveau contexte de rendu pour éviter
-   certains bugs visuels/z-index avec les éléments
-   fixed + blur + animations GPU.
-
-   position:relative :
-   Stabilise certains calculs de layout/stacking
-   avec les éléments positionnés et animés.
-   ================================================ */
-
-html,
-body {
-	overflow-x: hidden;
-}
-
-body {
+/* ── PRIORITÉ Z-INDEX GLOBALE ──
+   Tout le contenu de la page s'affiche au-dessus
+   des blobs (z-index:0). Les blobs et le grain
+   sont exclus pour éviter les conflits. */
+body > *:not(.alchemic-bg):not(.noise) {
 	position: relative;
-	isolation: isolate;
+	z-index: 1;
+}
+
+/* Les liens et boutons dans les activités restent
+   cliquables au-dessus de tous les autres éléments. */
+#activities-container a,
+#activities-container button {
+	position: relative;
+	z-index: 10000;
+	pointer-events: auto;
 }
 
 
-/* ================================================
-   CONTENEUR DES BLOBS ANIMÉS
+/* ════════════════════════════════════════════
+   8. BOUTONS FLOTTANTS (coin bas-droit)
+   Bouton son (🔇/🔊) et bouton blobs (✨/❌).
+   Visibles sur toute la page après le chargement.
+   ════════════════════════════════════════════ */
 
-   overflow:hidden :
-   Coupe les blobs qui dépassent de l'écran
-   pendant les animations GSAP/CSS.
-
-   width:100% :
-   Évite les débordements causés par 100vw
-   (qui inclut parfois la largeur de scrollbar).
-   ================================================ */
-
-.alchemic-bg {
-	overflow: hidden;
-	width: 100%;
-}
-
-/* ================================================
-   [MOD|2026-05-14|15:06]
-
-   LOADER CINÉMATIQUE FUTURISTE
-   ================================================ */
-
-#startup-loader {
-	position: fixed;
-	inset: 0;
-	z-index: 999999;
-	background:
-		radial-gradient(circle at center,
-			rgba(31,175,140,.08),
-			transparent 60%),
-		#171C22;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	backdrop-filter: blur(20px);
-
-	transition:
-		opacity 1.2s ease,
-		visibility 1.2s ease;
-}
-
-#startup-loader.hidden {
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
-}
-
-.startup-loader-content {
-	width: min(606px, 90vw);
-	text-align: center;
-	margin: auto;
-}
-
-.startup-loader-line {
-	display: block;
-	width: min(606px, 90vw);
-	height: 2px;
-	margin: 0 auto 30px auto;
-	margin-bottom: 30px;
-
-	background:
-		linear-gradient(
-			90deg,
-			transparent,
-			#C68346,
-			#1FAF8C,
-			transparent
-		);
-
-	background-size: 200% 100%;
-
-	animation:
-		startupScan 2s linear infinite;
-}
-
-#startup-loader-text {
-	font-size: .9rem;
-	letter-spacing: .35em;
-	text-transform: uppercase;
-	color: #B7B0A7;
-	opacity: .85;
-}
-
-@keyframes startupScan {
-
-	0% {
-		background-position: 200% 0;
-	}
-
-	100% {
-		background-position: -200% 0;
-	}
-
-}
-
-@keyframes startupFloat {
-
-	0%, 100% {
-		transform: translateY(0px);
-	}
-
-	50% {
-		transform: translateY(-12px);
-	}
-
-}
-
-.startup-loader-logo {
-	display: block;
-
-	width: min(606px, 90vw);
-	height: min(606px, 90vw);
-	height: 606px;
-
-	object-fit: contain;
-
-	border-radius: 3rem;
-
-	margin: 0 auto 40px auto;
-
-	animation:
-		startupFloat 4s ease-in-out infinite;
-}
-/* [/MOD|2026-05-14|15:06] */
-
-/* ================================================
-   [MOD|2026-05-14|18:58]
-
-   VARIABLES GLOBALES DU THÈME
-   Ces couleurs sont injectées dynamiquement
-   depuis le XML via app.js afin de rendre
-   le template entièrement réutilisable.
-
-   ================================================ */
-
-:root {
-
-	/* Couleurs principales */
-	--color-bg:        #171C22;
-	--color-primary:   #C68346;
-	--color-secondary: #1FAF8C;
-	--color-text-soft: #B7B0A7;
-
-}
-
-/*  [/MOD|2026-05-14|18:58] */
-
-/* =========================================
-   FLOATING CONTROLS
-========================================= */
-
-#floating-controls
-{
+#floating-controls {
 	position: fixed;
 	right: 20px;
 	bottom: 20px;
-
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
-
 	z-index: 9999;
 }
 
-.floating-btn
-{
+.floating-btn {
 	width: 52px;
 	height: 52px;
-
 	border-radius: 999px;
-
 	background: rgba(255,255,255,.08);
-
 	backdrop-filter: blur(14px);
-
 	border: 1px solid rgba(255,255,255,.08);
-
 	cursor: pointer;
-
 	font-size: 20px;
-
 	transition:
 		transform .25s ease,
 		background .25s ease,
 		opacity .25s ease;
 }
 
-.floating-btn:hover
-{
+.floating-btn:hover {
 	transform: scale(1.08);
-
 	background: rgba(255,255,255,.14);
 }
 
-.hidden
-{
-	display: none !important;
-}
-
-/* =========================================
-   AUDIO UNLOCK OVERLAY
-========================================= */
-
-#audio-unlock-overlay
-{
-	position: fixed;
-	inset: 0;
-
-	z-index: 9998;
-
-	background: transparent;
-}
-
+/* Les boutons du héro et les contrôles flottants
+   restent cliquables au-dessus des éléments fixés. */
 #hero-button,
 #hero-button2,
 #audio-toggle,
@@ -901,16 +404,106 @@ body {
 	z-index: 2000;
 }
 
-@font-face {
-  font-family: 'Telma-Regular';
-  src: url('/fonts/Telma-Regular.woff2') format('woff2'),
-       url('/fonts/Telma-Regular.woff') format('woff'),
-       url('/fonts/Telma-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
+/* Overlay transparent sur toute la page.
+   Capte le premier clic de l'utilisateur pour
+   déverrouiller l'audio (politique anti-autoplay
+   des navigateurs modernes). */
+#audio-unlock-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 9998;
+	background: transparent;
 }
 
-.titre {
-	font-family: 'Telma-Regular', sans-serif;
+
+/* ════════════════════════════════════════════
+   9. LOADER (ÉCRAN D'ACCUEIL)
+   Affiché pendant le préchauffage cinématique.
+   Masqué par app.js via la classe .hidden
+   une fois tout le site initialisé.
+   ════════════════════════════════════════════ */
+
+#startup-loader {
+	position: fixed;
+	inset: 0;
+	z-index: 999999;
+	background:
+		radial-gradient(circle at center, rgba(31,175,140,.08), transparent 60%),
+		#171C22;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	backdrop-filter: blur(20px);
+	transition:
+		opacity 1.2s ease,
+		visibility 1.2s ease;
+}
+
+/* État masqué : fondu de sortie (ajouté par app.js) */
+#startup-loader.hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+/* Bloc centré contenant logo, ligne et texte */
+.startup-loader-content {
+	width: min(606px, 90vw);
+	text-align: center;
+	margin: auto;
+}
+
+/* Logo animé : flotte doucement de haut en bas */
+.startup-loader-logo {
+	display: block;
+	width: min(606px, 90vw);
+	height: min(606px, 90vw); /* Adaptatif : ne dépasse pas 90% de la largeur sur mobile */
+	object-fit: contain;
+	border-radius: 3rem;
+	margin: 0 auto 40px auto;
+	animation: startupFloat 4s ease-in-out infinite;
+}
+
+/* Ligne lumineuse de scan sous le logo */
+.startup-loader-line {
+	display: block;
+	width: min(606px, 90vw);
+	height: 2px;
+	margin: 0 auto 30px auto;
+	background: linear-gradient(90deg, transparent, #C68346, #1FAF8C, transparent);
+	background-size: 200% 100%;
+	animation: startupScan 2s linear infinite;
+}
+
+/* Texte d'état sous la ligne (ex : "Initialisation des expériences") */
+#startup-loader-text {
+	font-size: .9rem;
+	letter-spacing: .35em;
+	text-transform: uppercase;
+	color: #B7B0A7;
+	opacity: .85;
+}
+
+/* Balayage lumineux de gauche à droite sur la ligne */
+@keyframes startupScan {
+	0%   { background-position:  200% 0; }
+	100% { background-position: -200% 0; }
+}
+
+/* Flottement vertical du logo (haut ↔ bas) */
+@keyframes startupFloat {
+	0%, 100% { transform: translateY(0px);   }
+	50%      { transform: translateY(-12px); }
+}
+
+
+/* ════════════════════════════════════════════
+   10. UTILITAIRES
+   ════════════════════════════════════════════ */
+
+/* .hidden — masque complètement un élément.
+   !important garantit la priorité sur display:flex
+   ou display:grid éventuellement appliqués ailleurs. */
+.hidden {
+	display: none !important;
 }
