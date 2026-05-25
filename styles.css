@@ -728,23 +728,16 @@ body {
 }
 
 .startup-loader-content {
+	width: min(606px, 90vw);
 	text-align: center;
-	max-width: 500px;
-	padding: 40px;
-}
-
-.startup-loader-content img {
-	width: 140px;
-	margin: 0 auto 40px auto;
-
-	animation:
-		startupFloat 4s ease-in-out infinite;
+	margin: auto;
 }
 
 .startup-loader-line {
-	width: 220px;
+	display: block;
+	width: min(606px, 90vw);
 	height: 2px;
-	margin: auto;
+	margin: 0 auto 30px auto;
 	margin-bottom: 30px;
 
 	background:
@@ -794,108 +787,22 @@ body {
 
 }
 
-/* [/MOD|2026-05-14|15:06] */
+.startup-loader-logo {
+	display: block;
 
-/* ================================================
-   [MOD|2026-05-14|15:06]
+	width: min(606px, 90vw);
+	height: min(606px, 90vw);
+	height: 606px;
 
-   LOADER CINÉMATIQUE FUTURISTE
-   ================================================ */
+	object-fit: contain;
 
-#startup-loader {
-	position: fixed;
-	inset: 0;
-	z-index: 999999;
-	background:
-		radial-gradient(circle at center,
-			rgba(31,175,140,.08),
-			transparent 60%),
-		#171C22;
+	border-radius: 3rem;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	backdrop-filter: blur(20px);
-
-	transition:
-		opacity 1.2s ease,
-		visibility 1.2s ease;
-}
-
-#startup-loader.hidden {
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
-}
-
-.startup-loader-content {
-	text-align: center;
-	max-width: 500px;
-	padding: 40px;
-}
-
-.startup-loader-content img {
-	width: 140px;
 	margin: 0 auto 40px auto;
 
 	animation:
 		startupFloat 4s ease-in-out infinite;
 }
-
-.startup-loader-line {
-	width: 220px;
-	height: 2px;
-	margin: auto;
-	margin-bottom: 30px;
-
-	background:
-		linear-gradient(
-			90deg,
-			transparent,
-			#C68346,
-			#1FAF8C,
-			transparent
-		);
-
-	background-size: 200% 100%;
-
-	animation:
-		startupScan 2s linear infinite;
-}
-
-#startup-loader-text {
-	font-size: .9rem;
-	letter-spacing: .35em;
-	text-transform: uppercase;
-	color: #B7B0A7;
-	opacity: .85;
-}
-
-@keyframes startupScan {
-
-	0% {
-		background-position: 200% 0;
-	}
-
-	100% {
-		background-position: -200% 0;
-	}
-
-}
-
-@keyframes startupFloat {
-
-	0%, 100% {
-		transform: translateY(0px);
-	}
-
-	50% {
-		transform: translateY(-12px);
-	}
-
-}
-
 /* [/MOD|2026-05-14|15:06] */
 
 /* ================================================

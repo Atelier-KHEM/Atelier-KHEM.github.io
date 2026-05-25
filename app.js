@@ -773,15 +773,25 @@ if (!AUDIO_ENABLED)
 
 	<!-- ═══ COLONNE DROITE : PANNEAU VITRINE ═══ -->
 	<!-- Le style inline est nécessaire pour les valeurs non supportées par Tailwind -->
-	<div style="background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);border-radius:3rem;height:650px;display:flex;flex-direction:column;justify-content:space-between;">
-
+	<!-- AVANT MODIF THIERRY :
+		<div style="background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);border-radius:3rem;padding:2rem;height:650px;display:flex;flex-direction:column;justify-content:space-between;">
+	-->
+	<!-- MODIF THIERRY : -->
+		<div style="background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);border-radius:3rem;height:650px;display:flex;flex-direction:column;justify-content:space-between;">
+	<!-- /MODIF THIERY -->
 		<!-- Zone de contenu : affiche l'image par défaut, puis le contenu dynamique -->
-		<div id="${actId}-content" style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center;">
-			<img src="${defaultVisual}" alt="${nom}" style="height:100%;">
+		<!-- MODIF 25/05 11:03 <div id="${actId}-content" style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center;"> -->
+		<div id="${actId}-content" style="flex:1;min-height:0;display:flex;align-items:flex-start;justify-content:center;overflow:hidden;">
+			<!-- AVANT MODIF THIERRY :
+				<img src="${defaultVisual}" alt="${nom}" style="max-width:100%;max-height:100%;object-fit:contain;padding:2rem;">
+			-->
+			<!-- MODIF THIERRY : -->
+				<img src="${defaultVisual}" alt="${nom}" style="max-height:100%;object-fit:contain;border-radius:3rem;">
+			<!-- /MODIF THIERY -->
 		</div>
 
 		<!-- Barre de navigation items : cachée par défaut, affichée lors du 1er clic sur une zone -->
-		<div id="${actId}-nav" class="hidden flex-wrap gap-4 justify-between pt-8">
+		<div id="${actId}-nav" class="hidden flex-wrap gap-4 justify-between pt-8" style="padding:2rem;">
 			<button id="${actId}-prev" onclick="changeContent('${actId}', currentType['${actId}'], -1)" class="inline-block px-8 py-4 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">← Précédent</button>
 			<!-- Le titre de l'item affiché est lu via innerText pour composer le message WhatsApp -->
 			<button onclick="window.open('https://wa.me/${telephone}?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%29%5D%0A%0ABonjour%2C%0A%0AJe%20souhaite%20commander%20un%20Rhum%20arrangés%20remK%20' + encodeURIComponent(document.getElementById('${actId}-title').innerText) + '%0A%0A');" class="inline-block px-8 py-4 rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300">Je commande</button>
@@ -811,9 +821,12 @@ if (!AUDIO_ENABLED)
 
 	<!-- Ancre invisible pour le scroll ciblé -->
 	<div id="footer-cta-anchor" class="scroll-offset"></div>
-
 	<!-- Label de marque -->
-	<div class="tracking-[0.35em] uppercase text-sm text-[#C68346]">Atelier KHEM</div>
+	<div class="inline-block border rounded-full px-12 py-6 text-3xl tracking-[0.6em] uppercase font-extralight" style="
+							border-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
+							color: var(--color-primary);
+							box-shadow: 0 0 40px rgba(198,131,70,.15);
+						">Atelier KHEM</div>
 
 	<!-- Titre accrocheur -->
 	<h2 class="titre text-6xl md:text-8xl font-light leading-none">${footer.querySelector('titre').textContent}</h2>
@@ -1161,8 +1174,8 @@ function changeContent(section, type, direction = 0) {
 	document.getElementById(`${section}-content`).innerHTML = `
 	<div class="w-full">
 		<!-- Image de fond en CSS background-image pour un meilleur contrôle du rendu -->
-		<div id="${section}-image" class="dynamic-image rounded-[2rem] h-[320px] mb-8" style="background-image:url('${current.image}')"></div>
-		<div class="space-y-4">
+		<div id="${section}-image" class="dynamic-image rounded-[3rem] h-[320px] mb-8" style="background-image:url('${current.image}')"></div>
+		<div class="space-y-4" style="padding: 0 2rem;">
 			<!-- L'id sur le titre est utilisé pour lire son texte dans le message WhatsApp -->
 			<h3 id="${section}-title" class="text-4xl font-light">${current.title}</h3>
 			<div id="${section}-description" class="text-[#B7B0A7] text-lg leading-relaxed">${current.description}</div>
@@ -1230,7 +1243,7 @@ function preloadEssentialImages() {
 	const images = []
 
 	// Logo
-	images.push('img/Logo.png')
+	images.push('img/Logo.jpg')
 
 	// Images principales des activités
 	document.querySelectorAll('#activities-container img')
