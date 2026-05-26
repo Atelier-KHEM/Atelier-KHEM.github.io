@@ -635,8 +635,7 @@ fetch('data/atelier-khem.xml')
 		   Note : les styles inline dans la colonne droite sont
 		   nécessaires car Tailwind ne supporte pas toutes les
 		   valeurs utilisées (ex: height:650px, flex-direction). */
-		const html = `
-<section id="${actId}" class="grid lg:grid-cols-2 gap-16 items-start section-fade border-b border-white/10 pb-24">
+		const html = `<section id="${actId}" class="grid lg:grid-cols-2 gap-16 items-start section-fade border-b border-white/10 pb-24">
 
 	<!-- ═══ COLONNE GAUCHE ═══ -->
 	<div class="space-y-8">
