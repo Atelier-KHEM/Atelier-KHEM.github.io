@@ -534,11 +534,14 @@ body > *:not(.alchemic-bg):not(.noise) {
     /* Badge héro (taille fixe dans le HTML) */
     #hero-badge { font-size: 0.73rem !important; }
 
-    /* Boutons et liens sans classe text- explicite */
-    button, a {
+    /* MODIF_RESPONSIVE Boutons et liens sans classe text- explicite
+   button, a {
         font-size: 1rem    !important;
-        min-height: 44px;               /* zone de tap recommandée iOS/Android */
-    }
+        min-height: 44px;               / * zone de tap recommandée iOS/Android * /
+    } */
+	button, a {
+		min-height: auto;
+	}
 
     /* Texte du loader */
     #startup-loader-text {
