@@ -708,17 +708,17 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				<item>
 					<titre>L’art de transformer</titre>
 					<texte>&lt;b&gt;L’Alchimiste&lt;/b&gt; crée des bières, vins et liqueurs artisanales aux recettes inspirées des richesses naturelles du Cameroun. Chaque préparation est élaborée avec soin afin d’offrir des boissons originales, équilibrées et riches en saveurs.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_01.jpg</image>
 				</item>
 				<item>
 					<titre>Nos boissons artisanales</titre>
 					<texte>Nos boissons artisanales se déclinent en plusieurs intensités : bières artisanales de 5 à 9 %, vins artisanaux : 9 à 13 % et liqueurs artisanales : 20 % et plus.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_02.jpg</image>
 				</item>
 				<item>
 					<titre>Nos recettes</titre>
 					<texte>&lt;b&gt;L’Alchimiste&lt;/b&gt; propose des bières, vins et liqueurs artisanales aux saveurs originales comme le bissap (foléré), l’ananas, la mangue, le Zizi Pan Pan aphrodisiaque, le vin d’avocatier, le vin de citronnier etc.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_03.jpg</image>
 				</item>
 			</zone>
 			<zone id="recettesalchimiste">
@@ -726,42 +726,42 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				<item>
 					<titre>Des saveurs artisanales uniques</titre>
 					<texte>&lt;b&gt;L’Alchimiste&lt;/b&gt; vous propose une gamme originale de bières, vins et liqueurs artisanales élaborées à partir d’ingrédients locaux soigneusement sélectionnés.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_04.jpg</image>
 				</item>
 				<item>
 					<titre>Bissap / Foléré</titre>
 					<texte>Une recette rafraîchissante aux notes florales et légèrement acidulées, appréciée pour son goût authentique et sa belle couleur naturelle.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_05.jpg</image>
 				</item>
 				<item>
 					<titre>Ananas</titre>
 					<texte>Une saveur fruitée et exotique offrant une boisson douce, parfumée et pleine de fraîcheur.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_06.jpg</image>
 				</item>
 				<item>
 					<titre>Mangue</titre>
 					<texte>Une recette gourmande et tropicale aux arômes sucrés et généreux.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_07.jpg</image>
 				</item>
 				<item>
 					<titre>Zizi Pan Pan (Aphrodisiaque)</titre>
 					<texte>Une préparation artisanale originale aux saveurs intenses et au caractère unique.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_08.jpg</image>
 				</item>
 				<item>
 					<titre>Vin d’avocatier</titre>
 					<texte>Une création artisanale élaborée à partir de feuilles d’avocatier pour une expérience authentique et atypique.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_09.jpg</image>
 				</item>
 				<item>
 					<titre>Vin de citronnier</titre>
 					<texte>Une recette aux notes végétales et citronnées, équilibrée et rafraîchissante.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_10.jpg</image>
 				</item>
 				<item>
 					<titre>Et bien d'autres saveurs</titre>
-					<texte>L’Alchimiste développe régulièrement de nouvelles recettes artisanales selon les saisons, les inspirations et les produits disponibles.</texte>
-					<image>img/en_chantier.jpg</image>
+					<texte>&lt;b&gt;L’Alchimiste&lt;/b&gt; développe régulièrement de nouvelles recettes artisanales selon les saisons, les inspirations et les produits disponibles.</texte>
+					<image>img/L_Alchimiste_11.jpg</image>
 				</item>
 			</zone>
 			<zone id="tarifsalchimiste">
@@ -769,12 +769,12 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				<item>
 					<titre>Bouteille 50 cl</titre>
 					<texte>• Bissap : 500 FCFA&lt;br&gt;• Ananas, Mangue, Vin d’avocatier ou de citronnier : 750 FCFA&lt;br&gt;• Zizi Pan Pan : 1.500 FCFA</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_12.jpg</image>
 				</item>
 				<item>
 					<titre>Bidon de 15 litres</titre>
-					<texte>Pour vos événements, L’Alchimiste propose sur commande des bidons de 15 litres de bières ou de vins artisanaux à prix exceptionnel (exemple : Bissap 15 litres à 10.000 FCFA).</texte>
-					<image>img/en_chantier.jpg</image>
+					<texte>Pour vos événements, &lt;b&gt;L’Alchimiste&lt;/b&gt; propose sur commande des bidons de 15 litres de bières ou de vins artisanaux à prix exceptionnel (exemple : Bissap 15 litres à 10.000 FCFA).</texte>
+					<image>img/L_Alchimiste_13.jpg</image>
 				</item>
 			</zone>
 			<zone id="formationalchimiste">
@@ -782,17 +782,17 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				<item>
 					<titre>Formation</titre>
 					<texte>Apprenez à fabriquer vos propres boissons artisanales !&lt;br&gt;&lt;b&gt;L’Alchimiste&lt;/b&gt; propose une formation dédiée à la fabrication de bières, vins et liqueurs artisanales.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_14.jpg</image>
 				</item>
 				<item>
 					<titre>Formation</titre>
 					<texte>Accessible aux débutants comme aux passionnés, la formation permet d’apprendre les techniques de fabrication, les recettes artisanales et les bases de la fermentation.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_15.jpg</image>
 				</item>
 				<item>
 					<titre>Formation</titre>
 					<texte>Formats disponibles :&lt;br&gt;• Formation en ligne : 50.000 FCFA&lt;br&gt;• Formation en présentiel : sur devis&lt;br&gt;&lt;i&gt;Tarif selon le lieu et le nombre de participants.&lt;/i&gt;</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_16.jpg</image>
 				</item>
 			</zone>
 			<zone id="pourquoialchimiste">
@@ -800,7 +800,7 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				<item>
 					<titre>Pourquoi choisir L’Alchimiste ?</titre>
 					<texte>&lt;b&gt;L’Alchimiste&lt;/b&gt;, c’est une fabrication artisanale à partir d’ingrédients locaux, des recettes originales aux saveurs authentiques, une production sur commande et la possibilité de se former à la fabrication artisanale.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/L_Alchimiste_17.jpg</image>
 				</item>
 			</zone>
 		</activite>
