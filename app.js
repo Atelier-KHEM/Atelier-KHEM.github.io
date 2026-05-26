@@ -266,9 +266,17 @@ if (AUDIO_ENABLED && audioToggle)
    ════════════════════════════════════════════ */
 
 fetch('data/atelier-khem.xml')
-	.then(res => res.text())
-	.then(str => new DOMParser().parseFromString(str, 'text/xml'))
-	.then(xml => {
+	.then(res => {
+        if (!res.ok) throw new Error('HTTP ' + res.status)
+        return res.text()
+    })
+    .then(str => {
+        const doc = new DOMParser().parseFromString(str, 'text/xml')
+        if (doc.querySelector('parsererror'))
+            throw new Error('XML invalide — vérifiez l\'encodage du fichier')
+        return doc
+    })
+    .then(xml => {
 
 
 	/* ──────────────────────────────────────────
@@ -502,13 +510,13 @@ fetch('data/atelier-khem.xml')
 	sectionSounds['hero'] = accueilSound
 
 	/* Injection du contenu dans les éléments HTML du héro */
-	document.getElementById('hero-badge').innerHTML       = accueil.querySelector('badge').textContent
-	document.getElementById('hero-title').innerHTML       = accueil.querySelector('titre').textContent
-	document.getElementById('hero-description').innerHTML = accueil.querySelector('intro').textContent
-	document.getElementById('hero-button').innerHTML      = accueil.querySelector('ctaTexte').textContent
-	document.getElementById('hero-button').href           = accueil.querySelector('ctaLien').textContent
-	document.getElementById('hero-button2').innerHTML     = accueil.querySelector('ctaTexte2').textContent
-	document.getElementById('hero-button2').href          = accueil.querySelector('ctaLien2').textContent
+	document.getElementById('hero-badge').innerHTML       = accueil.querySelector('badge')?.textContent     ?? ''
+	document.getElementById('hero-title').innerHTML       = accueil.querySelector('titre')?.textContent     ?? ''
+	document.getElementById('hero-description').innerHTML = accueil.querySelector('intro')?.textContent     ?? ''
+	document.getElementById('hero-button').innerHTML      = accueil.querySelector('ctaTexte')?.textContent  ?? ''
+	document.getElementById('hero-button').href           = accueil.querySelector('ctaLien')?.textContent   ?? ''
+	document.getElementById('hero-button2').innerHTML     = accueil.querySelector('ctaTexte2')?.textContent ?? ''
+	document.getElementById('hero-button2').href          = accueil.querySelector('ctaLien2')?.textContent  ?? ''
 
 	/* Lance le son d'accueil et mémorise le son courant */
 	playSectionSound(accueilSound)
@@ -556,28 +564,28 @@ fetch('data/atelier-khem.xml')
 		/* ── Lecture des données de l'activité ── */
 		const actId        = act.getAttribute('id')
 		const actIndex     = actIds.indexOf(actId) // Position dans la liste (0, 1, 2...)
-		const nom          = act.querySelector('nom').textContent
-		const defaultVisual = act.querySelector('defaultVisual').textContent
-		const subtitle     = act.querySelector('subtitle').textContent
-		const description  = act.querySelector('description').textContent
-		const telephone    = act.querySelector('telephone').textContent
-		const whatsapp     = act.querySelector('whatsapp').textContent
-		const whatsappText = act.querySelector('whatsappText').textContent
-		const next         = act.querySelector('next').textContent
-		const nextText     = act.querySelector('nextText').textContent
-		const previousText = act.querySelector('previousText').textContent
-		const activitySound = act.querySelector('sound')?.textContent?.trim()
+		const nom          = act.querySelector('nom').textContent ?? ''
+		const defaultVisual = act.querySelector('defaultVisual').textContent ?? ''
+		const subtitle     = act.querySelector('subtitle').textContent ?? ''
+		const description  = act.querySelector('description').textContent ?? ''
+		const telephone    = act.querySelector('telephone').textContent ?? ''
+		const whatsapp     = act.querySelector('whatsapp').textContent ?? ''
+		const whatsappText = act.querySelector('whatsappText').textContent ?? ''
+		const next         = act.querySelector('next').textContent ?? ''
+		const nextText     = act.querySelector('nextText').textContent ?? ''
+		const previousText = act.querySelector('previousText').textContent ?? ''
+		const activitySound = act.querySelector('sound')?.textContent?.trim() ?? ''
 
 		sectionSounds[actId] = activitySound
 
 		/* ── Activité précédente (avec bouclage circulaire via %) ── */
 		const prevId       = actIds[(actIndex - 1 + actIds.length) % actIds.length]
 		const prevActivity = activites[(actIndex - 1 + actIds.length) % actIds.length]
-		const prevSound    = prevActivity.querySelector('sound')?.textContent.trim()
+		const prevSound    = prevActivity.querySelector('sound')?.textContent.trim() ?? ''
 
 		/* ── Activité suivante (avec bouclage circulaire) ── */
 		const nextActivity = activites[(actIndex + 1) % actIds.length]
-		const nextSound    = nextActivity.querySelector('sound')?.textContent.trim()
+		const nextSound    = nextActivity.querySelector('sound')?.textContent.trim() ?? ''
 
 		/* ── Bouton "← Précédent" ──
 		   La 1ère activité (index 0) pointe vers l'accueil.
@@ -603,7 +611,7 @@ fetch('data/atelier-khem.xml')
 		zones.forEach((zone) =>
 		{
 			const zid   = zone.getAttribute('id')
-			const zname = zone.querySelector('nom').textContent
+			const zname = zone.querySelector('nom').textContent ?? ''
 
 			buttons += `<button onclick="changeContent('${actId}','${zid}')" class="glass rounded-2xl p-5 card-hover text-left">${zname}</button>`
 
@@ -745,6 +753,15 @@ fetch('data/atelier-khem.xml')
 	})
 
 	})
+	
+	.catch(err => {
+    console.error('[Atelier KHEM] Erreur de chargement :', err)
+    const loaderText = document.getElementById('startup-loader-text')
+    if (loaderText) loaderText.textContent = 'Erreur — Rechargez la page'
+    setTimeout(() => {
+        document.getElementById('startup-loader')?.classList.add('hidden')
+    }, 4000)
+})
 
 
 /* ════════════════════════════════════════════
