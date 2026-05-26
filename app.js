@@ -705,7 +705,6 @@ fetch('data/atelier-khem.xml')
 			<a href="${whatsapp}" target="_blank" class="inline-block px-4 py-2 text-sm sm:px-8 sm:py-4 sm:text-base rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300">${whatsappText}</a>
 			${nextButton}
 		</div>
-
 	</div>
 
 	<!-- ═══ COLONNE DROITE : PANNEAU VITRINE ═══ -->
