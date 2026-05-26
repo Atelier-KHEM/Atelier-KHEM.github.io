@@ -710,10 +710,13 @@ fetch('data/atelier-khem.xml')
 	<!-- ═══ COLONNE DROITE : PANNEAU VITRINE ═══ -->
 	<div style="background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);border-radius:3rem;height:650px;display:flex;flex-direction:column;justify-content:space-between;">
 
-		<!-- Zone d'affichage : image par défaut au chargement,
-		     contenu dynamique après clic sur une zone -->
+		<!-- MODIF_RESPONSIVE Zone d'affichage : image par défaut au chargement,
+		     contenu dynamique après clic sur une zone
 		<div id="${actId}-content" style="flex:1;min-height:0;display:flex;align-items:flex-start;justify-content:center;overflow:hidden;">
 			<img src="${defaultVisual}" alt="${nom}" style="max-height:100%;object-fit:contain;border-radius:3rem;" />
+		</div> -->
+		<div id="${actId}-content" style="flex:1;min-height:0;display:flex;align-items:flex-start;justify-content:center;overflow:hidden;">
+			<img src="${defaultVisual}" alt="${nom}" style=" width:100%;max-width:100%;height:auto;object-fit:contain;border-radius:3rem;" />
 		</div>
 
 		<!-- Barre de navigation des items (cachée par défaut, affichée au 1er clic) -->

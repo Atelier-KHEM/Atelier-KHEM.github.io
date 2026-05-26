@@ -25,7 +25,7 @@
 	<config>
 
 		<!-- Audio ambiant : 1 = activé | 0 = désactivé -->
-		<audio>0</audio>
+		<audio>1</audio>
 
 		<!-- Animations de blobs : 1 = activé | 0 = désactivé -->
 		<animation>1</animation>
