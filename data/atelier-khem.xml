@@ -24,6 +24,9 @@
 	     ════════════════════════════════════ -->
 	<config>
 
+		<!--Debug : 1 = activé | 0 = désactivé -->
+		<debug>1</debug>
+
 		<!-- Audio ambiant : 1 = activé | 0 = désactivé -->
 		<audio>1</audio>
 
