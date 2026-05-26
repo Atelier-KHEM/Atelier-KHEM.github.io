@@ -507,3 +507,42 @@ body > *:not(.alchemic-bg):not(.noise) {
 .hidden {
 	display: none !important;
 }
+
+/* ════════════════════════════════════════════
+   11. RESPONSIVE MOBILE — TAILLES DE TEXTE
+   Multiplie les textes × 1,5 sur mobile (≤ 640px).
+   !important nécessaire pour surpasser Tailwind CDN.
+   ════════════════════════════════════════════ */
+
+@media (max-width: 640px) {
+
+    /* Corps de texte */
+    .text-sm   { font-size: 1.05rem !important; }   /* 0.875 × 1.5 */
+    .text-lg   { font-size: 1.35rem !important; }   /* 1.125 × 1.2  */
+    .text-xl   { font-size: 1.5rem  !important; }   /* 1.25  × 1.2  */
+
+    /* Titres intermédiaires */
+    .text-3xl  { font-size: 2.4rem  !important; }   /* 1.875 × 1.28 */
+    .text-4xl  { font-size: 3rem    !important; }   /* 2.25  × 1.33 */
+    .text-5xl  { font-size: 4rem    !important; }   /* 3     × 1.33 */
+
+    /* Grands titres (modéré pour ne pas déborder) */
+    .text-6xl  { font-size: 4.5rem  !important; }   /* 3.75  × 1.2  */
+    .text-8xl  { font-size: 5.5rem  !important; }   /* 6     → réduit pour tenir */
+
+    /* Badge héro (taille fixe dans le HTML) */
+    #hero-badge { font-size: 1.1rem !important; }
+
+    /* Boutons et liens sans classe text- explicite */
+    button, a {
+        font-size: 1rem    !important;
+        min-height: 44px;               /* zone de tap recommandée iOS/Android */
+    }
+
+    /* Texte du loader */
+    #startup-loader-text {
+        font-size: 0.85rem !important;
+        letter-spacing: .2em;
+    }
+
+}
