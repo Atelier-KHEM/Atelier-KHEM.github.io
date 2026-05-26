@@ -477,7 +477,7 @@ body > *:not(.alchemic-bg):not(.noise) {
 
 /* Texte d'état sous la ligne (ex : "Initialisation des expériences") */
 #startup-loader-text {
-	font-size: .9rem;
+	font-size: 1.35rem;
 	letter-spacing: .35em;
 	text-transform: uppercase;
 	color: #B7B0A7;
