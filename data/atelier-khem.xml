@@ -369,7 +369,7 @@
 
 
 		<!-- ┌─────────────────────────────────────┐
-		     │  ACTIVITÉ 2 : GUIAH SONGS            │
+		     │  ACTIVITÉ 2 : GUIAH SONGS           │
 		     └─────────────────────────────────────┘ -->
 		<activite id="guiahsongs">
 
@@ -569,18 +569,18 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				<nom>Notre histoire</nom>
 				<item>
 					<titre>Notre histoire</titre>
-					<texte>KOKOLUX by Schouama est une marque camerounaise spécialisée dans les huiles naturelles de qualité, pensées pour le soin des cheveux, de la peau et du bien-être au quotidien.</texte>
-					<image>img/en_chantier.jpg</image>
+					<texte>&lt;b&gt;KOKOLUX by Schouama&lt;/b&gt; est une marque camerounaise spécialisée dans les huiles naturelles de qualité, pensées pour le soin des cheveux, de la peau et du bien-être au quotidien.</texte>
+					<image>img/KOKOLUX_by_Schouama_01.jpg</image>
 				</item>
 				<item>
 					<titre>Notre histoire</titre>
 					<texte>À travers une approche simple, naturelle et authentique, &lt;b&gt;KOKOLUX&lt;/b&gt; valorise les bienfaits des huiles végétales traditionnelles comme l’huile de coco et l’huile de palmiste, reconnues pour leurs propriétés nourrissantes et protectrices.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_02.jpg</image>
 				</item>
 				<item>
 					<titre>Notre histoire</titre>
 					<texte>Notre mission est d’offrir des produits accessibles, efficaces et adaptés aux réalités africaines, tout en mettant en avant une beauté saine et naturelle.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_03.jpg</image>
 				</item>
 			</zone>
 			<zone id="kokoluxproduits">
@@ -588,17 +588,17 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				<item>
 					<titre>Huile de Coco - 0,5 litre</titre>
 					<texte>Huile naturelle polyvalente pour les cheveux, la peau et les massages, elle nourrit, protège et hydrate en profondeur, apporte brillance et douceur, limite la casse et convient parfaitement aux cheveux crépus, bouclés et frisés.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_04.jpg</image>
 				</item>
 				<item>
 					<titre>Huile de Palmiste – 0,5 L</titre>
 					<texte>Huile traditionnelle reconnue pour ses propriétés nourrissantes et protectrices, elle nourrit les cheveux en profondeur, favorise leur souplesse, protège le cuir chevelu, hydrate les peaux sèches et convient parfaitement aux soins capillaires africains.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_05.jpg</image>
 				</item>
 				<item>
 					<titre>Huile de Coco - Flacon 50 ml</titre>
 					<texte>Flacon pipette 50 ml pratique à emporter partout, idéal pour les soins ciblés du cuir chevelu, des pointes sèches, de la barbe, du visage et les retouches beauté au quotidien.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_06.jpg</image>
 				</item>
 			</zone>
 			<zone id="kokoluxpromotrice">
@@ -606,17 +606,17 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				<item>
 					<titre>La promotrice</titre>
 					<texte>Derrière &lt;b&gt;KOKOLUX by Schouama&lt;/b&gt; se trouve Schouama Pamela, une entrepreneure passionnée par la beauté naturelle et le bien-être.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_07.jpg</image>
 				</item>
 				<item>
 					<titre>La promotrice</titre>
 					<texte>Animée par le désir d’aider les femmes et les familles à prendre soin d’elles avec des produits simples, efficaces et naturels, elle a créé &lt;b&gt;KOKOLUX&lt;/b&gt; avec une vision claire : proposer des huiles de qualité qui allient tradition, efficacité et élégance.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_08.jpg</image>
 				</item>
 				<item>
 					<titre>La promotrice</titre>
 					<texte>Grâce à son engagement, &lt;b&gt;KOKOLUX&lt;/b&gt; devient progressivement une référence locale pour celles et ceux qui recherchent des soins naturels accessibles et authentiques.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_09.jpg</image>
 				</item>
 			</zone>
 			<zone id="kokoluxpourquoi">
@@ -624,22 +624,22 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				<item>
 					<titre>Pourquoi choisir KOKOLUX ?</titre>
 					<texte>&lt;b&gt;100% Naturel&lt;/b&gt;&lt;br&gt;Des huiles sélectionnées avec soin, sans compromis sur la qualité.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_10.jpg</image>
 				</item>
 				<item>
 					<titre>Pourquoi choisir KOKOLUX ?</titre>
 					<texte>&lt;b&gt;Adapté aux cheveux africains&lt;/b&gt;&lt;br&gt;Des produits pensés pour les cheveux crépus, bouclés et frisés.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_11.jpg</image>
 				</item>
 				<item>
 					<titre>Pourquoi choisir KOKOLUX ?</titre>
 					<texte>&lt;b&gt;Qualité accessible&lt;/b&gt;&lt;br&gt;Des soins efficaces à des prix accessibles.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_12.jpg</image>
 				</item>
 				<item>
 					<titre>Pourquoi choisir KOKOLUX ?</titre>
 					<texte>&lt;b&gt;Fabrication et sélection sérieuses&lt;/b&gt;&lt;br&gt;Une attention particulière portée à la pureté et à l’efficacité des produits.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_13.jpg</image>
 				</item>
 			</zone>
 			<zone id="kokoluxconseils">
@@ -647,27 +647,27 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				<item>
 					<titre>Conseils d’utilisation</titre>
 					<texte>&lt;b&gt;Pour les cheveux / Huile de coco&lt;/b&gt;&lt;br&gt;Utiliser en bain d’huile avant shampoing, appliquer sur les pointes pour limiter la casse ou masser le cuir chevelu pour nourrir les racines.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_14.jpg</image>
 				</item>
 				<item>
 					<titre>Conseils d’utilisation</titre>
 					<texte>&lt;b&gt;Pour les cheveux / Huile de palmiste&lt;/b&gt;&lt;br&gt;Utiliser en soin capillaire pour nourrir les cheveux en profondeur, assouplir la fibre capillaire et protéger le cuir chevelu.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_15.jpg</image>
 				</item>
 				<item>
 					<titre>Conseils d’utilisation</titre>
 					<texte>&lt;b&gt;Pour la peau / Huile de coco&lt;/b&gt;&lt;br&gt;Appliquer après la douche sur peau légèrement humide, utiliser comme huile de massage ou hydrater les zones sèches au quotidien.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_16.jpg</image>
 				</item>
 				<item>
 					<titre>Conseils d’utilisation</titre>
 					<texte>&lt;b&gt;Pour la peau / Huile de palmiste&lt;/b&gt;&lt;br&gt;Appliquer sur les zones sèches pour nourrir et adoucir la peau ou utiliser comme huile de soin corporelle.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_17.jpg</image>
 				</item>
 				<item>
 					<titre>Conseils d’utilisation</titre>
 					<texte>&lt;b&gt;Pour la cuisine / Huile de coco&lt;/b&gt;&lt;br&gt;Peut être utilisée dans diverses préparations culinaires selon vos habitudes et recettes.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_18.jpg</image>
 				</item>
 			</zone>
 			<zone id="kokoluxtarifs">
@@ -675,12 +675,12 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				<item>
 					<titre>Des soins naturels accessibles</titre>
 					<texte>Chez &lt;b&gt;KOKOLUX by Schouama&lt;/b&gt;, nous croyons que la qualité et le naturel doivent rester accessibles.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_19.jpg</image>
 				</item>
 				<item>
 					<titre>Des soins naturels accessibles</titre>
 					<texte>Nous proposons des huiles soigneusement sélectionnées à des prix pensés pour le quotidien.</texte>
-					<image>img/en_chantier.jpg</image>
+					<image>img/KOKOLUX_by_Schouama_20.jpg</image>
 				</item>
 			</zone>
 		</activite>
