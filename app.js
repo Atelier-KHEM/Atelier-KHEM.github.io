@@ -1104,6 +1104,14 @@ async function cinematicWarmup()
 	await new Promise(resolve => setTimeout(resolve, 250))
 
 	loader.classList.add('hidden')
+	
+	/* ── Navigation par paramètre URL ──
+	   Exemple : monsite.com/?s=rhumsarrangesremk
+	   Valeurs valides : 'hero', un ID d'activité, 'footer-cta' */
+	const urlTarget = new URLSearchParams(window.location.search).get('s')
+	if (urlTarget) {
+		setTimeout(() => goToSection(urlTarget, sectionSounds[urlTarget] ?? null), 800)
+	}
 
 	/* Précharge les images secondaires en arrière-plan */
 	setTimeout(() => { preloadRemainingImages() }, 1200)
