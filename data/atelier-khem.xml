@@ -117,7 +117,7 @@
 		<!-- Bouton CTA secondaire (Contact WhatsApp) -->
 		<ctaTexte2>Contacte-nous</ctaTexte2>
 		<!-- Lien WhatsApp pré-rempli avec message d'introduction -->
-		<ctaLien2>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Accueil%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20...</ctaLien2>
+		<ctaLien2>aHR0cHM6Ly93YS5tZS8yMzc2OTM0NzQyNTM/dGV4dD0lNUJFbiUyMHByb3ZlbmFuY2UlMjBkdSUyMHNpdGUlMjAlMkFBdGVsaWVyJTIwS0hFTSUyQSUyMCUyOEFjY3VlaWwlMjklNUQlMEElMEFCb25qb3VyJTJDJTBBJTBBSiUyN2FpbWVyYWklMjBwbHVzJTIwZGUlMjByZW5zZWlnbmVtZW50cyUyMHN1ciUyMC4uLg==</ctaLien2>
 
 	</accueil>
 
@@ -156,7 +156,7 @@
 			<telephone>237693474253</telephone>
 
 			<!-- Lien WhatsApp du bouton principal (colonne gauche) -->
-			<whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20Rhums%20arrangés%20remK.%0A%0A</whatsapp>
+			<whatsapp>aHR0cHM6Ly93YS5tZS8yMzc2OTM0NzQyNTM/dGV4dD0lNUJFbiUyMHByb3ZlbmFuY2UlMjBkdSUyMHNpdGUlMjAlMkFBdGVsaWVyJTIwS0hFTSUyQSUyMCUyOFJodW1zJTIwYXJyYW5nw6lzJTIwcmVtSyUyOSU1RCUwQSUwQUJvbmpvdXIlMkMlMEElMEFKJTI3YWltZXJhaSUyMHBsdXMlMjBkZSUyMHJlbnNlaWduZW1lbnRzJTIwc3VyJTIwbGVzJTIwUmh1bXMlMjBhcnJhbmfDqXMlMjByZW1LLiUwQSUwQQ==</whatsapp>
 			<whatsappText>Je commande</whatsappText>
 
 			<!-- ID de l'activité SUIVANTE (pour le bouton "Suivant →") -->
@@ -379,7 +379,7 @@
 			<subtitle>Branding, Infographies, Vidéos publicitaires, …</subtitle>
 			<description>Guiah Songs transforme les idées en contenus percutants : chansons personnalisées, créations visuelles, vidéos, identité de marque et communication digitale sur mesure.</description>
 			<telephone>237693474253</telephone>
-			<whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Guiah%20Songs%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20services%20de%20Guiah%20Songs.%0A%0A</whatsapp>
+			<whatsapp>aHR0cHM6Ly93YS5tZS8yMzc2OTM0NzQyNTM/dGV4dD0lNUJFbiUyMHByb3ZlbmFuY2UlMjBkdSUyMHNpdGUlMjAlMkFBdGVsaWVyJTIwS0hFTSUyQSUyMCUyOEd1aWFoJTIwU29uZ3MlMjklNUQlMEElMEFCb25qb3VyJTJDJTBBJTBBSiUyN2FpbWVyYWklMjBwbHVzJTIwZGUlMjByZW5zZWlnbmVtZW50cyUyMHN1ciUyMGxlcyUyMHNlcnZpY2VzJTIwZGUlMjBHdWlhaCUyMFNvbmdzLiUwQSUwQQ==</whatsapp>
 			<whatsappText>Je commande</whatsappText>
 			<next>kokolux</next>
 			<previousText>← Précédente</previousText>
@@ -559,7 +559,7 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 			<subtitle>Le naturel au service de votre bien-être</subtitle>
 			<description>Des huiles naturelles soigneusement sélectionnées pour la cuisine et pour nourrir vos cheveux, hydrater votre peau et révéler votre éclat au quotidien.</description>
 			<telephone>237687097558</telephone>
-			<whatsapp>https://wa.me/237687097558?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28KOKOLUX%20by%20Schouama%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20huiles%20KOKOLUX%0A%0A</whatsapp>
+			<whatsapp>aHR0cHM6Ly93YS5tZS8yMzc2ODcwOTc1NTg/dGV4dD0lNUJFbiUyMHByb3ZlbmFuY2UlMjBkdSUyMHNpdGUlMjAlMkFBdGVsaWVyJTIwS0hFTSUyQSUyMCUyOEtPS09MVVglMjBieSUyMFNjaG91YW1hJTI5JTVEJTBBJTBBQm9uam91ciUyQyUwQSUwQUolMjdhaW1lcmFpJTIwcGx1cyUyMGRlJTIwcmVuc2VpZ25lbWVudHMlMjBzdXIlMjBsZXMlMjBodWlsZXMlMjBLT0tPTFVYJTBBJTBB</whatsapp>
 			<whatsappText>Je commande</whatsappText>
 			<next>lalchimiste</next>
 			<previousText>← Précédente</previousText>
@@ -697,7 +697,7 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 			<subtitle>Bières, vins et liqueurs artisanales</subtitle>
 			<description>Découvrez des boissons artisanales uniques fabriquées à partir d’ingrédients locaux soigneusement sélectionnés : bissap (foléré), ananas, feuilles d’avocatier, feuilles de citronnier et bien d’autres recettes originales.</description>
 			<telephone>237693474253</telephone>
-			<whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28L'Alchimiste%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20L'Alchimiste%0A%0A</whatsapp>
+			<whatsapp>aHR0cHM6Ly93YS5tZS8yMzc2OTM0NzQyNTM/dGV4dD0lNUJFbiUyMHByb3ZlbmFuY2UlMjBkdSUyMHNpdGUlMjAlMkFBdGVsaWVyJTIwS0hFTSUyQSUyMCUyOEwnQWxjaGltaXN0ZSUyOSU1RCUwQSUwQUJvbmpvdXIlMkMlMEElMEFKJTI3YWltZXJhaSUyMHBsdXMlMjBkZSUyMHJlbnNlaWduZW1lbnRzJTIwc3VyJTIwTCdBbGNoaW1pc3RlJTBBJTBB</whatsapp>
 			<whatsappText>Je commande</whatsappText>
 			<next>btcs</next>
 			<previousText>← Précédente</previousText>
@@ -817,7 +817,7 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 			<subtitle>Briques de Terre Compressées Stabilisées</subtitle>
 			<description>Une solution de construction durable, économique et écologique adaptée aux projets modernes et traditionnels.</description>
 			<telephone>237693474253</telephone>
-			<whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28BTCS%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20briques%20de%20terre%20compressées%20stabilisées%0A%0A</whatsapp>
+			<whatsapp>aHR0cHM6Ly93YS5tZS8yMzc2OTM0NzQyNTM/dGV4dD0lNUJFbiUyMHByb3ZlbmFuY2UlMjBkdSUyMHNpdGUlMjAlMkFBdGVsaWVyJTIwS0hFTSUyQSUyMCUyOEJUQ1MlMjklNUQlMEElMEFCb25qb3VyJTJDJTBBJTBBSiUyN2FpbWVyYWklMjBwbHVzJTIwZGUlMjByZW5zZWlnbmVtZW50cyUyMHN1ciUyMGxlcyUyMGJyaXF1ZXMlMjBkZSUyMHRlcnJlJTIwY29tcHJlc3PDqWVzJTIwc3RhYmlsaXPDqWVzJTBBJTBB</whatsapp>
 			<whatsappText>Je commande</whatsappText>
 			<!-- next pointe vers la première activité : boucle circulaire -->
 			<next>rhumsarrangesremk</next>
@@ -916,11 +916,11 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 		<texte>Création, transformation, artisanat et innovation locale.</texte>
 
 		<!-- Bouton WhatsApp principal du footer -->
-		<whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Footer%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20l'Atelier%20KHEM%0A%0A</whatsapp>
+		<whatsapp>aHR0cHM6Ly93YS5tZS8yMzc2OTM0NzQyNTM/dGV4dD0lNUJFbiUyMHByb3ZlbmFuY2UlMjBkdSUyMHNpdGUlMjAlMkFBdGVsaWVyJTIwS0hFTSUyQSUyMCUyOEZvb3RlciUyOSU1RCUwQSUwQUJvbmpvdXIlMkMlMEElMEFKJTI3YWltZXJhaSUyMHBsdXMlMjBkZSUyMHJlbnNlaWduZW1lbnRzJTIwc3VyJTIwbCdBdGVsaWVyJTIwS0hFTSUwQSUwQQ==</whatsapp>
 		<whatsappText>WhatsApp : +237 693 47 42 53</whatsappText>
 
 		<!-- Adresse email affichée et utilisée comme lien mailto: -->
-		<email>atelier.khem@gmail.com</email>
+		<email>YXRlbGllci5raGVtQGdtYWlsLmNvbQ==</email>
 
 	</footer>
 
