@@ -812,10 +812,10 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 		<activite id="btcs">
 
 			<sound>sounds/btcs.mp3</sound>
-			<nom>BTCS</nom>
+			<nom>BTCS by KHEM</nom>
 			<defaultVisual>img/Logo_BTCS.jpg</defaultVisual>
-			<subtitle>En construction…</subtitle>
-			<description>En construction</description>
+			<subtitle>Briques de Terre Compressées Stabilisées</subtitle>
+			<description>Une solution de construction durable, économique et écologique adaptée aux projets modernes et traditionnels.</description>
 			<telephone>237693474253</telephone>
 			<whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28BTCS%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20briques%20de%20terre%20compressées%20stabilisées%0A%0A</whatsapp>
 			<whatsappText>Je commande</whatsappText>
@@ -824,11 +824,76 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 			<previousText>← Précédente</previousText>
 			<nextText>Suivante →</nextText>
 
-			<zone id="decouvrenous">
-				<nom>En construction…</nom>
+			<zone id="decouvrebtcs">
+				<nom>BTCS, c’est quoi ?</nom>
 				<item>
-					<titre>En construction…</titre>
-					<texte>En construction…</texte>
+					<titre>BTCS, c’est quoi ?</titre>
+					<texte>Les BTCS (Briques de Terre Compressées Stabilisées) sont des briques fabriquées à partir de terre compressée et stabilisée afin d’offrir une excellente résistance et une construction plus respectueuse de l’environnement.</texte>
+					<image>img/en_chantier.jpg</image>
+				</item>
+				<item>
+					<titre>BTCS, c’est quoi ?</titre>
+					<texte>Appréciées pour leur solidité, leur confort thermique et leur aspect naturel, les BTCS représentent une alternative durable aux matériaux de construction classiques.</texte>
+					<image>img/en_chantier.jpg</image>
+				</item>
+			</zone>
+			<zone id="fabricationbtcs">
+				<nom>Fabrication de BTCS</nom>
+				<item>
+					<titre>Fabrication de BTCS</titre>
+					<texte>Des briques fabriquées avec soin&lt;br&gt;&lt;b&gt;BTCS by KHEM&lt;/b&gt; propose la fabrication de briques de terre compressées stabilisées adaptées aux besoins des particuliers, professionnels et chantiers de construction.</texte>
+					<image>img/en_chantier.jpg</image>
+				</item>
+				<item>
+					<titre>Fabrication de BTCS</titre>
+					<texte>Nos briques sont conçues pour offrir résistance, durabilité et esthétique naturelle tout en valorisant les ressources locales.</texte>
+					<image>img/en_chantier.jpg</image>
+				</item>
+			</zone>
+			<zone id="locationbtcs">
+				<nom>Location de machines</nom>
+				<item>
+					<titre>Location de machines</titre>
+					<texte>Nous proposons la location de machines de fabrication de BTCS pour vos projets de construction, vos productions locales ou vos chantiers.</texte>
+					<image>img/en_chantier.jpg</image>
+				</item>
+				<item>
+					<titre>Location de machines</titre>
+					<texte>Une solution pratique et à moindre coût pour produire vos briques directement sur site.</texte>
+					<image>img/en_chantier.jpg</image>
+				</item>
+			</zone>
+			<zone id="formationbtcs">
+				<nom>Formations</nom>
+				<item>
+					<titre>Formations</titre>
+					<texte>Apprenez la fabrication et la maçonnerie en BTCS&lt;br&gt;&lt;b&gt;BTCS by KHEM&lt;/b&gt; propose des formations dédiées à la fabrication de briques BTCS ainsi qu’aux techniques de maçonnerie adaptées à ce type de construction.</texte>
+					<image>img/en_chantier.jpg</image>
+				</item>
+				<item>
+					<titre>Formations</titre>
+					<texte>Les formations permettent d’acquérir les bases techniques nécessaires pour produire et utiliser les BTCS efficacement sur différents types de projets.</texte>
+					<image>img/en_chantier.jpg</image>
+				</item>
+				<item>
+					<titre>Formations</titre>
+					<texte>Formations disponibles :&lt;br&gt;• Fabrication de BTCS&lt;br&gt;• Maçonnerie en BTCS</texte>
+					<image>img/en_chantier.jpg</image>
+				</item>
+			</zone>
+			<zone id="pourquoibtcs">
+				<nom>Pourquoi nous choisir ?</nom>
+				<item>
+					<titre>Pourquoi nous choisir ?</titre>
+					<texte>&lt;b&gt;BTCS by KHEM&lt;/b&gt; propose des solutions de construction écologiques, économiques et durables avec des briques résistantes, une fabrication locale, des machines adaptées et des formations pratiques pour accompagner vos projets.</texte>
+					<image>img/en_chantier.jpg</image>
+				</item>
+			</zone>
+			<zone id="tarifsbtcs">
+				<nom>Tarifs</nom>
+				<item>
+					<titre>Tarifs</titre>
+					<texte>&lt;b&gt;Besoin d’un devis ?&lt;/b&gt;&lt;br&gt;Les tarifs varient selon les besoins, les quantités, les machines et les prestations demandées. Contactez-nous pour obtenir plus d’informations ou un devis personnalisé.</texte>
 					<image>img/en_chantier.jpg</image>
 				</item>
 			</zone>
