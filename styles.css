@@ -518,21 +518,21 @@ body > *:not(.alchemic-bg):not(.noise) {
 @media (max-width: 640px) {
 
     /* Corps de texte */
-    .text-sm   { font-size: 1.05rem !important; }   /* 0.875 × 1.5 */
-    .text-lg   { font-size: 1.35rem !important; }   /* 1.125 × 1.2  */
-    .text-xl   { font-size: 1.5rem  !important; }   /* 1.25  × 1.2  */
+    .text-sm   { font-size: 0.58rem !important; }   /* 0.875 × 1.5 */
+    .text-lg   { font-size: 0.75rem !important; }   /* 1.125 × 1.2  */
+    .text-xl   { font-size: 0.83rem  !important; }   /* 1.25  × 1.2  */
 
     /* Titres intermédiaires */
-    .text-3xl  { font-size: 2.4rem  !important; }   /* 1.875 × 1.28 */
-    .text-4xl  { font-size: 3rem    !important; }   /* 2.25  × 1.33 */
-    .text-5xl  { font-size: 4rem    !important; }   /* 3     × 1.33 */
+    .text-3xl  { font-size: 1.25rem  !important; }   /* 1.875 × 1.28 */
+    .text-4xl  { font-size: 1.5rem    !important; }   /* 2.25  × 1.33 */
+    .text-5xl  { font-size: 2rem    !important; }   /* 3     × 1.33 */
 
     /* Grands titres (modéré pour ne pas déborder) */
-    .text-6xl  { font-size: 4.5rem  !important; }   /* 3.75  × 1.2  */
-    .text-8xl  { font-size: 5.5rem  !important; }   /* 6     → réduit pour tenir */
+    .text-6xl  { font-size: 2.5rem  !important; }   /* 3.75  × 1.2  */
+    .text-8xl  { font-size: 3.66rem  !important; }   /* 6     → réduit pour tenir */
 
     /* Badge héro (taille fixe dans le HTML) */
-    #hero-badge { font-size: 1.1rem !important; }
+    #hero-badge { font-size: 0.73rem !important; }
 
     /* Boutons et liens sans classe text- explicite */
     button, a {
