@@ -12,9 +12,6 @@
    - ScrollToPlugin (ScrollToPlugin.min.js)
    ================================================ */
 
-/* Bloque le clic droit */
-document.addEventListener('contextmenu', e => e.preventDefault())
-
 /* ── Enregistrement des plugins GSAP ──
    À faire une seule fois, avant tout usage.
    ScrollTrigger : déclenche les animations au scroll.
@@ -309,14 +306,21 @@ fetch('data/atelier-khem.xml')
 		return doc
 	})
 	.then(xml => {
-
-
+		
 	/* ──────────────────────────────────────────
 	   CONFIGURATION GLOBALE (nœud <config> du XML)
 	   ────────────────────────────────────────── */
 
 	const config = xml.querySelector('config')
+	
+	/* Bloque le clic droit */
+	const debug = config?.querySelector('debug')?.textContent.trim();
 
+	if (debug === '0') {
+		document.addEventListener('contextmenu', (e) => {
+			e.preventDefault();
+		});
+	}
 
 	/* ── Couleurs du thème ──
 	   Injectées en variables CSS afin que toute la page
@@ -345,7 +349,7 @@ fetch('data/atelier-khem.xml')
 	   <audio>1</audio> dans le XML = activé.
 	   Si désactivé : masque le bouton et coupe tout son. */
 	AUDIO_ENABLED = config?.querySelector('audio')?.textContent.trim() === '1'
-
+	
 	if (!AUDIO_ENABLED)
 	{
 		audioToggle?.classList.add('hidden')
@@ -716,7 +720,7 @@ fetch('data/atelier-khem.xml')
 			<img src="${defaultVisual}" alt="${nom}" style="max-height:100%;object-fit:contain;border-radius:3rem;" />
 		</div> -->
 		<div id="${actId}-content" style="flex:1;min-height:0;display:flex;align-items:flex-start;justify-content:center;overflow:hidden;">
-			<img src="${defaultVisual}" alt="${nom}" style=" width:100%;max-width:100%;height:auto;object-fit:contain;border-radius:3rem;" />
+			<img src="${defaultVisual}" alt="${nom}" style="width:100%;max-width:100%;height:auto;max-height:60vh;object-fit:contain;border-radius:3rem;" />
 		</div>
 
 		<!-- Barre de navigation des items (cachée par défaut, affichée au 1er clic) -->
@@ -1004,7 +1008,7 @@ function changeContent(section, type, direction = 0)
 	{
 		state[section][type] += direction
 
-		if (state[section][type] < 0)            state[section][type] = items.length - 1
+		if (state[section][type] < 0) state[section][type] = items.length - 1
 		if (state[section][type] >= items.length) state[section][type] = 0
 	}
 
