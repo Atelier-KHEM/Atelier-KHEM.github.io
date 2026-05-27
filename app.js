@@ -12,7 +12,7 @@
    - ScrollToPlugin (ScrollToPlugin.min.js)
    ================================================ */
 
-alert('Version 1.0.0.0.0.0.1');
+alert('Version 1.0.0.0.0.0.2');
 
 /* ── Enregistrement des plugins GSAP ──
    À faire une seule fois, avant tout usage.
@@ -665,8 +665,8 @@ fetch('data/atelier-khem.xml')
 			const zid   = zone.getAttribute('id')
 			const zname = zone.querySelector('nom')?.textContent ?? ''
 
-			// MODIF_RESPONSIVE buttons += `<button onclick="changeContent('${actId}','${zid}')" class="glass rounded-2xl p-5 card-hover text-left">${zname}</button>`
-			buttons += `<button onclick="changeContent('${actId}','${zid}')" class="glass rounded-2xl p-3 sm:p-5 text-sm sm:text-base card-hover text-left">${zname}</button>`
+			// MODIF_RESPONSIVE buttons += `<button onclick="changeContent('${actId}','${zid}')" class="glass rounded-2xl p-5 card-hover text-left">${zname}</button>
+			buttons += `<button onclick="changeContent('${actId}','${zid}')" class="glass rounded-2xl p-3 sm:p-5 text-sm sm:text-base card-hover text-left w-full">${zname}</button>`
 
 			/* Stocke les items de la zone */
 			dataStore[actId][zid] = []
@@ -705,8 +705,9 @@ fetch('data/atelier-khem.xml')
 		<!-- Description de l'activité -->
 		<p class="text-[#B7B0A7] text-lg leading-relaxed">${description}</p>
 
-		<!-- Grille de boutons : un bouton par zone -->
-		<div class="grid sm:grid-cols-2 gap-4">${buttons}</div>
+		<!-- MODIF_RESPONSIVE Grille de boutons : un bouton par zone
+		<div class="grid sm:grid-cols-2 gap-4">${buttons}</div> -->
+		<div class="grid grid-cols-2 gap-4">${buttons}</div>
 
 		<!-- Navigation entre activités : Précédent | WhatsApp | Suivant -->
 		<div class="flex flex-wrap gap-4 pt-4">
