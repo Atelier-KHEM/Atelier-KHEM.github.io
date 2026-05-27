@@ -12,7 +12,7 @@
    - ScrollToPlugin (ScrollToPlugin.min.js)
    ================================================ */
 
-console.log('Version 1.0.0.0.0.0.0');
+alert('Version 1.0.0.0.0.0.1');
 
 /* ── Enregistrement des plugins GSAP ──
    À faire une seule fois, avant tout usage.
