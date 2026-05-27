@@ -532,7 +532,7 @@ body > *:not(.alchemic-bg):not(.noise) {
     .text-8xl  { font-size: 3.66rem  !important; }   /* 6     → réduit pour tenir */
 
     /* Badge héro (taille fixe dans le HTML) */
-    #hero-badge { font-size: 0.73rem !important; }
+    #hero-subtitle { font-size: clamp(2rem, 5vw, 3rem) !important; }
 
     /* MODIF_RESPONSIVE Boutons et liens sans classe text- explicite
    button, a {

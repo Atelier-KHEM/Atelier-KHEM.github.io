@@ -12,7 +12,7 @@
    - ScrollToPlugin (ScrollToPlugin.min.js)
    ================================================ */
 
-alert('Version 1.0.0.0.0.0.3');
+alert('Version 2.0.0.0.0.0.0');
 
 /* ── Enregistrement des plugins GSAP ──
    À faire une seule fois, avant tout usage.
@@ -553,7 +553,7 @@ fetch('data/atelier-khem.xml')
 
 	/* Injection du contenu dans les éléments HTML du héro.
 	   ctaLien2 est encodé en Base64 dans le XML (lien WhatsApp). */
-	document.getElementById('hero-badge').innerHTML       = accueil.querySelector('badge')?.textContent     ?? ''
+	document.getElementById('hero-subtitle').innerHTML    = accueil.querySelector('subtitle')?.textContent     ?? ''
 	document.getElementById('hero-title').innerHTML       = accueil.querySelector('titre')?.textContent     ?? ''
 	document.getElementById('hero-description').innerHTML = accueil.querySelector('intro')?.textContent     ?? ''
 	document.getElementById('hero-button').innerHTML      = accueil.querySelector('ctaTexte')?.textContent  ?? ''
@@ -666,7 +666,7 @@ fetch('data/atelier-khem.xml')
 			const zname = zone.querySelector('nom')?.textContent ?? ''
 
 			// MODIF_RESPONSIVE buttons += `<button onclick="changeContent('${actId}','${zid}')" class="glass rounded-2xl p-5 card-hover text-left">${zname}</button>
-			buttons += `<button onclick="changeContent('${actId}','${zid}')" class="glass rounded-2xl px-3 py-2 sm:p-5 text-xs sm:text-base card-hover text-left w-full">${zname}</button>`
+			buttons += `<button onclick="changeContent('${actId}','${zid}')" class="glass rounded-2xl px-3 py-2 sm:p-5 text-[11px] sm:text-base card-hover text-left w-full">${zname}</button>`
 
 			/* Stocke les items de la zone */
 			dataStore[actId][zid] = []
@@ -689,7 +689,7 @@ fetch('data/atelier-khem.xml')
 		   nécessaires car Tailwind ne supporte pas toutes les
 		   valeurs utilisées (ex: height:650px, flex-direction).
 		MODIF_RESPONSIVE const html = `<section id="${actId}" class="grid lg:grid-cols-2 gap-16 items-start section-fade border-b border-white/10 pb-24"> */
-		const html = `<section id="${actId}" class="grid lg:grid-cols-2 gap-6 lg:gap-16 items-start section-fade border-b border-white/10 pb-24">
+		const html = `<section id="${actId}" class="grid lg:grid-cols-2 gap-4 lg:gap-16 items-start section-fade border-b border-white/10 pb-4 sm:pb-24">
 
 	<!-- ═══ COLONNE GAUCHE ═══ -->
 	<div class="space-y-4 sm:space-y-8"">
@@ -699,7 +699,7 @@ fetch('data/atelier-khem.xml')
 
 		<!-- En-tête : sous-titre coloré + nom de l'activité -->
 		<div class="w-full">
-			<div class="text-sm tracking-[0.35em] uppercase text-[#1FAF8C]">${subtitle}</div>
+			<div id="${actId}-subtitle" class="text-[9px] sm:text-sm tracking-[0.2em] sm:tracking-[0.35em] uppercase text-[#1FAF8C]"><br>${subtitle}</div>
 			<h2 class="titre text-5xl font-light mt-2">${nom}</h2>
 		</div>
 
@@ -765,7 +765,7 @@ fetch('data/atelier-khem.xml')
 	const footerEmail    = decodeXML(footer.querySelector('email')?.textContent)
 
 	document.getElementById('footer-cta').innerHTML = `
-<div class="max-w-5xl mx-auto text-center space-y-10 relative">
+<div id="footer-cta-subtitle" class="max-w-5xl mx-auto text-center space-y-3 sm:space-y-10 relative">
 
 	<!-- Ancre invisible pour le scroll ciblé -->
 	<div id="footer-cta-anchor" class="scroll-offset"></div>
@@ -778,7 +778,7 @@ fetch('data/atelier-khem.xml')
 	<p class="text-xl text-[#B7B0A7] leading-relaxed max-w-3xl mx-auto">${footer.querySelector('texte')?.textContent ?? ''}</p>
 
 	<!-- Boutons : Retour | WhatsApp | Email -->
-	<div class="flex flex-wrap justify-center gap-5 pt-6">
+	<div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-5 pt-6">
 		<!-- MODIF_RESPONSIVE button onclick="goToSection('${actIds[actIds.length - 1]}')" class="px-8 py-5 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">← Retour</button -->
 		<button onclick="goToSection('${actIds[actIds.length - 1]}')" class="px-3 py-1.5 text-xs sm:px-8 sm:py-5 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">← Retour</button>
 		<!-- MODIF_RESPONSIVE a href="${footerWhatsapp}" target="_blank" class="px-8 py-5 rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300">${footer.querySelector('whatsappText')?.textContent ?? ''}</a -->
@@ -788,8 +788,7 @@ fetch('data/atelier-khem.xml')
 	</div>
 
 </div>
-<!-- Espace pour que le ScrollTrigger audio du footer puisse se déclencher -->
-<div style="padding-bottom:500px;"></div>`
+`
 
 
 	/* ── ScrollTrigger audio du footer ──
@@ -890,7 +889,11 @@ function goToSection(sectionId, soundSrc = null)
 	if (document.activeElement) document.activeElement.blur()
 
 	/* Cible l'ancre invisible en haut de la section */
-	const target = document.getElementById(`${sectionId}-anchor`)
+	const target =
+		window.innerWidth < 1024 && sectionId !== 'hero'
+			? document.getElementById(`${sectionId}-subtitle`)
+			: document.getElementById(`${sectionId}-anchor`)
+
 	if (!target) return
 
 	if (soundSrc) playSectionSound(soundSrc)
@@ -1049,8 +1052,8 @@ function changeContent(section, type, direction = 0)
 		<!-- MODIF_RESPONSIVE div id="${section}-image" class="dynamic-image rounded-[3rem] h-[320px] mb-8" style="background-image:url('${current.image}')"></div -->
 		<div id="${section}-image" class="dynamic-image rounded-[3rem] h-[180px] sm:h-[220px] md:h-[320px] mb-1 sm:mb-8" style="background-image:url('${current.image}')"></div>
 		<!-- MODIF_RESPONSIVE div class="space-y-4" style="padding:0 2rem;" -->
-		<div class="space-y-2 sm:space-y-4" style="padding:0 2rem;">
-			<h3 id="${section}-title" class="text-4xl font-light">${current.title}</h3>
+		<div class="space-y-2 sm:space-y-4 px-4 sm:px-8">
+			<h3 id="${section}-title" class="text-3xl sm:text-4xl font-light">${current.title}</h3>
 			<div id="${section}-description" class="text-[#B7B0A7] text-lg leading-relaxed">${current.description}</div>
 		</div>
 	</div>`
@@ -1060,6 +1063,7 @@ function changeContent(section, type, direction = 0)
 		{ opacity: 0, scale: 0.95 },
 		{ opacity: 1, scale: 1, duration: 1 }
 	)
+
 }
 
 

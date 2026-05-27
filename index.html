@@ -133,44 +133,40 @@
 		     Tous les textes sont injectés par app.js depuis
 		     le nœud <accueil> du XML.
 		     ===================================================== -->
-		<section id="hero" class="min-h-screen flex items-center px-6 py-24 pb-24">
-		<!-- section id="hero" class="min-h-screen flex items-center px-6 py-24 border-b border-white/10  pb-24" -->
-
-			<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center w-full border-b border-white/10 pb-24">
-			<!-- div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center w-full" -->
+		<section id="hero" class="flex items-center px-6 py-10 sm:min-h-screen sm:py-24 pb-8 sm:pb-24">
+			<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-16 items-center w-full border-b border-white/10 pb-10 sm:pb-24">
 
 				<!-- ── COLONNE GAUCHE : texte ── -->
-				<div class="space-y-8 section-fade relative text-left">
+				<div class="space-y-2 sm:space-y-8 section-fade relative text-left">
 
 					<!-- Ancre de scroll ciblée par goToSection('hero') dans app.js -->
 					<div id="hero-anchor" class="scroll-offset"></div>
 
 					<!-- Badge : petite pastille au-dessus du titre (ex : "Atelier KHEM") -->
 					<div
-						id="hero-badge"
-						class="inline-block border rounded-full px-12 py-6 text-3xl tracking-[0.6em] uppercase font-extralight"
+						id="hero-subtitle"
+						class="flex items-center justify-center text-center border rounded-full py-6 text-5xl uppercase font-extralight w-full max-w-[700px] mt-0 mb-8 sm:mb-12"
 						style="
-							border-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
-							color: var(--color-primary);
-							box-shadow: 0 0 40px rgba(198,131,70,.15);
-						">
-					</div>
+							letter-spacing:0.08em;
+							padding-left:3rem;
+							padding-right:2.4rem;
+							border-color:color-mix(in srgb, var(--color-primary) 30%, transparent);
+							color:var(--color-primary);
+							box-shadow:
+								0 0 40px rgba(198,131,70,.15),
+								0 0 80px rgba(198,131,70,.08),
+								inset 0 0 25px rgba(198,131,70,.05);
+						"
+					></div>
 
 					<!-- Titre principal (balise <titre> du XML, peut contenir du HTML) -->
-					<h1
-						id="hero-title"
-						class="titre text-6xl md:text-8xl font-light leading-none tracking-tight">
-					</h1>
+					<h1 id="hero-title" class="titre text-5xl sm:text-6xl md:text-8xl font-light leading-none tracking-tight"></h1>
 
 					<!-- Description courte (balise <intro> du XML) -->
-					<p
-						id="hero-description"
-						class="text-xl leading-relaxed max-w-2xl"
-						style="color: var(--color-text-soft);">
-					</p>
+					<p id="hero-description" class="text-base sm:text-xl leading-relaxed max-w-2xl"></p>
 
 					<!-- Boutons CTA (texte et liens viennent du XML) -->
-					<div class="flex flex-wrap gap-4 pt-4">
+					<div class="flex flex-wrap gap-2 sm:gap-4 pt-1 sm:pt-4">
 
 						<!-- MODIF_RESPONSIVE Bouton 1 : "Découvre nos activités" — scroll vers la 1ère activité 
 						<a
@@ -208,8 +204,7 @@
 
 				<!-- ── COLONNE DROITE : logo dans un cadre glassmorphism ── -->
 				<div class="section-fade">
-					<div class="glass rounded-[3rem] aspect-square flex items-center justify-center relative overflow-hidden">
-
+					<div class="glass rounded-[2rem] sm:rounded-[3rem] aspect-square flex items-center justify-center relative overflow-hidden">
 						<!-- Halo lumineux couleur primaire (doré) -->
 						<div
 							class="absolute w-96 h-96 rounded-full blur-3xl"
@@ -246,8 +241,8 @@
 		     avec sa colonne texte et son panneau vitrine.
 		     ===================================================== -->
 
-		<section id="activites" class="py-24 px-6">
-			<div id="activities-container" class="max-w-7xl mx-auto space-y-32"></div>
+		<section id="activites" class="pt-0 pb-8 sm:pb-16 px-6">
+			<div id="activities-container" class="max-w-7xl mx-auto space-y-8 sm:space-y-32"></div>
 		</section>
 
 
@@ -256,9 +251,7 @@
 		     Rempli entièrement par app.js depuis <footer> du XML.
 		     ===================================================== -->
 
-		<footer
-			id="footer-cta"
-			class="py-32 px-6 section-fade scroll-mt-24">
+		<footer id="footer-cta" class="py-0 sm:py-32 px-6 section-fade scroll-mt-0 sm:scroll-mt-24">
 		</footer>
 
 

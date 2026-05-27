@@ -100,7 +100,7 @@
 		<sound>sounds/accueil.mp3</sound>
 
 		<!-- Petit label au-dessus du titre (style pastille dorée) -->
-		<badge>Atelier KHEM</badge>
+		<subtitle>Atelier KHEM</subtitle>
 
 		<!-- Titre principal. &lt;br&gt; = saut de ligne en HTML encodé pour le XML -->
 		<titre><![CDATA[
@@ -623,7 +623,7 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				</item>
 			</zone>
 			<zone id="kokoluxpourquoi">
-				<nom>Pourquoi choisir KOKOLUX ?</nom>
+				<nom>Pourquoi nous choisir ?</nom>
 				<item>
 					<titre>Pourquoi choisir KOKOLUX ?</titre>
 					<texte>&lt;b&gt;100% Naturel&lt;/b&gt;&lt;br&gt;Des huiles sélectionnées avec soin, sans compromis sur la qualité.</texte>
@@ -799,7 +799,7 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 				</item>
 			</zone>
 			<zone id="pourquoialchimiste">
-				<nom>Pourquoi choisir L’Alchimiste ?</nom>
+				<nom>Pourquoi nous choisir ?</nom>
 				<item>
 					<titre>Pourquoi choisir L’Alchimiste ?</titre>
 					<texte>&lt;b&gt;L’Alchimiste&lt;/b&gt;, c’est une fabrication artisanale à partir d’ingrédients locaux, des recettes originales aux saveurs authentiques, une production sur commande et la possibilité de se former à la fabrication artisanale.</texte>
