@@ -317,9 +317,13 @@ fetch('data/atelier-khem.xml')
 	const debug = config?.querySelector('debug')?.textContent.trim();
 
 	if (debug === '0') {
+		console.log('Mode debug désactivé : clic droit bloqué.');
+
 		document.addEventListener('contextmenu', (e) => {
 			e.preventDefault();
 		});
+	} else {
+		console.log('Mode debug activé : clic droit autorisé.');
 	}
 
 	/* ── Couleurs du thème ──
