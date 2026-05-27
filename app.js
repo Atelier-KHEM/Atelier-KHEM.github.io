@@ -12,6 +12,8 @@
    - ScrollToPlugin (ScrollToPlugin.min.js)
    ================================================ */
 
+console.log('Version 1.0.0.0.0.0.0');
+
 /* ── Enregistrement des plugins GSAP ──
    À faire une seule fois, avant tout usage.
    ScrollTrigger : déclenche les animations au scroll.
@@ -719,12 +721,9 @@ fetch('data/atelier-khem.xml')
 	<div style="background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);border-radius:3rem;height:650px;display:flex;flex-direction:column;justify-content:space-between;">
 
 		<!-- MODIF_RESPONSIVE Zone d'affichage : image par défaut au chargement,
-		     contenu dynamique après clic sur une zone
+		     contenu dynamique après clic sur une zone -->
 		<div id="${actId}-content" style="flex:1;min-height:0;display:flex;align-items:flex-start;justify-content:center;overflow:hidden;">
 			<img src="${defaultVisual}" alt="${nom}" style="max-height:100%;object-fit:contain;border-radius:3rem;" />
-		</div> -->
-		<div id="${actId}-content" style="flex:1;min-height:0;display:flex;align-items:flex-start;justify-content:center;overflow:hidden;">
-			<img src="${defaultVisual}" alt="${nom}" style="width:100%;max-width:100%;height:auto;max-height:60vh;object-fit:contain;border-radius:3rem;" />
 		</div>
 
 		<!-- Barre de navigation des items (cachée par défaut, affichée au 1er clic) -->
@@ -1031,7 +1030,8 @@ function changeContent(section, type, direction = 0)
 	   pour composer le message WhatsApp. */
 	document.getElementById(`${section}-content`).innerHTML = `
 	<div class="w-full">
-		<div id="${section}-image" class="dynamic-image rounded-[3rem] h-[320px] mb-8" style="background-image:url('${current.image}')"></div>
+		<!-- MODIF_RESPONSIVE div id="${section}-image" class="dynamic-image rounded-[3rem] h-[320px] mb-8" style="background-image:url('${current.image}')"></div -->
+		<div id="${section}-image" class="dynamic-image rounded-[3rem] h-[180px] sm:h-[220px] md:h-[320px] mb-8" style="background-image:url('${current.image}')"></div>
 		<div class="space-y-4" style="padding:0 2rem;">
 			<h3 id="${section}-title" class="text-4xl font-light">${current.title}</h3>
 			<div id="${section}-description" class="text-[#B7B0A7] text-lg leading-relaxed">${current.description}</div>
