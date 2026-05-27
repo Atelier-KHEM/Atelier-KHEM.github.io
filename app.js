@@ -12,7 +12,7 @@
    - ScrollToPlugin (ScrollToPlugin.min.js)
    ================================================ */
 
-alert('Version 1.0.0.0.0.0.2');
+alert('Version 1.0.0.0.0.0.3');
 
 /* ── Enregistrement des plugins GSAP ──
    À faire une seule fois, avant tout usage.
@@ -640,8 +640,8 @@ fetch('data/atelier-khem.xml')
 			: `<button onclick="goToSection('${prevId}', '${prevSound}')" class="inline-block px-8 py-4 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${previousText}</button>`
 		*/
 		const prevButton = actIndex === 0
-			? `<button onclick="goToSection('hero', '${accueilSound}')" class="inline-block px-4 py-2 text-sm sm:px-8 sm:py-4 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${previousText}</button>`
-			: `<button onclick="goToSection('${prevId}', '${prevSound}')" class="inline-block px-4 py-2 text-sm sm:px-8 sm:py-4 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${previousText}</button>`
+			? `<button onclick="goToSection('hero', '${accueilSound}')" class="inline-block px-3 py-1.5 text-xs sm:px-8 sm:py-4 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${previousText}</button>`
+			: `<button onclick="goToSection('${prevId}', '${prevSound}')" class="inline-block px-3 py-1.5 text-xs sm:px-8 sm:py-4 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${previousText}</button>`
 		/* MODIF_RESPONSIVE ── Bouton "Suivant →" ──
 		   La dernière activité pointe vers le footer.
 		   Les autres pointent vers l'activité suivante. 
@@ -650,8 +650,8 @@ fetch('data/atelier-khem.xml')
 			: `<button onclick="goToSection('${next}', '${nextSound}')" class="inline-block px-8 py-4 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${nextText}</button>`
 		*/
 		const nextButton = actIndex === actIds.length - 1
-			? `<button onclick="goToSection('footer-cta', '${footerSound}')" class="inline-block px-4 py-2 text-sm sm:px-8 sm:py-4 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${nextText}</button>`
-			: `<button onclick="goToSection('${next}', '${nextSound}')" class="inline-block px-4 py-2 text-sm sm:px-8 sm:py-4 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${nextText}</button>`
+			? `<button onclick="goToSection('footer-cta', '${footerSound}')" class="inline-block px-3 py-1.5 text-xs sm:px-8 sm:py-4 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${nextText}</button>`
+			: `<button onclick="goToSection('${next}', '${nextSound}')" class="inline-block px-3 py-1.5 text-xs sm:px-8 sm:py-4 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${nextText}</button>`
 		
 		/* ── Génération des boutons de zones ──
 		   Chaque zone (<zone id="..."><nom>...</nom>) génère
@@ -666,7 +666,7 @@ fetch('data/atelier-khem.xml')
 			const zname = zone.querySelector('nom')?.textContent ?? ''
 
 			// MODIF_RESPONSIVE buttons += `<button onclick="changeContent('${actId}','${zid}')" class="glass rounded-2xl p-5 card-hover text-left">${zname}</button>
-			buttons += `<button onclick="changeContent('${actId}','${zid}')" class="glass rounded-2xl p-3 sm:p-5 text-sm sm:text-base card-hover text-left w-full">${zname}</button>`
+			buttons += `<button onclick="changeContent('${actId}','${zid}')" class="glass rounded-2xl px-3 py-2 sm:p-5 text-xs sm:text-base card-hover text-left w-full">${zname}</button>`
 
 			/* Stocke les items de la zone */
 			dataStore[actId][zid] = []
@@ -687,11 +687,12 @@ fetch('data/atelier-khem.xml')
 
 		   Note : les styles inline dans la colonne droite sont
 		   nécessaires car Tailwind ne supporte pas toutes les
-		   valeurs utilisées (ex: height:650px, flex-direction). */
-		const html = `<section id="${actId}" class="grid lg:grid-cols-2 gap-16 items-start section-fade border-b border-white/10 pb-24">
+		   valeurs utilisées (ex: height:650px, flex-direction).
+		MODIF_RESPONSIVE const html = `<section id="${actId}" class="grid lg:grid-cols-2 gap-16 items-start section-fade border-b border-white/10 pb-24"> */
+		const html = `<section id="${actId}" class="grid lg:grid-cols-2 gap-6 lg:gap-16 items-start section-fade border-b border-white/10 pb-24">
 
 	<!-- ═══ COLONNE GAUCHE ═══ -->
-	<div class="space-y-8">
+	<div class="space-y-4 sm:space-y-8"">
 
 		<!-- Ancre invisible : cible du scroll animé via goToSection() -->
 		<div id="${actId}-anchor" class="scroll-offset"></div>
@@ -709,17 +710,19 @@ fetch('data/atelier-khem.xml')
 		<div class="grid sm:grid-cols-2 gap-4">${buttons}</div> -->
 		<div class="grid grid-cols-2 gap-4">${buttons}</div>
 
-		<!-- Navigation entre activités : Précédent | WhatsApp | Suivant -->
-		<div class="flex flex-wrap gap-4 pt-4">
+		<!-- MODIF_RESPONSIVE Navigation entre activités : Précédent | WhatsApp | Suivant
+		<div class="flex flex-wrap gap-4 pt-4"> -->
+		<div class="flex flex-wrap gap-2 sm:gap-4 pt-1 sm:pt-4">
 			${prevButton}
 			<!-- MODIF_RESPONSIVE a href="${whatsapp}" target="_blank" class="inline-block px-8 py-4 rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300">${whatsappText}</a -->
-			<a href="${whatsapp}" target="_blank" class="inline-block px-4 py-2 text-sm sm:px-8 sm:py-4 sm:text-base rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300">${whatsappText}</a>
+			<a href="${whatsapp}" target="_blank" class="inline-block px-3 py-1.5 text-xs sm:px-8 sm:py-4 sm:text-base rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300">${whatsappText}</a>
 			${nextButton}
 		</div>
 	</div>
 
-	<!-- ═══ COLONNE DROITE : PANNEAU VITRINE ═══ -->
-	<div style="background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);border-radius:3rem;height:650px;display:flex;flex-direction:column;justify-content:space-between;">
+	<!-- MODIF_RESPONSIVE ═══ COLONNE DROITE : PANNEAU VITRINE ═══ 
+	<div style="background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);border-radius:3rem;height:650px;display:flex;flex-direction:column;justify-content:space-between;"> -->
+	<div style="aspect-ratio:0.93655/1;background:rgba(255,255,255,.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);border-radius:3rem;height:auto;min-height:350px;display:flex;flex-direction:column;justify-content:space-between;">
 
 		<!-- MODIF_RESPONSIVE Zone d'affichage : image par défaut au chargement,
 		     contenu dynamique après clic sur une zone -->
@@ -727,15 +730,17 @@ fetch('data/atelier-khem.xml')
 			<img src="${defaultVisual}" alt="${nom}" style="max-height:100%;object-fit:contain;border-radius:3rem;" />
 		</div>
 
-		<!-- Barre de navigation des items (cachée par défaut, affichée au 1er clic) -->
-		<div id="${actId}-nav" class="hidden flex-wrap gap-4 justify-between pt-8" style="padding:2rem;">
+		<!-- MODIF_RESPONSIVE Barre de navigation des items (cachée par défaut, affichée au 1er clic)
+		<div id="${actId}-nav" class="hidden flex-wrap gap-4 justify-between pt-8" style="padding:2rem;"> -->
+		<div id="${actId}-nav" class="hidden flex gap-2 sm:gap-4 justify-between items-center pt-2 sm:pt-8" style="padding:0.75rem 1rem;">
 			<!-- MODIF_RESPONSIVE button id="${actId}-prev" onclick="changeContent('${actId}', currentType['${actId}'], -1)" class="inline-block px-8 py-4 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">← Précédent</button -->
-			<button id="${actId}-prev" onclick="changeContent('${actId}', currentType['${actId}'], -1)" class="inline-block px-4 py-2 text-sm sm:px-8 sm:py-4 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">← Précédent</button>
+			
+			<button id="${actId}-prev" onclick="changeContent('${actId}', currentType['${actId}'], -1)" class="inline-block px-2 py-1 text-[11px] sm:px-8 sm:py-4 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">← Précédent</button>
 			<!-- Le titre de l'item est lu via innerText pour composer le message WhatsApp -->
 			<!-- MODIF_RESPONSIVE button onclick="window.open('https://wa.me/${telephone}?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrang%C3%A9s%20remK%29%5D%0A%0ABonjour%2C%0A%0AJe%20souhaite%20commander%20un%20Rhum%20arrang%C3%A9%20remK%20' + encodeURIComponent(document.getElementById('${actId}-title').innerText) + '%0A%0A');" class="inline-block px-8 py-4 rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300">Je commande</button -->
-			<button onclick="window.open('https://wa.me/${telephone}?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrang%C3%A9s%20remK%29%5D%0A%0ABonjour%2C%0A%0AJe%20souhaite%20commander%20un%20Rhum%20arrang%C3%A9%20remK%20' + encodeURIComponent(document.getElementById('${actId}-title').innerText) + '%0A%0A');" class="inline-block px-4 py-2 text-sm sm:px-8 sm:py-4 sm:text-base rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300">Je commande</button>
+			<button onclick="window.open('https://wa.me/${telephone}?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrang%C3%A9s%20remK%29%5D%0A%0ABonjour%2C%0A%0AJe%20souhaite%20commander%20un%20Rhum%20arrang%C3%A9%20remK%20' + encodeURIComponent(document.getElementById('${actId}-title').innerText) + '%0A%0A');" class="inline-block px-2 py-1 text-[11px] sm:px-8 sm:py-4 sm:text-base rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300">Je commande</button>
 			<!-- MODIF_RESPONSIVE button id="${actId}-next" onclick="changeContent('${actId}', currentType['${actId}'], 1)" class="inline-block px-8 py-4 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">Suivant →</button -->
-			<button id="${actId}-next" onclick="changeContent('${actId}', currentType['${actId}'], 1)" class="inline-block px-4 py-2 text-sm sm:px-8 sm:py-4 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">Suivant →</button>
+			<button id="${actId}-next" onclick="changeContent('${actId}', currentType['${actId}'], 1)" class="inline-block px-2 py-1 text-[11px] sm:px-8 sm:py-4 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">Suivant →</button>
 		</div>
 
 	</div>
@@ -775,11 +780,11 @@ fetch('data/atelier-khem.xml')
 	<!-- Boutons : Retour | WhatsApp | Email -->
 	<div class="flex flex-wrap justify-center gap-5 pt-6">
 		<!-- MODIF_RESPONSIVE button onclick="goToSection('${actIds[actIds.length - 1]}')" class="px-8 py-5 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">← Retour</button -->
-		<button onclick="goToSection('${actIds[actIds.length - 1]}')" class="px-4 py-2 text-sm sm:px-8 sm:py-5 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">← Retour</button>
+		<button onclick="goToSection('${actIds[actIds.length - 1]}')" class="px-3 py-1.5 text-xs sm:px-8 sm:py-5 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">← Retour</button>
 		<!-- MODIF_RESPONSIVE a href="${footerWhatsapp}" target="_blank" class="px-8 py-5 rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300">${footer.querySelector('whatsappText')?.textContent ?? ''}</a -->
-		<a href="${footerWhatsapp}" target="_blank" class="px-4 py-2 text-sm sm:px-8 sm:py-5 sm:text-base rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300">${footer.querySelector('whatsappText')?.textContent ?? ''}</a>
+		<a href="${footerWhatsapp}" target="_blank" class="px-3 py-1.5 text-xs sm:px-8 sm:py-5 sm:text-base rounded-2xl bg-[#C68346] text-black font-semibold hover:scale-105 transition duration-300">${footer.querySelector('whatsappText')?.textContent ?? ''}</a>
 		<!-- MODIF_RESPONSIVE a href="mailto:${footerEmail}" class="px-8 py-5 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${footerEmail}</a -->
-		<a href="mailto:${footerEmail}" class="px-4 py-2 text-sm sm:px-8 sm:py-5 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${footerEmail}</a>
+		<a href="mailto:${footerEmail}" class="px-3 py-1.5 text-xs sm:px-8 sm:py-5 sm:text-base rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">${footerEmail}</a>
 	</div>
 
 </div>
@@ -994,6 +999,16 @@ function changeContent(section, type, direction = 0)
 	const nav = document.getElementById(`${section}-nav`)
 	nav.classList.remove('hidden')
 	nav.classList.add('flex')
+	
+	/* MODIF_RESPONSIVE Ajout */
+	const panel = nav.parentElement
+
+	if (window.innerWidth < 1024)
+	{
+		panel.style.aspectRatio = 'auto'
+		panel.style.minHeight = '400px'
+	}
+	/* Fin MODIF_RESPONSIVE Ajout */
 
 	gsap.killTweensOf(`#${section}-nav`)
 	gsap.fromTo(`#${section}-nav`,
@@ -1032,8 +1047,9 @@ function changeContent(section, type, direction = 0)
 	document.getElementById(`${section}-content`).innerHTML = `
 	<div class="w-full">
 		<!-- MODIF_RESPONSIVE div id="${section}-image" class="dynamic-image rounded-[3rem] h-[320px] mb-8" style="background-image:url('${current.image}')"></div -->
-		<div id="${section}-image" class="dynamic-image rounded-[3rem] h-[180px] sm:h-[220px] md:h-[320px] mb-8" style="background-image:url('${current.image}')"></div>
-		<div class="space-y-4" style="padding:0 2rem;">
+		<div id="${section}-image" class="dynamic-image rounded-[3rem] h-[180px] sm:h-[220px] md:h-[320px] mb-1 sm:mb-8" style="background-image:url('${current.image}')"></div>
+		<!-- MODIF_RESPONSIVE div class="space-y-4" style="padding:0 2rem;" -->
+		<div class="space-y-2 sm:space-y-4" style="padding:0 2rem;">
 			<h3 id="${section}-title" class="text-4xl font-light">${current.title}</h3>
 			<div id="${section}-description" class="text-[#B7B0A7] text-lg leading-relaxed">${current.description}</div>
 		</div>
