@@ -25,7 +25,7 @@
 	<config>
 
 		<!--Debug : 1 = activé | 0 = désactivé -->
-		<debug>0</debug>
+		<debug>1</debug>
 
 		<!-- Audio ambiant : 1 = activé | 0 = désactivé -->
 		<audio>1</audio>
@@ -180,64 +180,73 @@
 					<titre>Le rhum arrangé, c'est quoi ?</titre>
 					<texte>Le rhum arrangé est une préparation de rhum et sucre dans laquelle macèrent fruits, épices, racines, feuilles ou fleurs afin de révéler des arômes uniques. Nos rhums macèrent 5 ans pour offrir un produit intense, raffiné et authentique.</texte>
 					<image>img/rhum_arrange.jpg</image>
+					<alt>Rhum arrangé artisanal premium aux fruits et épices fabriqué au Cameroun par remK</alt>
 				</item>
 
 				<item>
 					<titre>L'histoire du rhum arrangé</titre>
 					<texte>Il y a deux versions de l'histoire… La première raconte que les marins de la route des Indes utilisaient le rhum pour conserver fruits et épices durant leurs voyages. Le rhum arrangé était né ! Une fois les fruits conservés, les marins n'allaient pas gâcher…</texte>
 					<image>img/histoire_1.jpg</image>
+					<alt>Origines du rhum arrangé et traditions des marins de la route des Indes</alt>
 				</item>
 
 				<item>
 					<titre>L'histoire du rhum arrangé</titre>
 					<texte>La seconde histoire raconte que l'eau-de-vie fabriquée à partir de la canne à sucre (le rhum) n'était pas de très bonne qualité au commencement. Afin de la rendre meilleure, on y ajouta du sucre et des fruits, des épices ou même des feuilles.</texte>
 					<image>img/histoire_2.jpg</image>
+					<alt>Histoire artisanale du rhum arrangé à base de fruits sucre et épices</alt>
 				</item>
 
 				<item>
 					<titre>Comment le consomme t-on ?</titre>
 					<texte>Le rhum arrangé se consomme principalement pur, à température ambiante, frais ou même glacé. Pour ce faire, vous pouvez conserver votre bouteille de rhum arrangé &lt;b&gt;remK&lt;/b&gt; au congélateur ou le servir sur glace, glace pilée ou au shaker.</texte>
 					<image>img/comment_1.jpg</image>
+					<alt>Dégustation de rhum arrangé artisanal servi frais glacé ou sur glace</alt>
 				</item>
 
 				<item>
 					<titre>Comment le consomme t-on ?</titre>
 					<texte>Il est possible de diluer le rhum arrangé dans un soda comme le tonic ou l'eau gazeuse. Si vous utilisez un soda plus fort, vous risquerez de ne plus retrouver le goût du rhum arrangé. Certains rhums arrangés se marient très bien entre eux !</texte>
 					<image>img/comment_2.jpg</image>
+					<alt>Rhum arrangé artisanal utilisé en cocktail avec tonic ou eau gazeuse</alt>
 				</item>
 
 				<item>
 					<titre>Comment le consomme t-on ?</titre>
 					<texte>Ils sont aussi très appréciés avec un bon cigare !&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</texte>
 					<image>img/comment_3.jpg</image>
+					<alt>Rhum arrangé artisanal dégusté avec cigare et ambiance premium</alt>
 				</item>
 
 				<item>
 					<titre>Pourquoi ce logo ?</titre>
 					<texte>Le rhum et les pirates sont liés depuis toujours. C'est pourquoi nous avons choisi cette symbole pirate : une illustration forte et emblématique de nos produits, malgré les interrogations qu'elle peut susciter chez certains Camerounais.</texte>
 					<image>img/pourquoi_logo.jpg</image>
+					<alt>Logo pirate emblématique de la marque de rhums arrangés remK</alt>
 				</item>
 
 				<item>
 					<titre>Que signifie « remK » ?</titre>
 					<texte>En ce qui concerne le nom de notre marque, « &lt;b&gt;remK&lt;/b&gt; » signifie tout simplement « Kmer » écrit à l'envers. C'est d'ailleurs pour cela que le « K » est en majuscule à la fin du nom.&lt;br&gt;&lt;br&gt;</texte>
 					<image>img/pourquoi_remk.jpg</image>
+					<alt>Origine du nom remK inspiré du mot Kmer écrit à l’envers</alt>
 				</item>
 
 				<item>
 					<titre>Les engagements de remK</titre>
 					<texte>Forts de 30 années d'expérience, nous garantissons une découverte gustative inoubliable ! Nous travaillons chaque jour pour vous offrir un produit de qualité : le rhum arrangé bien entendu, mais aussi le packaging et le service.</texte>
 					<image>img/engagements_remk.jpg</image>
+					<alt>Engagement qualité et fabrication artisanale des rhums arrangés remK</alt>
 				</item>
 
 				<item>
 					<titre>remK protège la planète !</titre>
 					<texte>Nous vous proposons de reprendre chaque bouteille retournée pour la somme de 500 FCFA. C'est un geste écologique qui contribue également à la lutte contre la contrefaçon.&lt;br&gt;&lt;br&gt;</texte>
 					<image>img/remk_pense_a_la_planete.jpg</image>
+					<alt>Bouteilles consignées et démarche écologique des rhums arrangés remK</alt>
 				</item>
 
 			</zone>
-
 
 			<!-- ── ZONE : remK à base de fruits ── -->
 			<zone id="remkfruit">
@@ -247,66 +256,77 @@
 					<titre>Ananas</titre>
 					<texte>Classique mais incontournable, ce rhum arrangé est apprécié de tous pour sa douceur et son goût très fruité. Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
 					<image>img/ananas.jpg</image>
+					<alt>Rhum arrangé artisanal à l’ananas aux saveurs tropicales et fruitées</alt>
 				</item>
 
 				<item>
 					<titre>Bissap (fleur d'hibiscus)</titre>
 					<texte>Une magnifique robe bordeaux et un goût fruité… mais avec du caractère !&lt;br&gt;Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
 					<image>img/bissap.jpg</image>
+					<alt>Rhum arrangé bissap hibiscus artisanal à la robe rouge intense</alt>
 				</item>
 
 				<item>
 					<titre>Citron noir</titre>
 					<texte>Des citrons lentement séchés sous le soleil de Kribi, pour un rhum arrangé intense et parfumé. Une saveur acidulée qui rappelle les célèbres bonbons au citron. Idéal en apéritif, en digestif et en accompagnement de desserts.</texte>
 					<image>img/citron_noir.jpg</image>
+					<alt>Rhum arrangé citron noir séché aux notes acidulées et parfumées</alt>
 				</item>
 
 				<item>
 					<titre>Folérhum (hibiscus, ananas)</titre>
 					<texte>Le &lt;b&gt;Rhum arrangé remK&lt;/b&gt; Bissap mais plus fruité et plus doux grâce à l'ananas. Une recette inspirée du Foléré.&lt;br&gt;Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
 					<image>img/folerhum.jpg</image>
+					<alt>Rhum arrangé Folérhum au bissap et ananas inspiré du foléré camerounais</alt>
 				</item>
 
 				<item>
 					<titre>Gingembre - Passion</titre>
 					<texte>Un mélange de fruit de la passion et de gingembre réveille l'exotisme dans votre verre.&lt;br&gt;Idéal en apéritif et en accompagnement de desserts fruités ou chocolatés.</texte>
 					<image>img/gingembre_passion.jpg</image>
+					<alt>Rhum arrangé gingembre passion exotique aux saveurs intenses et fruitées</alt>
 				</item>
 
 				<item>
 					<titre>Jaabi (graines de jujube)</titre>
 					<texte>La graine de jujube donne à ce rhum arrangé des saveurs uniques de caramel.&lt;br&gt;Idéal en digestif et en accompagnement de desserts sucrés.&lt;br&gt;&lt;br&gt;</texte>
 					<image>img/jaabi.jpg</image>
+					<alt>Rhum arrangé Jaabi aux graines de jujube et notes de caramel</alt>
 				</item>
 
 				<item>
 					<titre>Jangolo (ananas, mangue, épices)</titre>
 					<texte>Un mariage parfait qui dévoile des notes exotiques et fruitées pour une dégustation chaleureuse et intense.</texte>
 					<image>img/jangolo.jpg</image>
+					<alt>Rhum arrangé Jangolo à l’ananas mangue et épices exotiques</alt>
 				</item>
 
 				<item>
 					<titre>Melon</titre>
 					<texte>À base de melon (fruit), peu connu au Cameroun. Ce rhum arrangé a un goût très subtil tout en restant doux. Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
 					<image>img/melon.jpg</image>
+					<alt>Rhum arrangé artisanal au melon doux et subtilement fruité</alt>
 				</item>
 
 				<item>
 					<titre>Mojirhum (citron, menthe)</titre>
 					<texte>Un rhum arrangé inspiré du mojito, du citron, du lemon, de la menthe et du sucre. C'est un rhum arrangé très rafraîchissant surtout servi glacé, shaké ou sur glace pilée. Idéal en apéritif et en accompagnement de desserts fruités ou chocolatés.</texte>
 					<image>img/mojirhum.jpg</image>
+					<alt>Rhum arrangé Mojirhum citron menthe inspiré du mojito glacé</alt>
 				</item>
 
 				<item>
 					<titre>Noix de coco</titre>
 					<texte>Fermez les yeux, prenez une petite gorgée. Ça y est, vous êtes sur la plage de Kribi !&lt;br&gt;Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
 					<image>img/noix_de_coco.jpg</image>
+					<alt>Rhum arrangé noix de coco inspiré des plages tropicales de Kribi</alt>
 				</item>
 
 				<item>
 					<titre>Salade de fruits</titre>
 					<texte>Un mélange équilibré de fruits pour une saveur façon cocktail ou salade de fruits.&lt;br&gt;Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</texte>
 					<image>img/salade_de_fruits.jpg</image>
+					<alt>Rhum arrangé salade de fruits aux saveurs exotiques façon cocktail</alt>
 				</item>
 
 			</zone>
@@ -320,12 +340,14 @@
 					<titre>Souchet (graines de palmiste)</titre>
 					<texte>Ce rhum arrangé à base de graines de palmiste et de miel camerounais est unique et très doux. Il sera apprécié de tous. Idéal en apéritif, en digestif et en accompagnement de desserts sucrés et au miel.</texte>
 					<image>img/souchet.jpg</image>
+					<alt>Rhum arrangé au souchet miel camerounais et graines de palmiste</alt>
 				</item>
 
 				<item>
 					<titre>Bonbon café (mondia whitei)</titre>
 					<texte>La « racine » donne à ce rhum arrangé tout son goût et sa force, le miel l'adoucit. Malgré son nom il n'y a pas de café ni même de saveur café dans cette préparation. C'est un rhum arrangé pour les hommes forts ! Idéal en apéritif et en digestif.</texte>
 					<image>img/bonbon_cafe.jpg</image>
+					<alt>Rhum arrangé Bonbon Café Mondia Whitei aux racines africaines puissantes</alt>
 				</item>
 
 			</zone>
@@ -339,18 +361,21 @@
 					<titre>Mbongo (sauce noire)</titre>
 					<texte>Ce rhum arrangé c'est la magie pour certains, la chimamiture pour d'autres ! Mais ce qui est sûr c'est que son goût de sauce noire ne vous laissera pas indifférent ! Idéal avec une viande de brousse ou un bon plat de Mbongo, évidemment.</texte>
 					<image>img/mbongo.jpg</image>
+					<alt>Rhum arrangé Mbongo aux épices sauce noire et saveurs camerounaises</alt>
 				</item>
 
 				<item>
 					<titre>Poivre de Penja - Curcuma</titre>
 					<texte>Le curcuma s'unit parfaitement au poivre de Penja dans ce rhum arrangé au goût bien relevé. Saurez-vous lui résister ? Idéal en digestif.&lt;br&gt;&lt;br&gt;</texte>
 					<image>img/poivre_de_penja_curcuma.jpg</image>
+					<alt>Rhum arrangé poivre de Penja et curcuma aux épices africaines</alt>
 				</item>
 
 				<item>
 					<titre>Zizi Pan Pan (aphrodisiaque)</titre>
 					<texte>Le rhum arrangé pour les hommes forts par excellence !!! De multiples aphrodisiaques, retardateurs et démarreurs ont été sélectionnés pour créer cette préparation. Messieurs, n'oubliez pas de prendre bien soin de Madame, c'est de ça qu'il s'agit ! Idéal à tout moment de la journée.</texte>
 					<image>img/zizi_pan_pan.jpg</image>
+					<alt>Rhum arrangé aphrodisiaque Zizi Pan Pan artisanal et épicé</alt>
 				</item>
 
 			</zone>
@@ -364,6 +389,7 @@
 					<titre>Prix et formats</titre>
 					<texte>Nous proposons les &lt;b&gt;Rhums arrangés remK&lt;/b&gt; en bouteilles de 70 cl à 20.000 FCFA, au format flask de 20 cl à 7.000 FCFA, ou en mignonettes de 6 cl à 2.500 FCFA. Les bouteilles en verre sont consignées à 500 FCFA (prix incluant la consigne).</texte>
 					<image>img/formats.jpg</image>
+					<alt>Formats bouteilles flasks et mignonettes des rhums arrangés remK</alt>
 				</item>
 
 			</zone>
@@ -396,12 +422,14 @@
 					<titre>Notre philosophie</titre>
 					<texte>Nous croyons qu'une création de qualité doit être accessible. &lt;b&gt;Guiah Songs&lt;/b&gt; mise sur l'écoute, le détail, l'originalité et un accompagnement humain afin de proposer des réalisations premium, modernes et impactantes à des tarifs raisonnables.</texte>
 					<image>img/notre_philosophie.jpg</image>
+					<alt>Philosophie créative et communication visuelle premium de Guiah Songs</alt>
 				</item>
 
 				<item>
 					<titre>Processus de création</titre>
 					<texte>Chaque projet suit une méthode simple : comprendre votre besoin, imaginer un concept fort, créer des visuels ou contenus adaptés puis ajuster chaque détail jusqu'au résultat final. Une approche pensée pour allier créativité, efficacité et rapidité.</texte>
 					<image>img/processus_de_creation.jpg</image>
+					<alt>Processus de création graphique et branding digital par Guiah Songs</alt>
 				</item>
 
 			</zone>
@@ -414,96 +442,112 @@
 					<titre>Les services de Guiah Songs</titre>
 					<texte>&lt;b&gt;Guiah Songs&lt;/b&gt; réunit création graphique, vidéo, branding et contenus digitaux dans une seule structure. Nous concevons des solutions visuelles complètes pour développer votre image, attirer votre public et renforcer votre communication.</texte>
 					<image>img/nos_services.jpg</image>
+					<alt>Services de création graphique vidéo branding et communication digitale</alt>
 				</item>
 
 				<item>
 					<titre>Logos</titre>
 					<texte>Nous créons des logos modernes, mémorables et adaptés à votre activité. Chaque identité visuelle est pensée pour transmettre une image professionnelle, cohérente et forte, capable de marquer durablement vos clients et partenaires.</texte>
 					<image>img/creation_de_logos.jpg</image>
+					<alt>Création de logos modernes professionnels et identités visuelles</alt>
 				</item>
 
 				<item>
 					<titre>Chartes graphiques</titre>
 					<texte>Couleurs, typographies, styles visuels et cohérence graphique : nous développons des chartes graphiques complètes pour donner une identité claire, homogène et professionnelle à votre entreprise sur tous vos supports de communication.</texte>
 					<image>img/charte_graphique.jpg</image>
+					<alt>Création de chartes graphiques professionnelles et cohérence visuelle</alt>
 				</item>
 
 				<item>
 					<titre>Etiquettes et Packaging</titre>
 					<texte>&lt;b&gt;Guiah Songs&lt;/b&gt; conçoit étiquettes et packagings modernes pour tous vos produits artisanaux. Chaque création associe design, cohérence visuelle et finition professionnelle afin de valoriser votre produit et renforcer votre image de marque.</texte>
 					<image>img/etiquettes_et_packaging.jpg</image>
+					<alt>Création d’étiquettes et packaging modernes pour produits artisanaux</alt>
 				</item>
 
 				<item>
 					<titre>Impression d'étiquettes</titre>
 					<texte>Nous proposons l'impression d'étiquettes premium avec une qualité de finition comparable aux standards européens. Couleurs précises, excellente tenue, matériaux professionnels et rendu haut de gamme pour valoriser vos produits.</texte>
 					<image>img/impression_etiquettes_haute_qualite.jpg</image>
+					<alt>Impression d’étiquettes premium haute qualité pour produits professionnels</alt>
 				</item>
 
 				<item>
 					<titre>Flyers</titre>
 					<texte>Nous réalisons des flyers modernes et percutants conçus pour attirer l'attention rapidement. Promotion, événement, lancement ou publicité locale : chaque création est pensée pour transmettre votre message efficacement et donner envie d'agir.</texte>
 					<image>img/flyers.jpg</image>
+					<alt>Création de flyers modernes publicitaires et supports de communication</alt>
 				</item>
 
 				<item>
 					<titre>Cartes de visite</titre>
 					<texte>Plus qu'un simple contact, une carte de visite reflète votre image. Nous concevons des cartes élégantes, modernes et professionnelles qui valorisent votre activité et renforcent la crédibilité de votre entreprise dès le premier échange.</texte>
 					<image>img/cartes_de_visite.jpg</image>
+					<alt>Création de cartes de visite élégantes modernes et professionnelles</alt>
 				</item>
 
 				<item>
 					<titre>Vidéos publicitaires</titre>
 					<texte>Nous créons des vidéos courtes, dynamiques et immersives adaptées aux réseaux sociaux et à la communication moderne. Storytelling, animation, concepts visuels et montage rythmé : des contenus pensés pour captiver rapidement votre audience.</texte>
 					<image>img/videos_publicitaires.jpg</image>
+					<alt>Création de vidéos publicitaires modernes pour réseaux sociaux et entreprises</alt>
 				</item>
 
 				<item>
 					<titre>Publicités radio</titre>
 					<texte>Nous créons des publicités radio dynamiques et professionnelles : écriture du message, voix, ambiance sonore et montage. Des spots pensés pour capter rapidement l'attention et transmettre efficacement votre message.</texte>
 					<image>img/publicites_radio.jpg</image>
+					<alt>Création de publicités radio professionnelles et spots audio publicitaires</alt>
 				</item>
 
 				<item>
 					<titre>Concepts marketing</titre>
 					<texte>Nous imaginons des concepts publicitaires originaux capables d'attirer l'attention et de provoquer une réaction immédiate. Messages forts, idées créatives et stratégies visuelles : des campagnes conçues pour être vues, comprises et retenues.</texte>
 					<image>img/concepts_marketing.jpg</image>
+					<alt>Concepts marketing créatifs et campagnes publicitaires impactantes</alt>
 				</item>
 
 				<item>
 					<titre>Chansons personnalisées</titre>
 					<texte>&lt;b&gt;Guiah Songs&lt;/b&gt; crée des chansons personnalisées, jingles et identités sonores pour particuliers et entreprises. Anniversaire, publicité ou communication professionnelle : des créations originales pensées pour marquer les esprits.</texte>
 					<image>img/chansons_personnalisees.jpg</image>
+					<alt>Création de chansons personnalisées jingles et identités sonores</alt>
 				</item>
 
 				<item>
 					<titre>Livres personnalisés</titre>
 					<texte>&lt;b&gt;Guiah Songs&lt;/b&gt; crée des livres personnalisés racontant une histoire unique autour d'un enfant, d'une entreprise ou d'un projet. Chaque ouvrage associe narration, univers visuel et émotion afin de créer un souvenir original et marquant.</texte>
 					<image>img/creation_livres_d_histoire_personnalises.jpg</image>
+					<alt>Création de livres personnalisés illustrés pour enfants entreprises et projets</alt>
 				</item>
 
 				<item>
 					<titre>Livres personnalisés 3D</titre>
 					<texte>&lt;b&gt;Guiah Songs&lt;/b&gt; réalise également des livres entièrement conçus en 3D. Personnages, décors, objets et mises en scène prennent vie dans un univers immersif et spectaculaire pensé pour renforcer l'impact visuel du récit.</texte>
 					<image>img/creation_livres_d_histoire_personnalises_3d.jpg</image>
+					<alt>Livres personnalisés 3D immersifs avec personnages et décors réalistes</alt>
 				</item>
 
 				<item>
 					<titre>Vidéos éducatives</titre>
 					<texte>Chaque jour, une vidéo éducative autour du business, du marketing, de la communication et de l'entrepreneuriat. Des contenus courts, modernes et accessibles conçus pour apprendre, inspirer et développer son activité.</texte>
 					<image>img/videos_educatives.jpg</image>
+					<alt>Vidéos éducatives business marketing communication et entrepreneuriat</alt>
 				</item>
 
 				<item>
 					<titre>Guides pratiques</titre>
 					<texte>Nous rédigeons des guides pratiques clairs, modernes et structurés destinés aux artisans et entrepreneurs. Formation, conseils, méthodes et vulgarisation : des contenus utiles pensés pour transmettre efficacement un savoir.</texte>
 					<image>img/guides_pratiques.jpg</image>
+					<alt>Guides pratiques modernes pour artisans entrepreneurs et formations</alt>
 				</item>
 
 				<item>
 					<titre>Modélisation 3D</titre>
 					<texte>La modélisation 3D permet de donner vie à vos idées avant leur réalisation. Produits, concepts, objets ou mises en scène : nous créons des visuels réalistes et modernes capables de renforcer fortement votre communication visuelle.</texte>
 					<image>img/modelisation_3d.jpg</image>
+					<alt>Modélisation 3D réaliste pour produits concepts et communication visuelle</alt>
 				</item>
 
 			</zone>
@@ -518,6 +562,7 @@
 					<titre>Laissez-nous vous convaincre</titre>
 					<texte>Avant de confier votre image à un infographiste, prenez le temps de découvrir ses réalisations. Son style, sa créativité et la qualité de ses visuels parlent mieux que de longs discours. Prenez le temps de parcourir les créations de &lt;b&gt;Guiah Songs&lt;/b&gt;.</texte>
 					<image>img/nos_realisations.jpg</image>
+					<alt>Réalisations graphiques créations visuelles et projets Guiah Songs</alt>
 				</item>
 
 				<item>
@@ -532,6 +577,7 @@ Retrouvez sur TikTok nos vidéos créatives, concepts publicitaires, démonstrat
 </span>
 ]]></texte>
 					<image>img/tiktok.jpg</image>
+					<alt>Compte TikTok Guiah Songs vidéos créatives et contenus publicitaires</alt>
 				</item>
 
 				<item>
@@ -544,6 +590,7 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 </span>
 ]]></texte>
 					<image>img/youtube.jpg</image>
+					<alt>Chaîne YouTube Guiah Songs vidéos immersives et créations visuelles</alt>
 				</item>
 
 			</zone>
@@ -574,16 +621,19 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Notre histoire</titre>
 					<texte>&lt;b&gt;KOKOLUX by Schouama&lt;/b&gt; est une marque camerounaise spécialisée dans les huiles naturelles de qualité, pensées pour le soin des cheveux, de la peau et du bien-être au quotidien.</texte>
 					<image>img/KOKOLUX_by_Schouama_01.jpg</image>
+					<alt>KOKOLUX by Schouama marque camerounaise d’huiles naturelles pour cheveux et peau</alt>
 				</item>
 				<item>
 					<titre>Notre histoire</titre>
 					<texte>À travers une approche simple, naturelle et authentique, &lt;b&gt;KOKOLUX&lt;/b&gt; valorise les bienfaits des huiles végétales traditionnelles comme l’huile de coco et l’huile de palmiste, reconnues pour leurs propriétés nourrissantes et protectrices.</texte>
 					<image>img/KOKOLUX_by_Schouama_02.jpg</image>
+					<alt>Huiles naturelles de coco et palmiste pour soins capillaires et bien-être</alt>
 				</item>
 				<item>
 					<titre>Notre histoire</titre>
 					<texte>Notre mission est d’offrir des produits accessibles, efficaces et adaptés aux réalités africaines, tout en mettant en avant une beauté saine et naturelle.</texte>
 					<image>img/KOKOLUX_by_Schouama_03.jpg</image>
+					<alt>Produits naturels africains accessibles pour cheveux peau et beauté saine</alt>
 				</item>
 			</zone>
 			<zone id="kokoluxproduits">
@@ -592,16 +642,19 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Huile de Coco - 0,5 litre</titre>
 					<texte>Huile naturelle polyvalente pour les cheveux, la peau et les massages, elle nourrit, protège et hydrate en profondeur, apporte brillance et douceur, limite la casse et convient parfaitement aux cheveux crépus, bouclés et frisés.</texte>
 					<image>img/KOKOLUX_by_Schouama_04.jpg</image>
+					<alt>Huile de coco naturelle KOKOLUX 0,5 litre pour cheveux peau et massages</alt>
 				</item>
 				<item>
 					<titre>Huile de Palmiste – 0,5 L</titre>
 					<texte>Huile traditionnelle reconnue pour ses propriétés nourrissantes et protectrices, elle nourrit les cheveux en profondeur, favorise leur souplesse, protège le cuir chevelu, hydrate les peaux sèches et convient parfaitement aux soins capillaires africains.</texte>
 					<image>img/KOKOLUX_by_Schouama_05.jpg</image>
+					<alt>Huile de palmiste naturelle KOKOLUX pour cheveux africains et peau sèche</alt>
 				</item>
 				<item>
 					<titre>Huile de Coco - Flacon 50 ml</titre>
 					<texte>Flacon pipette 50 ml pratique à emporter partout, idéal pour les soins ciblés du cuir chevelu, des pointes sèches, de la barbe, du visage et les retouches beauté au quotidien.</texte>
 					<image>img/KOKOLUX_by_Schouama_06.jpg</image>
+					<alt>Huile de coco naturelle en flacon pipette 50 ml pour soins beauté</alt>
 				</item>
 			</zone>
 			<zone id="kokoluxpromotrice">
@@ -610,16 +663,19 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>La promotrice</titre>
 					<texte>Derrière &lt;b&gt;KOKOLUX by Schouama&lt;/b&gt; se trouve Schouama Pamela, une entrepreneure passionnée par la beauté naturelle et le bien-être.</texte>
 					<image>img/KOKOLUX_by_Schouama_07.jpg</image>
+					<alt>Schouama Pamela fondatrice de KOKOLUX spécialiste des soins naturels</alt>
 				</item>
 				<item>
 					<titre>La promotrice</titre>
 					<texte>Animée par le désir d’aider les femmes et les familles à prendre soin d’elles avec des produits simples, efficaces et naturels, elle a créé &lt;b&gt;KOKOLUX&lt;/b&gt; avec une vision claire : proposer des huiles de qualité qui allient tradition, efficacité et élégance.</texte>
 					<image>img/KOKOLUX_by_Schouama_08.jpg</image>
+					<alt>Entrepreneure camerounaise créatrice de soins naturels KOKOLUX</alt>
 				</item>
 				<item>
 					<titre>La promotrice</titre>
 					<texte>Grâce à son engagement, &lt;b&gt;KOKOLUX&lt;/b&gt; devient progressivement une référence locale pour celles et ceux qui recherchent des soins naturels accessibles et authentiques.</texte>
 					<image>img/KOKOLUX_by_Schouama_09.jpg</image>
+					<alt>KOKOLUX référence locale des huiles naturelles et soins capillaires africains</alt>
 				</item>
 			</zone>
 			<zone id="kokoluxpourquoi">
@@ -628,21 +684,25 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Pourquoi choisir KOKOLUX ?</titre>
 					<texte>&lt;b&gt;100% Naturel&lt;/b&gt;&lt;br&gt;Des huiles sélectionnées avec soin, sans compromis sur la qualité.</texte>
 					<image>img/KOKOLUX_by_Schouama_10.jpg</image>
+					<alt>Huiles naturelles 100 pour cent pures et soins KOKOLUX de qualité</alt>
 				</item>
 				<item>
 					<titre>Pourquoi choisir KOKOLUX ?</titre>
 					<texte>&lt;b&gt;Adapté aux cheveux africains&lt;/b&gt;&lt;br&gt;Des produits pensés pour les cheveux crépus, bouclés et frisés.</texte>
 					<image>img/KOKOLUX_by_Schouama_11.jpg</image>
+					<alt>Soins naturels adaptés aux cheveux crépus bouclés et frisés africains</alt>
 				</item>
 				<item>
 					<titre>Pourquoi choisir KOKOLUX ?</titre>
 					<texte>&lt;b&gt;Qualité accessible&lt;/b&gt;&lt;br&gt;Des soins efficaces à des prix accessibles.</texte>
 					<image>img/KOKOLUX_by_Schouama_12.jpg</image>
+					<alt>Soins capillaires naturels efficaces et accessibles par KOKOLUX</alt>
 				</item>
 				<item>
 					<titre>Pourquoi choisir KOKOLUX ?</titre>
 					<texte>&lt;b&gt;Fabrication et sélection sérieuses&lt;/b&gt;&lt;br&gt;Une attention particulière portée à la pureté et à l’efficacité des produits.</texte>
 					<image>img/KOKOLUX_by_Schouama_13.jpg</image>
+					<alt>Sélection rigoureuse et fabrication sérieuse des huiles naturelles KOKOLUX</alt>
 				</item>
 			</zone>
 			<zone id="kokoluxconseils">
@@ -651,26 +711,31 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Conseils d’utilisation</titre>
 					<texte>&lt;b&gt;Pour les cheveux / Huile de coco&lt;/b&gt;&lt;br&gt;Utiliser en bain d’huile avant shampoing, appliquer sur les pointes pour limiter la casse ou masser le cuir chevelu pour nourrir les racines.</texte>
 					<image>img/KOKOLUX_by_Schouama_14.jpg</image>
+					<alt>Utilisation de l’huile de coco pour nourrir cheveux et cuir chevelu</alt>
 				</item>
 				<item>
 					<titre>Conseils d’utilisation</titre>
 					<texte>&lt;b&gt;Pour les cheveux / Huile de palmiste&lt;/b&gt;&lt;br&gt;Utiliser en soin capillaire pour nourrir les cheveux en profondeur, assouplir la fibre capillaire et protéger le cuir chevelu.</texte>
 					<image>img/KOKOLUX_by_Schouama_15.jpg</image>
+					<alt>Huile de palmiste pour soin capillaire africain et cheveux nourris</alt>
 				</item>
 				<item>
 					<titre>Conseils d’utilisation</titre>
 					<texte>&lt;b&gt;Pour la peau / Huile de coco&lt;/b&gt;&lt;br&gt;Appliquer après la douche sur peau légèrement humide, utiliser comme huile de massage ou hydrater les zones sèches au quotidien.</texte>
 					<image>img/KOKOLUX_by_Schouama_16.jpg</image>
+					<alt>Huile de coco naturelle pour hydratation de la peau et massage corporel</alt>
 				</item>
 				<item>
 					<titre>Conseils d’utilisation</titre>
 					<texte>&lt;b&gt;Pour la peau / Huile de palmiste&lt;/b&gt;&lt;br&gt;Appliquer sur les zones sèches pour nourrir et adoucir la peau ou utiliser comme huile de soin corporelle.</texte>
 					<image>img/KOKOLUX_by_Schouama_17.jpg</image>
+					<alt>Huile de palmiste naturelle pour nourrir et adoucir la peau</alt>
 				</item>
 				<item>
 					<titre>Conseils d’utilisation</titre>
 					<texte>&lt;b&gt;Pour la cuisine / Huile de coco&lt;/b&gt;&lt;br&gt;Peut être utilisée dans diverses préparations culinaires selon vos habitudes et recettes.</texte>
 					<image>img/KOKOLUX_by_Schouama_18.jpg</image>
+					<alt>Huile de coco naturelle utilisée en cuisine et recettes maison</alt>
 				</item>
 			</zone>
 			<zone id="kokoluxtarifs">
@@ -679,11 +744,13 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Des soins naturels accessibles</titre>
 					<texte>Chez &lt;b&gt;KOKOLUX by Schouama&lt;/b&gt;, nous croyons que la qualité et le naturel doivent rester accessibles.</texte>
 					<image>img/KOKOLUX_by_Schouama_19.jpg</image>
+					<alt>Soins naturels accessibles KOKOLUX huiles végétales de qualité</alt>
 				</item>
 				<item>
 					<titre>Des soins naturels accessibles</titre>
 					<texte>Nous proposons des huiles soigneusement sélectionnées à des prix pensés pour le quotidien.</texte>
 					<image>img/KOKOLUX_by_Schouama_20.jpg</image>
+					<alt>Huiles naturelles KOKOLUX à prix accessibles pour le quotidien</alt>
 				</item>
 			</zone>
 		</activite>
@@ -712,16 +779,19 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>L’art de transformer</titre>
 					<texte>&lt;b&gt;L’Alchimiste&lt;/b&gt; crée des bières, vins et liqueurs artisanales aux recettes inspirées des richesses naturelles du Cameroun. Chaque préparation est élaborée avec soin afin d’offrir des boissons originales, équilibrées et riches en saveurs.</texte>
 					<image>img/L_Alchimiste_01.jpg</image>
+					<alt>L’Alchimiste bières vins et liqueurs artisanales du Cameroun</alt>
 				</item>
 				<item>
 					<titre>Nos boissons artisanales</titre>
 					<texte>Nos boissons artisanales se déclinent en plusieurs intensités : bières artisanales de 5 à 9 %, vins artisanaux : 9 à 13 % et liqueurs artisanales : 20 % et plus.</texte>
 					<image>img/L_Alchimiste_02.jpg</image>
+					<alt>Boissons artisanales camerounaises bières vins et liqueurs naturelles</alt>
 				</item>
 				<item>
 					<titre>Nos recettes</titre>
 					<texte>&lt;b&gt;L’Alchimiste&lt;/b&gt; propose des bières, vins et liqueurs artisanales aux saveurs originales comme le bissap (foléré), l’ananas, la mangue, le Zizi Pan Pan aphrodisiaque, le vin d’avocatier, le vin de citronnier etc.</texte>
 					<image>img/L_Alchimiste_03.jpg</image>
+					<alt>Recettes artisanales originales au bissap ananas mangue et plantes africaines</alt>
 				</item>
 			</zone>
 			<zone id="recettesalchimiste">
@@ -730,41 +800,49 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Des saveurs artisanales uniques</titre>
 					<texte>&lt;b&gt;L’Alchimiste&lt;/b&gt; vous propose une gamme originale de bières, vins et liqueurs artisanales élaborées à partir d’ingrédients locaux soigneusement sélectionnés.</texte>
 					<image>img/L_Alchimiste_04.jpg</image>
+					<alt>Bières vins et liqueurs artisanales élaborées avec ingrédients locaux</alt>
 				</item>
 				<item>
 					<titre>Bissap / Foléré</titre>
 					<texte>Une recette rafraîchissante aux notes florales et légèrement acidulées, appréciée pour son goût authentique et sa belle couleur naturelle.</texte>
 					<image>img/L_Alchimiste_05.jpg</image>
+					<alt>Boisson artisanale au bissap foléré aux notes florales et acidulées</alt>
 				</item>
 				<item>
 					<titre>Ananas</titre>
 					<texte>Une saveur fruitée et exotique offrant une boisson douce, parfumée et pleine de fraîcheur.</texte>
 					<image>img/L_Alchimiste_06.jpg</image>
+					<alt>Bière ou vin artisanal à l’ananas aux saveurs exotiques et fruitées</alt>
 				</item>
 				<item>
 					<titre>Mangue</titre>
 					<texte>Une recette gourmande et tropicale aux arômes sucrés et généreux.</texte>
 					<image>img/L_Alchimiste_07.jpg</image>
+					<alt>Boisson artisanale à la mangue tropicale douce et parfumée</alt>
 				</item>
 				<item>
 					<titre>Zizi Pan Pan (Aphrodisiaque)</titre>
 					<texte>Une préparation artisanale originale aux saveurs intenses et au caractère unique.</texte>
 					<image>img/L_Alchimiste_08.jpg</image>
+					<alt>Liqueur artisanale Zizi Pan Pan aphrodisiaque aux saveurs puissantes</alt>
 				</item>
 				<item>
 					<titre>Vin d’avocatier</titre>
 					<texte>Une création artisanale élaborée à partir de feuilles d’avocatier pour une expérience authentique et atypique.</texte>
 					<image>img/L_Alchimiste_09.jpg</image>
+					<alt>Vin artisanal d’avocatier élaboré à partir de feuilles naturelles</alt>
 				</item>
 				<item>
 					<titre>Vin de citronnier</titre>
 					<texte>Une recette aux notes végétales et citronnées, équilibrée et rafraîchissante.</texte>
 					<image>img/L_Alchimiste_10.jpg</image>
+					<alt>Vin artisanal de citronnier aux notes végétales et citronnées</alt>
 				</item>
 				<item>
 					<titre>Et bien d'autres saveurs</titre>
 					<texte>&lt;b&gt;L’Alchimiste&lt;/b&gt; développe régulièrement de nouvelles recettes artisanales selon les saisons, les inspirations et les produits disponibles.</texte>
 					<image>img/L_Alchimiste_11.jpg</image>
+					<alt>Nouvelles recettes artisanales L’Alchimiste inspirées des produits locaux</alt>
 				</item>
 			</zone>
 			<zone id="tarifsalchimiste">
@@ -773,11 +851,13 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Bouteille 50 cl</titre>
 					<texte>• Bissap : 500 FCFA&lt;br&gt;• Ananas, Mangue, Vin d’avocatier ou de citronnier : 750 FCFA&lt;br&gt;• Zizi Pan Pan : 1.500 FCFA</texte>
 					<image>img/L_Alchimiste_12.jpg</image>
+					<alt>Tarifs bouteilles bières vins et liqueurs artisanales L’Alchimiste</alt>
 				</item>
 				<item>
 					<titre>Bidon de 15 litres</titre>
 					<texte>Pour vos événements, &lt;b&gt;L’Alchimiste&lt;/b&gt; propose sur commande des bidons de 15 litres de bières ou de vins artisanaux à prix exceptionnel (exemple : Bissap 15 litres à 10.000 FCFA).</texte>
 					<image>img/L_Alchimiste_13.jpg</image>
+					<alt>Bidons de quinze litres de boissons artisanales pour événements et fêtes</alt>
 				</item>
 			</zone>
 			<zone id="formationalchimiste">
@@ -786,16 +866,19 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Formation</titre>
 					<texte>Apprenez à fabriquer vos propres boissons artisanales !&lt;br&gt;&lt;b&gt;L’Alchimiste&lt;/b&gt; propose une formation dédiée à la fabrication de bières, vins et liqueurs artisanales.</texte>
 					<image>img/L_Alchimiste_14.jpg</image>
+					<alt>Formation fabrication de bières vins et liqueurs artisanales</alt>
 				</item>
 				<item>
 					<titre>Formation</titre>
 					<texte>Accessible aux débutants comme aux passionnés, la formation permet d’apprendre les techniques de fabrication, les recettes artisanales et les bases de la fermentation.</texte>
 					<image>img/L_Alchimiste_15.jpg</image>
+					<alt>Apprentissage des techniques artisanales de fermentation et boissons naturelles</alt>
 				</item>
 				<item>
 					<titre>Formation</titre>
 					<texte>Formats disponibles :&lt;br&gt;• Formation en ligne : 50.000 FCFA&lt;br&gt;• Formation en présentiel : sur devis&lt;br&gt;&lt;i&gt;Tarif selon le lieu et le nombre de participants.&lt;/i&gt;</texte>
 					<image>img/L_Alchimiste_16.jpg</image>
+					<alt>Formation artisanale en ligne et présentielle boissons alcoolisées naturelles</alt>
 				</item>
 			</zone>
 			<zone id="pourquoialchimiste">
@@ -804,6 +887,7 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Pourquoi choisir L’Alchimiste ?</titre>
 					<texte>&lt;b&gt;L’Alchimiste&lt;/b&gt;, c’est une fabrication artisanale à partir d’ingrédients locaux, des recettes originales aux saveurs authentiques, une production sur commande et la possibilité de se former à la fabrication artisanale.</texte>
 					<image>img/L_Alchimiste_17.jpg</image>
+					<alt>L’Alchimiste fabrication artisanale locale recettes authentiques et formation</alt>
 				</item>
 			</zone>
 		</activite>
@@ -833,11 +917,13 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>BTCS, c’est quoi ?</titre>
 					<texte>Les BTCS (Briques de Terre Compressées Stabilisées) sont des briques fabriquées à partir de terre compressée et stabilisée afin d’offrir une excellente résistance et une construction plus respectueuse de l’environnement.</texte>
 					<image>img/BTCS_by_KHEM_01.jpg</image>
+					<alt>Briques de terre compressées stabilisées BTCS pour construction écologique</alt>
 				</item>
 				<item>
 					<titre>BTCS, c’est quoi ?</titre>
 					<texte>Appréciées pour leur solidité, leur confort thermique et leur aspect naturel, les BTCS représentent une alternative durable aux matériaux de construction classiques.</texte>
 					<image>img/BTCS_by_KHEM_02.jpg</image>
+					<alt>Construction durable en BTCS avec confort thermique et aspect naturel</alt>
 				</item>
 			</zone>
 			<zone id="fabricationbtcs">
@@ -846,11 +932,13 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Fabrication de BTCS</titre>
 					<texte>Des briques fabriquées avec soin&lt;br&gt;&lt;b&gt;BTCS by KHEM&lt;/b&gt; propose la fabrication de briques de terre compressées stabilisées adaptées aux besoins des particuliers, professionnels et chantiers de construction.</texte>
 					<image>img/BTCS_by_KHEM_03.jpg</image>
+					<alt>Fabrication artisanale de briques BTCS pour maisons et chantiers</alt>
 				</item>
 				<item>
 					<titre>Fabrication de BTCS</titre>
 					<texte>Nos briques sont conçues pour offrir résistance, durabilité et esthétique naturelle tout en valorisant les ressources locales.</texte>
 					<image>img/BTCS_by_KHEM_04.jpg</image>
+					<alt>Briques BTCS résistantes durables et écologiques fabriquées localement</alt>
 				</item>
 			</zone>
 			<zone id="locationbtcs">
@@ -859,11 +947,13 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Location de machines</titre>
 					<texte>Nous proposons la location de machines de fabrication de BTCS pour vos projets de construction, vos productions locales ou vos chantiers.</texte>
 					<image>img/BTCS_by_KHEM_05.jpg</image>
+					<alt>Location de machines de fabrication de briques BTCS pour construction</alt>
 				</item>
 				<item>
 					<titre>Location de machines</titre>
 					<texte>Une solution pratique et à moindre coût pour produire vos briques directement sur site.</texte>
 					<image>img/BTCS_by_KHEM_06.jpg</image>
+					<alt>Production locale de briques BTCS directement sur chantier grâce aux machines</alt>
 				</item>
 			</zone>
 			<zone id="formationbtcs">
@@ -872,16 +962,19 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Formations</titre>
 					<texte>Apprenez la fabrication et la maçonnerie en BTCS&lt;br&gt;&lt;b&gt;BTCS by KHEM&lt;/b&gt; propose des formations dédiées à la fabrication de briques BTCS ainsi qu’aux techniques de maçonnerie adaptées à ce type de construction.</texte>
 					<image>img/BTCS_by_KHEM_07.jpg</image>
+					<alt>Formation fabrication et maçonnerie en briques BTCS écologiques</alt>
 				</item>
 				<item>
 					<titre>Formations</titre>
 					<texte>Les formations permettent d’acquérir les bases techniques nécessaires pour produire et utiliser les BTCS efficacement sur différents types de projets.</texte>
 					<image>img/BTCS_by_KHEM_08.jpg</image>
+					<alt>Apprentissage des techniques de construction et fabrication de BTCS</alt>
 				</item>
 				<item>
 					<titre>Formations</titre>
 					<texte>Formations disponibles :&lt;br&gt;• Fabrication de BTCS&lt;br&gt;• Maçonnerie en BTCS</texte>
 					<image>img/BTCS_by_KHEM_09.jpg</image>
+					<alt>Formations professionnelles en fabrication et maçonnerie BTCS</alt>
 				</item>
 			</zone>
 			<zone id="pourquoibtcs">
@@ -890,6 +983,7 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Pourquoi nous choisir ?</titre>
 					<texte>&lt;b&gt;BTCS by KHEM&lt;/b&gt; propose des solutions de construction écologiques, économiques et durables avec des briques résistantes, une fabrication locale, des machines adaptées et des formations pratiques pour accompagner vos projets.</texte>
 					<image>img/BTCS_by_KHEM_10.jpg</image>
+					<alt>Solutions de construction écologique durable et économique en BTCS</alt>
 				</item>
 			</zone>
 			<zone id="tarifsbtcs">
@@ -898,6 +992,7 @@ Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, 
 					<titre>Tarifs</titre>
 					<texte>&lt;b&gt;Besoin d’un devis ?&lt;/b&gt;&lt;br&gt;Les tarifs varient selon les besoins, les quantités, les machines et les prestations demandées. Contactez-nous pour obtenir plus d’informations ou un devis personnalisé.</texte>
 					<image>img/BTCS_by_KHEM_11.jpg</image>
+					<alt>Devis et tarifs personnalisés pour fabrication formation et machines BTCS</alt>
 				</item>
 			</zone>
 
