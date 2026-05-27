@@ -312,9 +312,9 @@
 			</zone>
 
 
-			<!-- ── ZONE : remK à base de racines ── -->
+			<!-- ── ZONE : remK aux racines ── -->
 			<zone id="remkracine">
-				<nom>remK à base de racines</nom>
+				<nom>remK aux racines</nom>
 
 				<item>
 					<titre>Souchet (graines de palmiste)</titre>
