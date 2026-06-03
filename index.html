@@ -71,43 +71,37 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
+		<!-- Emoji -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 		<!-- Feuille de styles du site -->
 		<link rel="stylesheet" href="styles.css" />
-
 	</head>
-
 	<body>
-
 		<!-- =====================================================
 		     LOADER (ÉCRAN D'ACCUEIL)
 		     Affiché pendant le chargement du site.
 		     app.js lui ajoute la classe .hidden une fois prêt.
 		     ===================================================== -->
-
 		<div id="startup-loader">
 			<div class="startup-loader-content">
-
 				<!-- Logo : src et alt injectés par app.js depuis <branding> du XML -->
-				<img data-site-logo src="img/Logo.jpg" alt="Logo" class="startup-loader-logo" />
+				<div class="startup-loader-logo-wrapper"><img data-site-logo src="img/Logo.jpg" alt="Logo" class="startup-loader-logo" /></div>
+
 
 				<!-- Ligne lumineuse de scan animée -->
 				<div class="startup-loader-line"></div>
-
 				<!-- Texte d'état : injecté par app.js depuis <loaderText> du XML -->
 				<div id="startup-loader-text"></div>
-
 			</div>
 		</div>
-
 
 		<!-- =====================================================
 		     GRAIN (TEXTURE DE FOND)
 		     Div fixé, invisible aux clics, au-dessus de tout.
 		     Stylisé dans styles.css (.noise).
 		     ===================================================== -->
-
 		<div class="noise"></div>
-
 
 		<!-- =====================================================
 		     BLOBS ANIMÉS
@@ -115,18 +109,7 @@
 		     app.js supprime tout ce bloc si <animation>0</animation>
 		     est défini dans le XML.
 		     ===================================================== -->
-
-		<div id="alchemic-bg" class="alchemic-bg">
-			<div class="blob blob-1"></div>
-			<div class="blob blob-2"></div>
-			<div class="blob blob-3"></div>
-			<div class="blob blob-4"></div>
-			<div class="blob blob-5"></div>
-			<div class="blob blob-6"></div>
-			<div class="blob blob-7"></div>
-			<div class="blob blob-8"></div>
-		</div>
-
+		<div id="background-animation"></div>
 
 		<!-- =====================================================
 		     SECTION HÉRO (ACCUEIL)
@@ -135,10 +118,8 @@
 		     ===================================================== -->
 		<section id="hero" class="flex items-center px-6 py-10 sm:min-h-screen sm:py-24 pb-8 sm:pb-24">
 			<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 sm:gap-16 items-center w-full border-b border-white/10 pb-10 sm:pb-24">
-
 				<!-- ── COLONNE GAUCHE : texte ── -->
 				<div class="space-y-2 sm:space-y-8 section-fade relative text-left">
-
 					<!-- Ancre de scroll ciblée par goToSection('hero') dans app.js -->
 					<div id="hero-anchor" class="scroll-offset"></div>
 
@@ -172,7 +153,7 @@
 						<a
 							id="hero-button"
 							href="#"
-							class="px-4 py-2 text-sm sm:px-8 sm:py-4 sm:text-base rounded-2xl text-black font-semibold hover:scale-105 transition duration-300"
+							class="px-3 py-1 text-xs sm:px-8 sm:py-4 sm:text-base rounded-2xl text-black font-semibold hover:scale-105 transition duration-300"
 							style="background: var(--color-primary);">
 						</a>
 						<!-- Bouton 2 : "Contacte-nous" — lien WhatsApp externe -->
@@ -180,44 +161,25 @@
 							id="hero-button2"
 							href="#"
 							target="_blank"
-							class="px-4 py-2 text-sm sm:px-8 sm:py-4 sm:text-base rounded-2xl text-black font-semibold hover:scale-105 transition duration-300"
+							class="px-3 py-1 text-xs sm:px-8 sm:py-4 sm:text-base rounded-2xl text-black font-semibold hover:scale-105 transition duration-300"
 							style="background: var(--color-primary);">
 						</a>
 					</div>
-
 				</div>
 
 				<!-- ── COLONNE DROITE : logo dans un cadre glassmorphism ── -->
 				<div class="section-fade">
 					<div class="glass rounded-[2rem] sm:rounded-[3rem] aspect-square flex items-center justify-center relative overflow-hidden">
 						<!-- Halo lumineux couleur primaire (doré) -->
-						<div
-							class="absolute w-96 h-96 rounded-full blur-3xl"
-							style="background: color-mix(in srgb, var(--color-primary) 20%, transparent);">
-						</div>
-
+						<div class="absolute w-96 h-96 rounded-full blur-3xl" style="background: color-mix(in srgb, var(--color-primary) 20%, transparent);"></div>
 						<!-- Halo lumineux couleur secondaire (vert) -->
-						<div
-							class="absolute w-72 h-72 rounded-full blur-3xl"
-							style="background: color-mix(in srgb, var(--color-secondary) 20%, transparent);">
-						</div>
-
+						<div class="absolute w-72 h-72 rounded-full blur-3xl" style="background: color-mix(in srgb, var(--color-secondary) 20%, transparent);"></div>
 						<!-- Logo centré, au-dessus des halos -->
-						<div class="relative z-10 text-center">
-							<img
-								data-site-logo
-								src="img/Logo.jpg"
-								alt="Logo"
-								class="mx-auto rounded-[2rem] object-contain" />
-						</div>
-
+						<div class="relative z-10 text-center"><img data-site-logo src="img/Logo.jpg" alt="Logo" class="block mx-auto rounded-[2rem] object-contain" /></div>
 					</div>
 				</div>
-
 			</div>
-
 		</section>
-
 
 		<!-- =====================================================
 		     ACTIVITÉS
@@ -225,41 +187,26 @@
 		     Chaque <activite> du XML génère une section complète
 		     avec sa colonne texte et son panneau vitrine.
 		     ===================================================== -->
-
-		<section id="activites" class="pt-0 pb-8 sm:pb-16 px-6">
-			<div id="activities-container" class="max-w-7xl mx-auto space-y-8 sm:space-y-32"></div>
-		</section>
-
+		<section id="activites" class="pt-0 pb-8 sm:pb-16 px-6"><div id="activities-container" class="max-w-7xl mx-auto space-y-8 sm:space-y-32"></div></section>
 
 		<!-- =====================================================
 		     FOOTER
 		     Rempli entièrement par app.js depuis <footer> du XML.
 		     ===================================================== -->
-
-		<footer id="footer-cta" class="py-0 sm:py-32 px-6 section-fade scroll-mt-0 sm:scroll-mt-24">
-		</footer>
-		<br><br>
-
+		<footer id="footer-cta" class="py-0 sm:py-32 px-6 section-fade scroll-mt-0 sm:scroll-mt-24"></footer>
+		<div class="h-96 sm:h-32"></div>
 
 		<!-- =====================================================
 		     BOUTONS FLOTTANTS (coin bas-droit)
 		     Cachés par défaut (.hidden), rendus visibles par app.js
 		     une fois le site chargé.
 		     ===================================================== -->
-
 		<div id="floating-controls" class="fixed !top-1 !right-1 z-[99999] flex flex-col gap-2">
 			<!-- Bouton son -->
-			<button
-				id="audio-toggle"
-				class="hidden !w-5 !h-5 !min-w-0 !min-h-0 !p-0 rounded-full glass text-[20px] leading-none flex items-center justify-center"
-			>🔇</button>
+			<button id="audio-toggle" class="hidden !w-5 !h-5 !min-w-0 !min-h-0 !p-0 rounded-full glass text-[20px] leading-none flex items-center justify-center"><i class="fa-solid fa-volume-xmark" style="color: rgb(116, 163, 9);"></i></button>
 			<!-- Bouton blobs -->
-			<button
-				id="blob-toggle"
-				class="hidden !w-5 !h-5 !min-w-0 !min-h-0 !p-0 rounded-full glass text-[20px] leading-none flex items-center justify-center"
-			>✨</button>
+			<button id="blob-toggle" class="hidden !w-5 !h-5 !min-w-0 !min-h-0 !p-0 rounded-full glass text-[20px] leading-none flex items-center justify-center"><i class="fa-solid fa-virus-covid" style="color: rgb(99, 230, 190);"></i></button>
 		</div>
-
 
 		<!-- =====================================================
 		     SCRIPT PRINCIPAL
@@ -267,9 +214,6 @@
 		     app.js lit le XML, construit toute la page et
 		     gère les animations, l'audio et la navigation.
 		     ===================================================== -->
-
 		<script src="app.js"></script>
-
 	</body>
-
 </html>
