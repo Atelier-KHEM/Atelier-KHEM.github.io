@@ -1,0 +1,12 @@
+# ================================================================
+#  ROBOTS.TXT
+#  Les moteurs de recherche PEUVENT accéder aux deux versions.
+#  Ils les indexeront sous leurs vrais chemins (/institutionnel/
+#  et /dynamique/) mais l'utilisateur ne les verra jamais.
+# ================================================================
+
+User-agent: *
+Allow: /
+
+# Sitemap global listant les pages des deux versions
+Sitemap: https://atelier-khem.github.io/sitemap.xml

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Chargement…</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .loader {
+      width: 32px;
+      height: 32px;
+      border: 3px solid #333;
+      border-top-color: #63e6be;
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <script src="/config.js"></script>
+  <script>
+    (function () {
+      const key      = SITE_CONFIG.storageKey;
+      const versions = SITE_CONFIG.versions;
+      const params   = new URLSearchParams(window.location.search);
+
+      // ?version=xxx prioritaire (pratique en dev)
+      let target = params.get("version");
+      if (!target || !versions[target]) {
+        target = localStorage.getItem(key);
+      }
+      if (!target || !versions[target]) {
+        target = SITE_CONFIG.defaultVersion;
+      }
+
+      localStorage.setItem(key, target);
+      window.location.replace("/" + versions[target].folder + "/");
+    })();
+  </script>
+</body>
+</html>
