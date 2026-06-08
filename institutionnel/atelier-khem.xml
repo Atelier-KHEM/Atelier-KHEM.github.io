@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atelier>
+
+	<!-- ════════════════════════════════════
+	     CONFIGURATION GLOBALE
+	     ════════════════════════════════════ -->
+	<config>
+		<debug>0</debug>
+		<theme>
+			<background>#171C22</background>
+			<primary>#C68346</primary>
+			<secondary>#1FAF8C</secondary>
+			<textSoft>#B7B0A7</textSoft>
+		</theme>
+	</config>
+
+	<!-- ════════════════════════════════════
+	     BRANDING
+	     ════════════════════════════════════ -->
+	<branding>
+		<siteName>Atelier KHEM</siteName>
+		<siteUrl>https://atelier-khem.github.io/</siteUrl>
+		<logo>img/Logo.jpg</logo>
+		<logo_navbar>img/Logo_Barre_Navigation.png</logo_navbar>
+		<loaderText>Initialisation des expériences</loaderText>
+		<colorPrimary>#C68346</colorPrimary>
+		<colorSecondary>#1FAF8C</colorSecondary>
+		<colorBackground>#171C22</colorBackground>
+		<colorText>#B7B0A7</colorText>
+	</branding>
+
+	<!-- ════════════════════════════════════
+	     FOOTER
+	     ════════════════════════════════════ -->
+	<footer>
+		<site>Atelier KHEM</site>
+		<url></url>
+		<titre><![CDATA[<h2 class="footer-brand"><span style="color:#1FAF8C;">Créer</span><br><span style="color:#FF8A3D;">Transformer</span><br><span style="color:#2D6CDF;">Révéler</span></h1>]]></titre>
+		<texte></texte>
+		<whatsapp>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Footer%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20l'Atelier%20KHEM%0A%0A</whatsapp>
+		<target>_blank</target>
+		<whatsappText>WhatsApp : +237 693 47 42 53</whatsappText>
+		<email>atelier.khem@gmail.com</email>
+	</footer>
+
+	<!-- ════════════════════════════════════
+	     DONNÉES ANIMÉES
+	     ════════════════════════════════════ -->
+	<donnees_animees>
+		<Annees_Experience>
+			<type>compteur</type>
+			<debut>0</debut>
+			<depuis>1997</depuis>
+			<vitesse>40</vitesse>
+			<pause>1500</pause>
+		</Annees_Experience>
+		<Liste_Univers>
+			<type>defilement_horizontal</type>
+			<element_liste>Rhums Arrangés remK</element_liste>
+			<element_liste>Guiah Songs</element_liste>
+			<element_liste>KOKOLUX by Schouama</element_liste>
+			<element_liste>L'Alchimiste</element_liste>
+			<element_liste>BTCS by KHEM</element_liste>
+			<vitesse>40</vitesse>
+			<pause>0</pause>
+		</Liste_Univers>
+		<Liste_Expertises>
+			<type>defilement_horizontal</type>
+			<element_liste>branding</element_liste>
+			<element_liste>intelligence artificielle appliquée aux entreprises</element_liste>
+			<element_liste>fabrication de bières artisanales</element_liste>
+			<element_liste>création de sites internet</element_liste>
+			<element_liste>éco-construction</element_liste>
+			<element_liste>production audiovisuelle</element_liste>
+			<element_liste>fabrication d'huiles végétales</element_liste>
+			<element_liste>référencement naturel (SEO)</element_liste>
+			<element_liste>maçonnerie en BTCS</element_liste>
+			<element_liste>marketing digital</element_liste>
+			<element_liste>fabrication de rhums arrangés</element_liste>
+			<element_liste>développement de projets</element_liste>
+			<element_liste>transformation agroalimentaire</element_liste>
+			<element_liste>conception de logos</element_liste>
+			<element_liste>formation professionnelle</element_liste>
+			<element_liste>stratégies marketing</element_liste>
+			<element_liste>production de contenus digitaux</element_liste>
+			<element_liste>briques de terre compressées stabilisées (BTCS)</element_liste>
+			<element_liste>création graphique</element_liste>
+			<element_liste>valorisation des ressources locales</element_liste>
+			<element_liste>montage vidéo</element_liste>
+			<element_liste>fabrication de vins artisanaux</element_liste>
+			<element_liste>création d'identités visuelles</element_liste>
+			<element_liste>communication visuelle et digitale</element_liste>
+			<element_liste>location de machines BTCS</element_liste>
+			<element_liste>transformation végétale</element_liste>
+			<element_liste>renforcement de la visibilité des marques et entreprises</element_liste>
+			<element_liste>publicité radio et télévision</element_liste>
+			<element_liste>formation à la fabrication de BTCS</element_liste>
+			<element_liste>design d'emballages et d'étiquettes</element_liste>
+			<element_liste>production de boissons artisanales</element_liste>
+			<element_liste>entrepreneuriat et innovation locale</element_liste>
+			<element_liste>élaboration de chartes graphiques</element_liste>
+			<element_liste>formation aux techniques de maçonnerie en BTCS</element_liste>
+			<element_liste>fabrication de liqueurs artisanales</element_liste>
+			<element_liste>techniques de construction durables</element_liste>
+			<element_liste>accompagnement de porteurs de projets</element_liste>
+			<element_liste>impression d'étiquettes personnalisées</element_liste>
+			<element_liste>création de supports publicitaires</element_liste>
+			<element_liste>automatisation de processus grâce à l'intelligence artificielle</element_liste>
+			<element_liste>développement de marques artisanales</element_liste>
+			<element_liste>conception de campagnes de communication</element_liste>
+			<element_liste>formation en fabrication de boissons artisanales</element_liste>
+			<element_liste>valorisation des produits du terroir</element_liste>
+			<element_liste>création de contenus pour les réseaux sociaux</element_liste>
+			<element_liste>audit et amélioration de l'image de marque</element_liste>
+			<element_liste>solutions de communication pour PME et entrepreneurs</element_liste>
+			<element_liste>construction écologique à faible impact environnemental</element_liste>
+			<element_liste>innovation appliquée à l'artisanat et à la production locale</element_liste>
+			<vitesse>500</vitesse>
+			<pause>0</pause>
+		</Liste_Expertises>
+		<Annees_remK>
+			<type>compteur</type>
+			<debut>0</debut>
+			<depuis>2018</depuis>
+			<vitesse>120</vitesse>
+			<pause>1500</pause>
+		</Annees_remK>
+	</donnees_animees>
+
+	<!-- ════════════════════════════════════
+	     PAGES
+	     ════════════════════════════════════ -->
+	<pages>
+
+		<!-- ══════════════════════════════════
+		     PAGE : ACCUEIL
+		     ══════════════════════════════════ -->
+		<page id="accueil">
+			<menu_label>Accueil</menu_label>
+			<url></url>
+			<cible>khem_hero</cible>
+			<seo>
+				<title>Atelier KHEM - Atelier de création graphique et de transformation de matières premières</title>
+				<description>Atelier KHEM réunit création graphique, branding, rhums arrangés artisanaux, huile de coco, huile de palmiste et autre huiles végétales, savons, briques de terre compressées stabilisées BTCS ainsi que des innovations locales au Cameroun.</description>
+				<keywords>rhum arrangé, branding, création graphique, vidéos publicitaires, Cameroun, artisanat, Kribi, Yaoundé</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io{{ROOT_PATH}}img/og-cover.jpg</ogImage>
+			</seo>
+
+			<!-- ── HERO ── -->
+			<section>
+				<id>khem_hero</id>
+				<type>hero</type>
+				<badge>Atelier KHEM</badge>
+				<image>img/Logo.jpg</image>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Créer</span><br><span style="color:#FF8A3D;">Transformer</span><br><span style="color:#2D6CDF;">Révéler</span>]]></titre>
+				<description>Atelier de création graphique&lt;br&gt;et de transformation de matières premières</description>
+				<bouton><texte>Découvrez nos activités</texte><lien>#khem_pieuvre</lien></bouton>
+				<bouton><texte>Contactez-nous</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Accueil%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20l'Atelier%20KHEM%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+
+			<!-- ── PIEUVRE / ÉCOSYSTÈME ── -->
+			<section>
+				<id>khem_pieuvre</id>
+				<type>pieuvre</type>
+				<label>L'écosystème</label>
+				<titre>Atelier KHEM &amp; ses univers</titre>
+				<description><![CDATA[<p><strong>L'Atelier KHEM</strong> est une entreprise camerounaise regroupant cinq marques artisanales spécialisées dans les <strong>rhums arrangés</strong>, la <strong>communication visuelle et digitale</strong>, les <strong>huiles végétales</strong>, les <strong>boissons artisanales</strong> et les <strong>briques de terre compressées stabilisées (BTCS)</strong>. Nous proposons des produits, services et formations destinés aux particuliers, entrepreneurs et professionnels au Cameroun et en Afrique.</p><br><p>À travers les <strong>Rhums arrangés remK</strong> (rhums arrangés 100 % camerounais), <strong>Guiah Songs</strong> (création de logos, chartes graphiques, flyers, affiches, vidéos publicitaires, publicités radio et TV, sites internet et impression d'étiquettes), <strong>KOKOLUX by Schouama</strong> (fabrication d'huiles végétales artisanales), <strong>L'Alchimiste</strong> (bières, vins, liqueurs artisanales et formations) et <strong>BTCS by KHEM</strong> (fabrication de briques de terre compressées stabilisées, location de machines BTCS, maçonnerie et formation), nous valorisons les ressources locales et le savoir-faire camerounais.</p>]]></description>
+				<image_centrale><image>img/Logo_Pieuvre_Atelier_KHEM.jpg</image><lien>/</lien></image_centrale>
+				<satellite><image>img/Logo_Pieuvre_Rhums_arranges_remK.jpg</image><lien>/rhums_arranges_remk/</lien><nom>Rhums arrangés remK</nom></satellite>
+				<satellite><image>img/Logo_Pieuvre_KOKOLUX_by_Schouama.jpg</image><lien>/kokolux_by_schouama/</lien><nom>KOKOLUX by Schouama</nom></satellite>
+				<satellite><image>img/Logo_Pieuvre_BTCS_by_KHEM.jpg</image><lien>/btcs_by_khem/</lien><nom>BTCS by KHEM</nom></satellite>
+				<satellite><image>img/Logo_Pieuvre_L_Alchimiste.jpg</image><lien>/l_alchimiste/</lien><nom>L'Alchimiste</nom></satellite>
+				<satellite><image>img/Logo_Pieuvre_Guiah_Songs.jpg</image><lien>/guiah_songs/</lien><nom>Guiah Songs</nom></satellite>
+			</section>
+
+			<!-- ── NOS UNIVERS ── -->
+			<section>
+				<id>khem_univers</id>
+				<type>univers</type>
+				<label>Nos univers</label>
+				<titre>Cinq marques, une vision</titre>
+				<description>Atelier KHEM rassemble plusieurs activités complémentaires autour de l'artisanat, de la création, de l'innovation et de l'entrepreneuriat.</description>
+				<item>
+					<titre>Rhums arrangés remK</titre>
+					<sous_titre>Rhums arrangés artisanaux 100% Camerounais</sous_titre>
+					<description>Rhums arrangés remK transforme fruits, épices, racines, fleurs et feuilles en arrangés uniques au monde, issus de 30 années d'expérience et de création artisanale.</description>
+					<image>img/Logo_Rhums_arranges_remK.jpg</image>
+					<lien>/rhums_arranges_remk/</lien>
+					<lien_texte>Découvrir remK →</lien_texte>
+				</item>
+				<item>
+					<titre>Guiah Songs</titre>
+					<sous_titre>Branding, Infographies, Vidéos publicitaires, …</sous_titre>
+					<description>Guiah Songs transforme les idées en contenus percutants : chansons personnalisées, créations visuelles, vidéos, identité de marque et communication digitale sur mesure.</description>
+					<image>img/Logo_Guiah_Songs.jpg</image>
+					<lien>/guiah_songs/</lien>
+					<lien_texte>Découvrir Guiah Songs →</lien_texte>
+				</item>
+				<item>
+					<titre>KOKOLUX by Schouama</titre>
+					<sous_titre>Le naturel au service de votre bien-être</sous_titre>
+					<description>Des huiles naturelles soigneusement sélectionnées pour la cuisine et pour nourrir vos cheveux, hydrater votre peau et révéler votre éclat au quotidien.</description>
+					<image>img/Logo_KOKOLUX_by_Schouama.jpg</image>
+					<lien>/kokolux_by_schouama/</lien>
+					<lien_texte>Découvrir KOKOLUX →</lien_texte>
+				</item>
+				<item>
+					<titre>L'Alchimiste</titre>
+					<sous_titre>Bières, vins et liqueurs artisanales</sous_titre>
+					<description>Découvrez des boissons artisanales uniques fabriquées à partir d'ingrédients locaux soigneusement sélectionnés : bissap, ananas, feuilles d'avocatier, de citronnier et bien d'autres recettes originales.</description>
+					<image>img/Logo_L_Alchimiste.jpg</image>
+					<lien>/l_alchimiste/</lien>
+					<lien_texte>Découvrir L'Alchimiste →</lien_texte>
+				</item>
+				<item>
+					<titre>BTCS by KHEM</titre>
+					<sous_titre>Briques de Terre Compressées Stabilisées</sous_titre>
+					<description>Une solution de construction durable, économique et écologique adaptée aux projets modernes et traditionnels.</description>
+					<image>img/Logo_BTCS_by_KHEM.jpg</image>
+					<lien>/btcs_by_khem/</lien>
+					<lien_texte>Découvrir BTCS →</lien_texte>
+				</item>
+			</section>
+
+			<!-- ── NOS VALEURS ── -->
+			<section>
+				<id>khem_valeurs</id>
+				<type>information</type>
+				<label>Nos valeurs</label>
+				<titre>Ce en quoi nous croyons</titre>
+				<description>L'Atelier KHEM construit chaque projet sur quatre piliers fondamentaux : créativité, qualité, innovation et transmission. Ces valeurs guident nos actions au quotidien et définissent la façon dont nous accompagnons nos clients et partenaires.</description>
+				<item><description>Créativité</description></item>
+				<item><description>Qualité</description></item>
+				<item><description>Innovation</description></item>
+				<item><description>Transmission</description></item>
+			</section>
+
+			<!-- ── NOTRE DIFFÉRENCE ── -->
+			<section>
+				<id>khem_difference</id>
+				<type>information</type>
+				<label>Notre différence</label>
+				<titre>Ce qui nous distingue</titre>
+				<description>Ce qui fait la force de l'Atelier KHEM, c'est la combinaison unique d'une expertise pluridisciplinaire, d'un ancrage local fort et d'une approche humaine et personnalisée. Voici ce qui nous différencie concrètement.</description>
+				<item><description><![CDATA[<strong>Plus de #Annees_Experience# ans d'expérience</strong>]]></description></item>
+				<item><description><![CDATA[<strong>Expertise dans les domaines suivants</strong> : #Liste_Expertises#]]></description></item>
+				<item><description><![CDATA[<strong>Plusieurs productions artisanales de qualité</strong> privilégiant le savoir-faire, le contrôle des procédés et le souci du détail.]]></description></item>
+				<item><description><![CDATA[<strong>Accompagnement personnalisé</strong> adapté aux besoins spécifiques de chaque client, entrepreneur ou porteur de projet.]]></description></item>
+				<item><description><![CDATA[<strong>Valorisation des matières premières locales</strong> et des ressources disponibles au Cameroun.]]></description></item>
+				<item><description><![CDATA[<strong>Transmission du savoir-faire</strong> à travers des formations pratiques et accessibles.]]></description></item>
+				<item><description><![CDATA[<strong>Innovation permanente</strong> combinant techniques artisanales traditionnelles et outils modernes.]]></description></item>
+				<item><description><![CDATA[<strong>Solutions clés en main</strong> allant de la conception à la réalisation et à la formation.]]></description></item>
+				<item><description><![CDATA[<strong>Engagement pour le développement local</strong> à travers la création de produits et services à forte valeur ajoutée.]]></description></item>
+			</section>
+
+			<!-- ── NOTRE VISION ── -->
+			<section>
+				<id>khem_vision</id>
+				<type>information</type>
+				<label>Notre vision</label>
+				<titre>Construire ensemble</titre>
+				<description>Construire un écosystème de marques complémentaires où artisanat, créativité et innovation se renforcent mutuellement pour créer de la valeur au Cameroun et en Afrique.</description>
+				<item><description><![CDATA[Chez <strong>Atelier KHEM</strong>, nous sommes convaincus que les meilleures réalisations naissent de la rencontre entre les savoir-faire. C'est pourquoi nous développons des activités complémentaires qui partagent les mêmes valeurs : <b>qualité</b>, <b>durabilité</b>, <b>créativité</b> et <b>proximité</b> avec nos clients.]]></description></item>
+				<item><description><![CDATA[Notre ambition est de créer un environnement où la <b>création graphique</b>, le <b>développement web</b>, la <b>communication visuelle</b>, l'<b>artisanat</b> et les solutions de <b>construction innovantes</b> peuvent collaborer pour répondre aux besoins des particuliers, des entrepreneurs, des associations et des entreprises.]]></description></item>
+				<item><description><![CDATA[Chaque projet mené au sein de l'<strong>écosystème KHEM</strong> contribue à renforcer les autres. Une <b>identité visuelle</b> cohérente valorise une activité artisanale. Un <b>site internet performant</b> améliore la visibilité d'une entreprise. Une solution de <b>construction durable</b> participe au développement local. Ensemble, ces compétences créent davantage de valeur que lorsqu'elles sont utilisées séparément.]]></description></item>
+				<item><description><![CDATA[Nous croyons également à une approche responsable de l'innovation. Les <b>technologies numériques</b>, la <b>création artistique</b> et les techniques de <b>construction écologique</b> doivent rester au service des personnes, des territoires et du <b>développement durable</b>.]]></description></item>
+				<item><description><![CDATA[Notre vision à long terme est de bâtir un réseau de marques et de projets capables d'accompagner nos clients dans leurs besoins de <b>communication</b>, de <b>présence en ligne</b>, de <b>valorisation de leur image</b> et de développement d'activités innovantes en <b>Afrique</b> et ailleurs.]]></description></item>
+			</section>
+
+			<!-- ── CTA ── -->
+			<section>
+				<id>khem_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">collaborer avec</span> <span style="color:#2D6CDF;">Atelier KHEM ?</span>]]></titre>
+				<description>Découvrez nos activités ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Accueil%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20l'Atelier%20KHEM%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+
+		</page>
+
+		<!-- ┌─────────────────────────────────────┐
+		     │  ACTIVITÉ 1 : RHUMS ARRANGÉS REMK   │
+		     └─────────────────────────────────────┘ -->
+
+		<page id="rhumsarrangesremk">
+			<parent>accueil</parent>
+			<menu_label>Rhums arrangés remK</menu_label>
+			<url>rhums_arranges_remk/</url>
+			<cible>remk_hero</cible>
+			<seo>
+				<title>Rhums Arrangés remK : Rhums artisanaux 100% Camerounais | Atelier KHEM</title>
+				<description>Découvrez les rhums arrangés remK, créations artisanales camerounaises à base de fruits, épices, racines et plantes. Plus de 25 recettes uniques disponibles en bouteilles 70cl, flacons 20cl et mignonettes. Commande via WhatsApp.</description>
+				<keywords>rhum arrangé Cameroun, rhum artisanal, remK, rhum arrangé Kribi, rhum épices, rhum fruits tropicaux, rhum arrangé artisanal, acheter rhum arrangé Cameroun</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>remk_hero</id>
+				<type>hero</type>
+				<badge>Rhums arrangés remK</badge>
+				<image>img/Logo_Rhums_arranges_remK.jpg</image>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Arrrangés</span><br><span style="color:#FF8A3D;">100%</span><br><span style="color:#2D6CDF;">Camerounais</span>]]></titre>
+				<description>L'authenticité du rhum arrangé,&lt;br&gt;sublimée par la créativité et l'excellence</description>
+				<bouton><texte>Découvrez-nous</texte><lien>#remk_art</lien></bouton>
+				<bouton><texte>Contactez-nous</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20Rhums%20arrangés%20remK%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+
+			<section>
+				<id>remk_art</id>
+				<type>information</type>
+				<label>Rhums arrangés remK</label>
+				<titre>L'art du rhum arrangé artisanal camerounais</titre>
+				<description>Depuis plus de #Annees_remK# ans, remK crée des rhums arrangés artisanaux uniques à partir des fruits, épices, racines et plantes du Cameroun. Chaque recette est le fruit d'un savoir-faire minutieux transmis avec passion.</description>
+				<item><description><![CDATA[Depuis plus de <strong>#Annees_remK# ans</strong>, <strong>remK</strong> imagine et crée des recettes originales de <strong>rhums arrangés artisanaux</strong> inspirées par la richesse des <strong>fruits, épices, racines, fleurs et plantes du Cameroun</strong>.]]></description></item>
+				<item><description><![CDATA[Chaque bouteille est le fruit d'un travail minutieux où la sélection des <strong>ingrédients</strong>, la maîtrise des <strong>macérations</strong> et la recherche permanente de nouvelles saveurs donnent naissance à des créations uniques.]]></description></item>
+				<item><description><![CDATA[Chez <strong>remK</strong>, nous ne reproduisons pas simplement des recettes traditionnelles. Nous explorons sans cesse de nouvelles associations pour révéler des <strong>arômes surprenants, équilibrés et authentiques</strong>.]]></description></item>
+				<item><description><![CDATA[Certaines recettes mettent à l'honneur les grands classiques du <strong>rhum arrangé</strong>, tandis que d'autres vous invitent à découvrir des <strong>saveurs rares et originales</strong> introuvables ailleurs.]]></description></item>
+			</section>
+
+			<section>
+				<id>remk_fabrication</id>
+				<type>information</type>
+				<label>Rhums arrangés remK</label>
+				<titre>Une fabrication 100% artisanale</titre>
+				<description>Chaque rhum arrangé remK est élaboré artisanalement, sans additifs ni conservateurs industriels. La qualité commence par le choix des ingrédients et se confirme à chaque étape de la macération.</description>
+				<item><description><![CDATA[Cette approche artisanale permet à <strong>remK</strong> de contrôler chaque étape de fabrication et de garantir des <strong>rhums arrangés de qualité</strong>, conçus dans le respect des matières premières locales et du savoir-faire camerounais.]]></description></item>
+			</section>
+
+			<section>
+				<id>remk_saveurs</id>
+				<type>information</type>
+				<label>Rhums arrangés remK</label>
+				<titre>Des saveurs uniques pour chaque occasion</titre>
+				<description>Que vous soyez amateur de rhums classiques ou en quête de saveurs rares, remK propose une gamme de créations adaptées à tous les palais et à toutes les occasions : apéritif, digestif, cadeau ou événement.</description>
+				<item><description><![CDATA[Que vous soyez amateur de <strong>rhum arrangé traditionnel</strong>, passionné de découvertes gustatives ou à la recherche d'un <strong>cadeau original</strong>, <strong>remK</strong> vous propose une gamme de créations adaptées à toutes les envies.]]></description></item>
+				<item><description><![CDATA[Nos recettes accompagnent aussi bien les <strong>moments de convivialité</strong> entre amis que les grandes occasions, les événements professionnels ou les dégustations privées.]]></description></item>
+			</section>
+
+			<section>
+				<id>remk_experience</id>
+				<type>information</type>
+				<label>Rhums arrangés remK</label>
+				<titre>Plus qu'un rhum arrangé, une expérience</titre>
+				<description>Chaque bouteille remK est une invitation au voyage gustatif. Un rhum arrangé artisanal camerounais qui raconte l'histoire d'une passion, d'un terroir et d'un savoir-faire transmis de génération en génération.</description>
+				<item><description><![CDATA[Chaque création <strong>remK</strong> raconte une histoire. Celle d'une rencontre entre les <strong>traditions du rhum arrangé</strong>, l'<strong>innovation artisanale</strong> et les trésors naturels du Cameroun.]]></description></item>
+				<item><description><![CDATA[Notre ambition est simple : faire découvrir des <strong>saveurs authentiques</strong>, surprendre les palais et partager notre passion à travers des produits qui reflètent l'<strong>excellence de l'artisanat local</strong>.]]></description></item>
+				<item><description><![CDATA[Découvrez l'univers <strong>remK</strong> et laissez-vous surprendre par des <strong>rhums arrangés uniques</strong>, entre <strong>tradition, créativité et excellence</strong>.]]></description></item>
+			</section>
+
+			<section>
+				<id>remk_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur remK ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20Rhums%20arrangés%20remK%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="lerhumarrange">
+			<parent>rhumsarrangesremk</parent>
+			<menu_label>Le rhum arrangé</menu_label>
+			<url>rhums_arranges_remk/qu_est_ce_que_le_rhum_arrange</url>
+			<cible>remk_quoi</cible>
+			<seo>
+				<title>Qu'est-ce que le rhum arrangé ? Histoire, dégustation et secrets | remK</title>
+				<description>Tout savoir sur le rhum arrangé : son histoire, ses origines, comment le déguster, pourquoi le logo pirate, et ce que signifie remK. Un guide complet par les artisans camerounais remK.</description>
+				<keywords>qu'est-ce que le rhum arrangé, histoire rhum arrangé, dégustation rhum, rhum arrangé origines, comment consommer rhum arrangé, remK signification</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>remk_quoi</id>
+				<type>information</type>
+				<label>Rhums arrangés remK</label>
+				<titre>Le rhum arrangé</titre>
+				<description>Le rhum arrangé est une préparation artisanale où fruits, épices, racines et plantes macèrent dans du rhum sucré pendant plusieurs années. Chez remK, chaque recette macère 5 ans pour révéler une intensité et une complexité aromatique incomparables.</description>
+				<item><titre>C'est quoi le rhum arrangés ?</titre><description>Le rhum arrangé est une préparation de rhum et sucre dans laquelle macèrent fruits, épices, racines, feuilles ou fleurs afin de révéler des arômes uniques. Nos rhums macèrent 5 ans pour offrir un produit intense, raffiné et authentique.</description><image>img/rhum_arrange.jpg</image><alt>Rhum arrangé artisanal premium aux fruits et épices fabriqué au Cameroun par remK</alt></item>
+				<item><titre>L'histoire du rhum arrangé</titre><description>Il y a deux versions de l'histoire… La première raconte que les marins de la route des Indes utilisaient le rhum pour conserver fruits et épices durant leurs voyages. Le rhum arrangé était né ! Une fois les fruits conservés, les marins n'allaient pas gâcher…</description><image>img/histoire_1.jpg</image><alt>Origines du rhum arrangé et traditions des marins de la route des Indes</alt></item>
+				<item><titre>L'histoire du rhum arrangé</titre><description>La seconde histoire raconte que l'eau-de-vie fabriquée à partir de la canne à sucre (le rhum) n'était pas de très bonne qualité au commencement. Afin de la rendre meilleure, on y ajouta du sucre et des fruits, des épices ou même des feuilles.</description><image>img/histoire_2.jpg</image><alt>Histoire artisanale du rhum arrangé à base de fruits sucre et épices</alt></item>
+				<item><titre>Comment le consomme t-on ?</titre><description>Le rhum arrangé se consomme principalement pur, à température ambiante, frais ou même glacé. Pour ce faire, vous pouvez conserver votre bouteille de rhum arrangé &lt;b&gt;remK&lt;/b&gt; au congélateur ou le servir sur glace, glace pilée ou au shaker.</description><image>img/comment_1.jpg</image><alt>Dégustation de rhum arrangé artisanal servi frais glacé ou sur glace</alt></item>
+				<item><titre>Comment le consomme t-on ?</titre><description>Il est possible de diluer le rhum arrangé dans un soda comme le tonic ou l'eau gazeuse. Si vous utilisez un soda plus fort, vous risquerez de ne plus retrouver le goût du rhum arrangé. Certains rhums arrangés se marient très bien entre eux !</description><image>img/comment_2.jpg</image><alt>Rhum arrangé artisanal utilisé en cocktail avec tonic ou eau gazeuse</alt></item>
+				<item><titre>Comment le consomme t-on ?</titre><description>Ils sont aussi très appréciés avec un bon cigare !&lt;br&gt;&lt;br&gt;</description><image>img/comment_3.jpg</image><alt>Rhum arrangé artisanal dégusté avec cigare et ambiance premium</alt></item>
+				<item><titre>Pourquoi ce logo ?</titre><description>Le rhum et les pirates sont liés depuis toujours. C'est pourquoi nous avons choisi cette symbole pirate : une illustration forte et emblématique de nos produits, malgré les interrogations qu'elle peut susciter chez certains Camerounais.</description><image>img/pourquoi_logo.jpg</image><alt>Logo pirate emblématique de la marque de rhums arrangés remK</alt></item>
+				<item><titre>Que signifie « remK » ?</titre><description>En ce qui concerne le nom de notre marque, « &lt;b&gt;remK&lt;/b&gt; » signifie tout simplement « Kmer » écrit à l'envers. C'est d'ailleurs pour cela que le « K » est en majuscule à la fin du nom.</description><image>img/pourquoi_remk.jpg</image><alt>Origine du nom remK inspiré du mot Kmer écrit à l'envers</alt></item>
+				<item><titre>Les engagements de remK</titre><description>Forts de 30 années d'expérience, nous garantissons une découverte gustative inoubliable ! Nous travaillons chaque jour pour vous offrir un produit de qualité : le rhum arrangé bien entendu, mais aussi le packaging et le service.</description><image>img/engagements_remk.jpg</image><alt>Engagement qualité et fabrication artisanale des rhums arrangés remK</alt></item>
+				<item><titre>remK protège la planète !</titre><description>Nous vous proposons de reprendre chaque bouteille retournée pour la somme de 500 FCFA. C'est un geste écologique qui contribue également à la lutte contre la contrefaçon.</description><image>img/remk_pense_a_la_planete.jpg</image><alt>Bouteilles consignées et démarche écologique des rhums arrangés remK</alt></item>
+			</section>
+
+			<section>
+				<id>remk_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur remK ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%20Le%20rhum%20arrangé%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20Rhums%20arrangés%20remK%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="remk_fruits">
+			<parent>rhumsarrangesremk</parent>
+			<menu_label>remK à base de fruits</menu_label>
+			<url>rhums_arranges_remk/rhums_arranges_remK_a_base_de_fruits</url>
+			<cible>remk_aux_fruits</cible>
+			<seo>
+				<title>Rhums arrangés remK à base de fruits : Ananas, Bissap, Coco et plus | Atelier KHEM</title>
+				<description>Découvrez les rhums arrangés remK à base de fruits tropicaux : ananas, bissap, citron noir, noix de coco, melon, salade de fruits et bien d'autres. Des créations artisanales camerounaises uniques, disponibles en commande directe.</description>
+				<keywords>rhum arrangé ananas, rhum arrangé bissap, rhum arrangé noix de coco, rhum arrangé fruits tropicaux, rhum artisanal Cameroun, remK fruits, rhum arrangé Folérhum</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>remk_aux_fruits</id>
+				<type>information</type>
+				<label>Rhums arrangés remK</label>
+				<titre>Rhums arrangés remK à base de fruits</titre>
+				<description>11 créations artisanales à base de fruits tropicaux et locaux du Cameroun. De l'ananas incontournable au citron noir séché de Kribi, chaque recette explore une palette de saveurs fruitées, douces ou intenses, idéales en apéritif ou digestif.</description>
+				<item><titre>Ananas</titre><description>Classique mais incontournable, ce rhum arrangé est apprécié de tous pour sa douceur et son goût très fruité. Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</description><image>img/ananas.jpg</image><alt>Rhum arrangé artisanal à l'ananas aux saveurs tropicales et fruitées</alt></item>
+				<item><titre>Bissap (fleur d'hibiscus)</titre><description>Une magnifique robe bordeaux et un goût fruité… mais avec du caractère ! Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</description><image>img/bissap.jpg</image><alt>Rhum arrangé bissap hibiscus artisanal à la robe rouge intense</alt></item>
+				<item><titre>Citron noir</titre><description>Des citrons lentement séchés sous le soleil de Kribi, pour un rhum arrangé intense et parfumé. Une saveur acidulée qui rappelle les célèbres bonbons au citron. Idéal en apéritif, en digestif et en accompagnement de desserts.</description><image>img/citron_noir.jpg</image><alt>Rhum arrangé citron noir séché aux notes acidulées et parfumées</alt></item>
+				<item><titre>Folérhum (hibiscus, ananas)</titre><description>Le &lt;b&gt;Rhum arrangé remK&lt;/b&gt; Bissap mais plus fruité et plus doux grâce à l'ananas. Une recette inspirée du Foléré. Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</description><image>img/folerhum.jpg</image><alt>Rhum arrangé Folérhum au bissap et ananas inspiré du foléré camerounais</alt></item>
+				<item><titre>Gingembre - Passion</titre><description>Un mélange de fruit de la passion et de gingembre réveille l'exotisme dans votre verre. Idéal en apéritif et en accompagnement de desserts fruités ou chocolatés.</description><image>img/gingembre_passion.jpg</image><alt>Rhum arrangé gingembre passion exotique aux saveurs intenses et fruitées</alt></item>
+				<item><titre>Jaabi (graines de jujube)</titre><description>La graine de jujube donne à ce rhum arrangé des saveurs uniques de caramel. Idéal en digestif et en accompagnement de desserts sucrés.</description><image>img/jaabi.jpg</image><alt>Rhum arrangé Jaabi aux graines de jujube et notes de caramel</alt></item>
+				<item><titre>Jangolo (ananas, mangue, épices)</titre><description>Un mariage parfait qui dévoile des notes exotiques et fruitées pour une dégustation chaleureuse et intense.</description><image>img/jangolo.jpg</image><alt>Rhum arrangé Jangolo à l'ananas mangue et épices exotiques</alt></item>
+				<item><titre>Melon</titre><description>À base de melon (fruit), peu connu au Cameroun. Ce rhum arrangé a un goût très subtil tout en restant doux. Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</description><image>img/melon.jpg</image><alt>Rhum arrangé artisanal au melon doux et subtilement fruité</alt></item>
+				<item><titre>Mojirhum (citron, menthe)</titre><description>Un rhum arrangé inspiré du mojito, du citron, du lemon, de la menthe et du sucre. C'est un rhum arrangé très rafraîchissant surtout servi glacé, shaké ou sur glace pilée. Idéal en apéritif et en accompagnement de desserts fruités ou chocolatés.</description><image>img/mojirhum.jpg</image><alt>Rhum arrangé Mojirhum citron menthe inspiré du mojito glacé</alt></item>
+				<item><titre>Noix de coco</titre><description>Fermez les yeux, prenez une petite gorgée. Ça y est, vous êtes sur la plage de Kribi ! Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</description><image>img/noix_de_coco.jpg</image><alt>Rhum arrangé noix de coco inspiré des plages tropicales de Kribi</alt></item>
+				<item><titre>Salade de fruits</titre><description>Un mélange équilibré de fruits pour une saveur façon cocktail ou salade de fruits. Idéal en apéritif, en digestif et en accompagnement de desserts fruités ou chocolatés.</description><image>img/salade_de_fruits.jpg</image><alt>Rhum arrangé salade de fruits aux saveurs exotiques façon cocktail</alt></item>
+			</section>
+
+			<section>
+				<id>remk_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur remK ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%20aux%20fruits%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20Rhums%20arrangés%20remK%20aux%20fruits%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="remk_racines">
+			<parent>rhumsarrangesremk</parent>
+			<menu_label>remK à base de racines</menu_label>
+			<url>rhums_arranges_remk/rhums_arranges_remK_a_base_de_racines</url>
+			<cible>remk_aux_racines</cible>
+			<seo>
+				<title>Rhums arrangés remK à base de racines : Souchet, Bonbon Café | Atelier KHEM</title>
+				<description>Les rhums arrangés remK à base de racines africaines : souchet au miel camerounais et Bonbon Café au Mondia Whitei. Des recettes puissantes et authentiques pour les amateurs de saveurs intenses et originales.</description>
+				<keywords>rhum arrangé racines, rhum arrangé Mondia Whitei, rhum souchet miel, Bonbon Café rhum, rhum artisanal africain, rhum arrangé aphrodisiaque racines, remK racines</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>remk_aux_racines</id>
+				<type>information</type>
+				<label>Rhums arrangés remK</label>
+				<titre>Rhums arrangés remK à base de racines</titre>
+				<description>Des recettes rares élaborées à partir de racines africaines soigneusement sélectionnées. Le souchet au miel camerounais pour une douceur unique, le Bonbon Café au Mondia Whitei pour une puissance caractéristique. Deux créations réservées aux palais aventureux.</description>
+				<item><titre>Souchet (graines de palmiste)</titre><description>Ce rhum arrangé à base de graines de palmiste et de miel camerounais est unique et très doux. Il sera apprécié de tous. Idéal en apéritif, en digestif et en accompagnement de desserts sucrés et au miel.</description><image>img/souchet.jpg</image><alt>Rhum arrangé au souchet miel camerounais et graines de palmiste</alt></item>
+				<item><titre>Bonbon café (mondia whitei)</titre><description>La « racine » donne à ce rhum arrangé tout son goût et sa force, le miel l'adoucit. Malgré son nom il n'y a pas de café ni même de saveur café dans cette préparation. C'est un rhum arrangé pour les hommes forts ! Idéal en apéritif et en digestif.</description><image>img/bonbon_cafe.jpg</image><alt>Rhum arrangé Bonbon Café Mondia Whitei aux racines africaines puissantes</alt></item>
+			</section>
+
+			<section>
+				<id>remk_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur remK ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%20aux%20racines%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20Rhums%20arrangés%20remK%20aux%20racines%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="remk_epices">
+			<parent>rhumsarrangesremk</parent>
+			<menu_label>remK à base d'épices</menu_label>
+			<url>rhums_arranges_remk/rhums_arranges_remK_a_base_d_epices</url>
+			<cible>remk_aux_epices</cible>
+			<seo>
+				<title>Rhums arrangés remK à base d'épices : Mbongo, Poivre de Penja, Zizi Pan Pan | Atelier KHEM</title>
+				<description>Osez les rhums arrangés remK aux épices camerounaises : Mbongo aux épices sauce noire, Poivre de Penja et curcuma, et le légendaire Zizi Pan Pan aphrodisiaque. Des saveurs intenses et authentiques qui ne laissent personne indifférent.</description>
+				<keywords>rhum arrangé épices, rhum arrangé Mbongo, rhum Poivre de Penja, Zizi Pan Pan rhum aphrodisiaque, rhum épices camerounaises, remK épices, rhum arrangé relevé</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>remk_aux_epices</id>
+				<type>information</type>
+				<label>Rhums arrangés remK</label>
+				<titre>Rhums arrangés remK à base d'épices</titre>
+				<description>3 créations audacieuses pour les amateurs de caractère. Le Mbongo aux épices de la sauce noire camerounaise, le Poivre de Penja au curcuma pour les palais relevés, et le mythique Zizi Pan Pan, un aphrodisiaque artisanal pas comme les autres.</description>
+				<item><titre>Mbongo (sauce noire)</titre><description>Ce rhum arrangé c'est la magie pour certains, la chimamiture pour d'autres ! Mais ce qui est sûr c'est que son goût de sauce noire ne vous laissera pas indifférent ! Idéal avec une viande de brousse ou un bon plat de Mbongo, évidemment.</description><image>img/mbongo.jpg</image><alt>Rhum arrangé Mbongo aux épices sauce noire et saveurs camerounaises</alt></item>
+				<item><titre>Poivre de Penja - Curcuma</titre><description>Le curcuma s'unit parfaitement au poivre de Penja dans ce rhum arrangé au goût bien relevé. Saurez-vous lui résister ? Idéal en digestif.</description><image>img/poivre_de_penja_curcuma.jpg</image><alt>Rhum arrangé poivre de Penja et curcuma aux épices africaines</alt></item>
+				<item><titre>Zizi Pan Pan (aphrodisiaque)</titre><description>Le rhum arrangé pour les hommes forts par excellence !!! De multiples aphrodisiaques, retardateurs et démarreurs ont été sélectionnés pour créer cette préparation. Messieurs, n'oubliez pas de prendre bien soin de Madame, c'est de ça qu'il s'agit ! Idéal à tout moment de la journée.</description><image>img/zizi_pan_pan.jpg</image><alt>Rhum arrangé aphrodisiaque Zizi Pan Pan artisanal et épicé</alt></item>
+			</section>
+
+			<section>
+				<id>remk_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur remK ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%20aux%20épices%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20Rhums%20arrangés%20remK%20aux%20épices%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="remk_prix">
+			<parent>rhumsarrangesremk</parent>
+			<menu_label>Prix et formats</menu_label>
+			<url>rhums_arranges_remk/rhums_arranges_remK_prix_et_formats</url>
+			<cible>remk_prix_et_formats</cible>
+			<seo>
+				<title>Prix et formats des rhums arrangés remK : Bouteilles, Flacons, Mignonettes | Atelier KHEM</title>
+				<description>Les rhums arrangés remK sont disponibles en bouteille 70cl à 20.000 FCFA, flask 20cl à 7.000 FCFA et mignonette 6cl à 2.500 FCFA. Bouteilles consignées à 500 FCFA. Commandez directement via WhatsApp.</description>
+				<keywords>prix rhum arrangé Cameroun, tarif remK, bouteille rhum arrangé 70cl, flask rhum arrangé, mignonette rhum, acheter rhum arrangé Yaoundé Kribi, commander rhum artisanal</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>remk_prix_et_formats</id>
+				<type>information</type>
+				<label>Rhums arrangés remK</label>
+				<titre>Prix et formats</titre>
+				<description>Les rhums arrangés remK sont proposés en trois formats adaptés à tous les usages : la bouteille 70cl pour les grandes occasions, le flask 20cl pour un cadeau original, et la mignonette 6cl pour découvrir une recette. Bouteilles en verre consignées à 500 FCFA.</description>
+				<item><titre>Prix et formats</titre><description>Nous proposons les &lt;b&gt;Rhums arrangés remK&lt;/b&gt; en bouteilles de 70 cl à 20.000 FCFA, au format flask de 20 cl à 7.000 FCFA, ou en mignonettes de 6 cl à 2.500 FCFA. Les bouteilles en verre sont consignées à 500 FCFA (prix incluant la consigne).</description><image>img/formats.jpg</image><alt>Formats bouteilles flasks et mignonettes des rhums arrangés remK</alt></item>
+			</section>
+
+			<section>
+				<id>remk_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur remK ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Rhums%20arrangés%20remK%20Prix%20et%20formats%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20Rhums%20arrangés%20remK%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<!-- ┌─────────────────────────────────────┐
+		     │  ACTIVITÉ 2 : GUIAH SONGS           │
+		     └─────────────────────────────────────┘ -->
+		<page id="guiahsongs">
+			<parent>accueil</parent>
+			<menu_label>Guiah Songs</menu_label>
+			<url>guiah_songs/</url>
+			<cible>gs_hero</cible>
+			<seo>
+				<title>Guiah Songs : Création graphique, Branding et Communication digitale au Cameroun | Atelier KHEM</title>
+				<description>Guiah Songs crée logos, chartes graphiques, vidéos publicitaires, sites internet, étiquettes et supports marketing pour entreprises et artisans au Cameroun. Identité visuelle sur mesure, tarifs accessibles, résultats professionnels.</description>
+				<keywords>création graphique Cameroun, logo entreprise Cameroun, branding Yaoundé, vidéo publicitaire Cameroun, site internet Cameroun, Guiah Songs, identité visuelle, charte graphique</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>gs_hero</id>
+				<type>hero</type>
+				<badge>Guiah Songs</badge>
+				<image>img/Logo_Guiah_songs.jpg</image>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Identité</span><br><span style="color:#FF8A3D;">Visibilité</span><br><span style="color:#2D6CDF;">Impact</span>]]></titre>
+				<description>Création graphique, vidéo et digitale&lt;br&gt;au service de votre croissance</description>
+				<bouton><texte>Découvrez-nous</texte><lien>#gs_philosophie</lien></bouton>
+				<bouton><texte>Contactez-nous</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Guiah%20Songs%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20Guiah%20Songs%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+
+			<section>
+				<id>gs_philosophie</id>
+				<type>information</type>
+				<label>Guiah Songs</label>
+				<titre>Qui est Guiah Songs ?</titre>
+				<description>Guiah Songs transforme les idées en contenus percutants : chansons personnalisées, créations visuelles, vidéos, identité de marque et communication digitale sur mesure.</description>
+				<item><titre>Notre philosophie</titre><description>Nous croyons qu'une création de qualité doit être accessible. &lt;b&gt;Guiah Songs&lt;/b&gt; mise sur l'écoute, le détail, l'originalité et un accompagnement humain afin de proposer des réalisations premium, modernes et impactantes à des tarifs raisonnables.</description><image>img/notre_philosophie.jpg</image><alt>Philosophie créative et communication visuelle premium de Guiah Songs</alt></item>
+				<item><titre>Processus de création</titre><description>Chaque projet suit une méthode simple : comprendre votre besoin, imaginer un concept fort, créer des visuels ou contenus adaptés puis ajuster chaque détail jusqu'au résultat final. Une approche pensée pour allier créativité, efficacité et rapidité.</description><image>img/processus_de_creation.jpg</image><alt>Processus de création graphique et branding digital par Guiah Songs</alt></item>
+			</section>
+
+			<section>
+				<id>gs_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur Guiah Songs ?</span>]]></titre>
+				<description>Découvrez nos services ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Guiah%20Songs%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20Guiah%20Songs%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="gs_services">
+			<parent>guiahsongs</parent>
+			<menu_label>Nos services</menu_label>
+			<url>guiah_songs/les_services_de_guiah_songs</url>
+			<cible>gs_nos_services</cible>
+			<seo>
+				<title>Services Guiah Songs : Logos, Vidéos, Sites Internet, Étiquettes et plus | Atelier KHEM</title>
+				<description>Guiah Songs propose logos, chartes graphiques, étiquettes, packaging, flyers, sites internet, cartes de visite, vidéos publicitaires, publicités radio, chansons personnalisées, livres illustrés, modélisation 3D et vidéos éducatives pour entreprises et artisans au Cameroun.</description>
+				<keywords>services création graphique Cameroun, logo Cameroun, vidéo publicitaire, étiquettes packaging, site internet, charte graphique, publicité radio Cameroun, Guiah Songs services</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>gs_nos_services</id>
+				<type>information</type>
+				<label>Guiah Songs</label>
+				<titre>Nos services</titre>
+				<description>De la création de logo à la vidéo publicitaire, en passant par les sites internet, les étiquettes, les publicités radio et les livres personnalisés : Guiah Songs couvre tous vos besoins en communication visuelle et digitale, avec un rendu professionnel à tarif accessible.</description>
+				<item><titre>Les services de Guiah Songs</titre><description>&lt;b&gt;Guiah Songs&lt;/b&gt; réunit création graphique, vidéo, branding et contenus digitaux dans une seule structure. Nous concevons des solutions visuelles complètes pour développer votre image, attirer votre public et renforcer votre communication.</description><image>img/nos_services.jpg</image><alt>Services de création graphique vidéo branding et communication digitale</alt></item>
+				<item><titre>Logos</titre><description>Nous créons des logos modernes, mémorables et adaptés à votre activité. Chaque identité visuelle est pensée pour transmettre une image professionnelle, cohérente et forte, capable de marquer durablement vos clients et partenaires.</description><image>img/creation_de_logos.jpg</image><alt>Création de logos modernes professionnels et identités visuelles</alt></item>
+				<item><titre>Chartes graphiques</titre><description>Couleurs, typographies, styles visuels et cohérence graphique : nous développons des chartes graphiques complètes pour donner une identité claire, homogène et professionnelle à votre entreprise sur tous vos supports de communication.</description><image>img/charte_graphique.jpg</image><alt>Création de chartes graphiques professionnelles et cohérence visuelle</alt></item>
+				<item><titre>Etiquettes et Packaging</titre><description>&lt;b&gt;Guiah Songs&lt;/b&gt; conçoit étiquettes et packagings modernes pour tous vos produits artisanaux. Chaque création associe design, cohérence visuelle et finition professionnelle afin de valoriser votre produit et renforcer votre image de marque.</description><image>img/etiquettes_et_packaging.jpg</image><alt>Création d'étiquettes et packaging modernes pour produits artisanaux</alt></item>
+				<item><titre>Impression d'étiquettes</titre><description>Nous proposons l'impression d'étiquettes premium avec une qualité de finition comparable aux standards européens. Couleurs précises, excellente tenue, matériaux professionnels et rendu haut de gamme pour valoriser vos produits.</description><image>img/impression_etiquettes_haute_qualite.jpg</image><alt>Impression d'étiquettes premium haute qualité pour produits professionnels</alt></item>
+				<item><titre>Flyers</titre><description>Nous réalisons des flyers modernes et percutants conçus pour attirer l'attention rapidement. Promotion, événement, lancement ou publicité locale : chaque création est pensée pour transmettre votre message efficacement et donner envie d'agir.</description><image>img/flyers.jpg</image><alt>Création de flyers modernes publicitaires et supports de communication</alt></item>
+				<item><titre>Sites internet</titre><description>Bien plus qu'une simple présence en ligne, votre site internet est la vitrine numérique de votre entreprise. Nous concevons des sites élégants, performants et sur mesure qui reflètent votre identité et inspirent confiance à vos visiteurs.</description><image>img/sites_internet.jpg</image><alt>Création de sites internet modernes rapides et professionnels</alt></item>
+				<item><titre>Cartes de visite</titre><description>Plus qu'un simple contact, une carte de visite reflète votre image. Nous concevons des cartes élégantes, modernes et professionnelles qui valorisent votre activité et renforcent la crédibilité de votre entreprise dès le premier échange.</description><image>img/cartes_de_visite.jpg</image><alt>Création de cartes de visite élégantes modernes et professionnelles</alt></item>
+				<item><titre>Vidéos publicitaires</titre><description>Nous créons des vidéos courtes, dynamiques et immersives adaptées aux réseaux sociaux et à la communication moderne. Storytelling, animation, concepts visuels et montage rythmé : des contenus pensés pour captiver rapidement votre audience.</description><image>img/videos_publicitaires.jpg</image><alt>Création de vidéos publicitaires modernes pour réseaux sociaux et entreprises</alt></item>
+				<item><titre>Publicités radio</titre><description>Nous créons des publicités radio dynamiques et professionnelles : écriture du message, voix, ambiance sonore et montage. Des spots pensés pour capter rapidement l'attention et transmettre efficacement votre message.</description><image>img/publicites_radio.jpg</image><alt>Création de publicités radio professionnelles et spots audio publicitaires</alt></item>
+				<item><titre>Concepts marketing</titre><description>Nous imaginons des concepts publicitaires originaux capables d'attirer l'attention et de provoquer une réaction immédiate. Messages forts, idées créatives et stratégies visuelles : des campagnes conçues pour être vues, comprises et retenues.</description><image>img/concepts_marketing.jpg</image><alt>Concepts marketing créatifs et campagnes publicitaires impactantes</alt></item>
+				<item><titre>Chansons personnalisées</titre><description>&lt;b&gt;Guiah Songs&lt;/b&gt; crée des chansons personnalisées, jingles et identités sonores pour particuliers et entreprises. Anniversaire, publicité ou communication professionnelle : des créations originales pensées pour marquer les esprits.</description><image>img/chansons_personnalisees.jpg</image><alt>Création de chansons personnalisées jingles et identités sonores</alt></item>
+				<item><titre>Livres personnalisés</titre><description>&lt;b&gt;Guiah Songs&lt;/b&gt; crée des livres personnalisés racontant une histoire unique autour d'un enfant, d'une entreprise ou d'un projet. Chaque ouvrage associe narration, univers visuel et émotion afin de créer un souvenir original et marquant.</description><image>img/creation_livres_d_histoire_personnalises.jpg</image><alt>Création de livres personnalisés illustrés pour enfants entreprises et projets</alt></item>
+				<item><titre>Livres personnalisés 3D</titre><description>&lt;b&gt;Guiah Songs&lt;/b&gt; réalise également des livres entièrement conçus en 3D. Personnages, décors, objets et mises en scène prennent vie dans un univers immersif et spectaculaire pensé pour renforcer l'impact visuel du récit.</description><image>img/creation_livres_d_histoire_personnalises_3d.jpg</image><alt>Livres personnalisés 3D immersifs avec personnages et décors réalistes</alt></item>
+				<item><titre>Vidéos éducatives</titre><description>Chaque jour, une vidéo éducative autour du business, du marketing, de la communication et de l'entrepreneuriat. Des contenus courts, modernes et accessibles conçus pour apprendre, inspirer et développer son activité.</description><image>img/videos_educatives.jpg</image><alt>Vidéos éducatives business marketing communication et entrepreneuriat</alt></item>
+				<item><titre>Guides pratiques</titre><description>Nous rédigeons des guides pratiques clairs, modernes et structurés destinés aux artisans et entrepreneurs. Formation, conseils, méthodes et vulgarisation : des contenus utiles pensés pour transmettre efficacement un savoir.</description><image>img/guides_pratiques.jpg</image><alt>Guides pratiques modernes pour artisans entrepreneurs et formations</alt></item>
+				<item><titre>Modélisation 3D</titre><description>La modélisation 3D permet de donner vie à vos idées avant leur réalisation. Produits, concepts, objets ou mises en scène : nous créons des visuels réalistes et modernes capables de renforcer fortement votre communication visuelle.</description><image>img/modelisation_3d.jpg</image><alt>Modélisation 3D réaliste pour produits concepts et communication visuelle</alt></item>
+			</section>
+
+			<section>
+				<id>gs_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur Guiah Songs ?</span>]]></titre>
+				<description>Découvrez nos services ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Guiah%20Songs%20Nos%20Services%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20services%20de%20Guiah%20Songs%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="gs_realisations">
+			<parent>guiahsongs</parent>
+			<menu_label>Nos réalisations</menu_label>
+			<url>guiah_songs/les_realisations_de_guiah_songs</url>
+			<cible>gs_nos_realisations</cible>
+			<seo>
+				<title>Réalisations Guiah Songs : Portfolio créatif, TikTok et YouTube | Atelier KHEM</title>
+				<description>Découvrez le portfolio de Guiah Songs : logos, vidéos publicitaires, étiquettes, chartes graphiques et contenus digitaux réalisés pour des clients au Cameroun. Retrouvez aussi nos créations sur TikTok et YouTube.</description>
+				<keywords>portfolio création graphique Cameroun, réalisations Guiah Songs, exemples logos vidéos Cameroun, TikTok Guiah Songs, YouTube Guiah Songs, infographiste Cameroun portfolio</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>gs_nos_realisations</id>
+				<type>information</type>
+				<label>Guiah Songs</label>
+				<titre>Nos réalisations</titre>
+				<description>Avant de confier votre image à Guiah Songs, explorez nos réalisations : logos, vidéos publicitaires, étiquettes, affiches et contenus digitaux créés pour des clients camerounais. Nos créations sur TikTok et YouTube parlent d'elles-mêmes.</description>
+				<item><titre>Laissez-nous vous convaincre</titre><description>Avant de confier votre image à un infographiste, prenez le temps de découvrir ses réalisations. Son style, sa créativité et la qualité de ses visuels parlent mieux que de longs discours. Prenez le temps de parcourir les créations de &lt;b&gt;Guiah Songs&lt;/b&gt;.</description><image>img/nos_realisations.jpg</image><alt>Réalisations graphiques créations visuelles et projets Guiah Songs</alt></item>
+				<item><titre>TikTok</titre><description><![CDATA[Retrouvez sur TikTok nos vidéos créatives, concepts publicitaires, démonstrations visuelles et contenus courts pensés pour capter l'attention immédiatement.<br><a href="https://www.tiktok.com/@guiah.songs" target="_blank" rel="noopener noreferrer" class="rainbow-link">Découvrez notre TikTok</a>]]></description><image>img/tiktok.jpg</image><alt>Compte TikTok Guiah Songs vidéos créatives et contenus publicitaires</alt></item>
+				<item><titre>YouTube</titre><description><![CDATA[Notre chaîne YouTube regroupe des vidéos publicitaires, créations visuelles, présentations de projets et contenus immersifs.<br><a href="https://www.youtube.com/@GuiahSongs" target="_blank" rel="noopener noreferrer" class="rainbow-link">Découvrez notre YouTube</a>]]></description><image>img/youtube.jpg</image><alt>Chaîne YouTube Guiah Songs vidéos immersives et créations visuelles</alt></item>
+			</section>
+
+			<section>
+				<id>gs_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur Guiah Songs ?</span>]]></titre>
+				<description>Découvrez nos services ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Guiah%20Songs%20Nos%20Réalisations%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20réalisations%20de%20Guiah%20Songs%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<!-- ┌─────────────────────────────────────┐
+		     │  ACTIVITÉ 3 : KOKOLUX BY SCHOUAMA   │
+		     └─────────────────────────────────────┘ -->
+		<page id="kokolux">
+			<parent>accueil</parent>
+			<menu_label>KOKOLUX</menu_label>
+			<url>kokolux_by_schouama/</url>
+			<cible>kokolux_hero</cible>
+			<seo>
+				<title>KOKOLUX by Schouama : Huiles naturelles de coco et palmiste au Cameroun | Atelier KHEM</title>
+				<description>KOKOLUX by Schouama fabrique des huiles végétales naturelles artisanales au Cameroun : huile de coco vierge et huile de palmiste pour les cheveux, la peau et la cuisine. Des soins naturels accessibles adaptés aux cheveux africains.</description>
+				<keywords>huile de coco naturelle Cameroun, huile de palmiste cheveux, soins naturels africains, KOKOLUX Schouama, huile végétale artisanale, soin capillaire naturel Cameroun, huile coco peau</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>kokolux_hero</id>
+				<type>hero</type>
+				<badge>KOKOLUX by Schouama</badge>
+				<image>img/Logo_KOKOLUX_by_Schouama.jpg</image>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Pureté</span><br><span style="color:#FF8A3D;">Nature</span><br><span style="color:#2D6CDF;">Tradition</span>]]></titre>
+				<description>Des huiles végétales naturelles&lt;br&gt;fabriquées avec passion</description>
+				<bouton><texte>Découvrez-nous</texte><lien>#kokolux_histoire</lien></bouton>
+				<bouton><texte>Contactez-nous</texte><lien>https://wa.me/237687097558?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28KOKOLUX%20by%20Schouama%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20KOKOLUX%20by%20Schouama%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+
+			<section>
+				<id>kokolux_histoire</id>
+				<type>information</type>
+				<label>KOKOLUX by Schouama</label>
+				<titre>Notre histoire</titre>
+				<description>KOKOLUX by Schouama est née d'une passion pour la beauté naturelle et le bien-être. Schouama Pamela a fondé cette marque camerounaise pour proposer des huiles végétales de qualité, accessibles et adaptées aux réalités africaines.</description>
+				<description>Des huiles naturelles soigneusement sélectionnées pour la cuisine et pour nourrir vos cheveux, hydrater votre peau et révéler votre éclat au quotidien.</description>
+				<item><titre>Notre histoire</titre><description>&lt;b&gt;KOKOLUX by Schouama&lt;/b&gt; est une marque camerounaise spécialisée dans les huiles naturelles de qualité, pensées pour le soin des cheveux, de la peau et du bien-être au quotidien.</description><image>img/KOKOLUX_by_Schouama_01.jpg</image><alt>KOKOLUX by Schouama marque camerounaise d'huiles naturelles pour cheveux et peau</alt></item>
+				<item><titre>Notre histoire</titre><description>À travers une approche simple, naturelle et authentique, &lt;b&gt;KOKOLUX&lt;/b&gt; valorise les bienfaits des huiles végétales traditionnelles comme l'huile de coco et l'huile de palmiste, reconnues pour leurs propriétés nourrissantes et protectrices.</description><image>img/KOKOLUX_by_Schouama_02.jpg</image><alt>Huiles naturelles de coco et palmiste pour soins capillaires et bien-être</alt></item>
+				<item><titre>Notre histoire</titre><description>Notre mission est d'offrir des produits accessibles, efficaces et adaptés aux réalités africaines, tout en mettant en avant une beauté saine et naturelle.</description><image>img/KOKOLUX_by_Schouama_03.jpg</image><alt>Produits naturels africains accessibles pour cheveux peau et beauté saine</alt></item>
+			</section>
+
+			<section>
+				<id>kokolux_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur KOKOLUX by Schouama ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237687097558?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28KOKOLUX%20by%20Schouama%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20KOKOLUX%20by%20Schouama%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="kokoluxproduits">
+			<parent>kokolux</parent>
+			<menu_label>Nos produits</menu_label>
+			<url>kokolux_by_schouama/les_produits_kokolux_by_schouama</url>
+			<cible>kokolux_produits</cible>
+			<seo>
+				<title>Produits KOKOLUX by Schouama : Huile de Coco et Palmiste naturelles | Atelier KHEM</title>
+				<description>Découvrez les produits KOKOLUX by Schouama : huile de coco vierge 0,5L et flacon 50ml, huile de palmiste 0,5L. Des huiles végétales naturelles pour vos cheveux, votre peau et votre cuisine. Disponibles au Cameroun.</description>
+				<keywords>huile de coco vierge 0.5 litre Cameroun, huile de palmiste naturelle, KOKOLUX produits, huile coco flacon pipette, soin capillaire naturel cheveux crépus, huile végétale Schouama</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>kokolux_produits</id>
+				<type>information</type>
+				<label>KOKOLUX by Schouama</label>
+				<titre>Nos produits</titre>
+				<description>KOKOLUX by Schouama propose trois produits naturels : l'huile de coco vierge en 0,5L pour les soins cheveux, peau et cuisine, l'huile de palmiste en 0,5L pour les soins capillaires traditionnels, et le flacon pipette 50ml pratique pour les retouches et soins ciblés.</description>
+				<item><titre>Huile de Coco - 0,5 litre</titre><description>Huile naturelle polyvalente pour les cheveux, la peau et les massages, elle nourrit, protège et hydrate en profondeur, apporte brillance et douceur, limite la casse et convient parfaitement aux cheveux crépus, bouclés et frisés.</description><image>img/KOKOLUX_by_Schouama_04.jpg</image><alt>Huile de coco naturelle KOKOLUX 0,5 litre pour cheveux peau et massages</alt></item>
+				<item><titre>Huile de Palmiste – 0,5 L</titre><description>Huile traditionnelle reconnue pour ses propriétés nourrissantes et protectrices, elle nourrit les cheveux en profondeur, favorise leur souplesse, protège le cuir chevelu, hydrate les peaux sèches et convient parfaitement aux soins capillaires africains.</description><image>img/KOKOLUX_by_Schouama_05.jpg</image><alt>Huile de palmiste naturelle KOKOLUX pour cheveux africains et peau sèche</alt></item>
+				<item><titre>Huile de Coco - Flacon 50 ml</titre><description>Flacon pipette 50 ml pratique à emporter partout, idéal pour les soins ciblés du cuir chevelu, des pointes sèches, de la barbe, du visage et les retouches beauté au quotidien.</description><image>img/KOKOLUX_by_Schouama_06.jpg</image><alt>Huile de coco naturelle en flacon pipette 50 ml pour soins beauté</alt></item>
+			</section>
+
+			<section>
+				<id>kokolux_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur KOKOLUX by Schouama ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237687097558?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28KOKOLUX%20by%20Schouama%20Nos%20Produits%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20produits%20KOKOLUX%20by%20Schouama%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="kokoluxpromotrice">
+			<parent>kokolux</parent>
+			<menu_label>La promotrice</menu_label>
+			<url>kokolux_by_schouama/la_promotrice_de_kokolux_by_schouama</url>
+			<cible>kokolux_promotrice</cible>
+			<seo>
+				<title>Schouama Pamela : Fondatrice de KOKOLUX by Schouama | Atelier KHEM</title>
+				<description>Découvrez Schouama Pamela, l'entrepreneure camerounaise fondatrice de KOKOLUX by Schouama. Passionnée par la beauté naturelle, elle a créé une gamme d'huiles végétales artisanales pour mettre la qualité naturelle à portée de toutes.</description>
+				<keywords>Schouama Pamela, fondatrice KOKOLUX, entrepreneure camerounaise, soins naturels Cameroun, beauté naturelle africaine, marque huiles végétales Cameroun</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>kokolux_promotrice</id>
+				<type>information</type>
+				<label>KOKOLUX by Schouama</label>
+				<titre>La promotrice</titre>
+				<description>Derrière KOKOLUX by Schouama se trouve Schouama Pamela, une entrepreneure camerounaise animée par la conviction que chaque femme mérite des soins naturels efficaces, accessibles et ancrés dans les traditions africaines.</description>
+				<item><titre>La promotrice</titre><description>Derrière &lt;b&gt;KOKOLUX by Schouama&lt;/b&gt; se trouve Schouama Pamela, une entrepreneure passionnée par la beauté naturelle et le bien-être.</description><image>img/KOKOLUX_by_Schouama_07.jpg</image><alt>Schouama Pamela fondatrice de KOKOLUX spécialiste des soins naturels</alt></item>
+				<item><titre>La promotrice</titre><description>Animée par le désir d'aider les femmes et les familles à prendre soin d'elles avec des produits simples, efficaces et naturels, elle a créé &lt;b&gt;KOKOLUX&lt;/b&gt; avec une vision claire : proposer des huiles de qualité qui allient tradition, efficacité et élégance.</description><image>img/KOKOLUX_by_Schouama_08.jpg</image><alt>Entrepreneure camerounaise créatrice de soins naturels KOKOLUX</alt></item>
+				<item><titre>La promotrice</titre><description>Grâce à son engagement, &lt;b&gt;KOKOLUX&lt;/b&gt; devient progressivement une référence locale pour celles et ceux qui recherchent des soins naturels accessibles et authentiques.</description><image>img/KOKOLUX_by_Schouama_09.jpg</image><alt>KOKOLUX référence locale des huiles naturelles et soins capillaires africains</alt></item>
+			</section>
+
+			<section>
+				<id>kokolux_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur KOKOLUX by Schouama ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237687097558?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28KOKOLUX%20by%20Schouama%20La%20Promotrice%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20la%20promotrice%20de%20KOKOLUX%20by%20Schouama%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="kokoluxpourquoi">
+			<parent>kokolux</parent>
+			<menu_label>Pourquoi nous choisir ?</menu_label>
+			<url>kokolux_by_schouama/pourquoi_choisir_kokolux_by_schouama</url>
+			<cible>kokolux_pourquoi</cible>
+			<seo>
+				<title>Pourquoi choisir KOKOLUX by Schouama ? Naturel, Efficace, Accessible | Atelier KHEM</title>
+				<description>4 bonnes raisons de choisir KOKOLUX by Schouama : produits 100% naturels, spécialement adaptés aux cheveux africains crépus et bouclés, qualité accessible et fabrication rigoureuse. Des huiles végétales pour toute la famille.</description>
+				<keywords>pourquoi choisir KOKOLUX, huile naturelle cheveux crépus, soins capillaires africains, avantages huile de coco palmiste, produits naturels accessibles Cameroun</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>kokolux_pourquoi</id>
+				<type>information</type>
+				<label>KOKOLUX by Schouama</label>
+				<titre>Pourquoi choisir KOKOLUX by Schouama ?</titre>
+				<description>KOKOLUX by Schouama se distingue par quatre engagements : des produits 100% naturels sans compromis, une formulation adaptée aux cheveux africains, une qualité accessible à tous les budgets, et une sélection rigoureuse des matières premières.</description>
+				<item><titre>Pourquoi choisir KOKOLUX ?</titre><description>&lt;b&gt;100% Naturel&lt;/b&gt;&lt;br&gt;Des huiles sélectionnées avec soin, sans compromis sur la qualité.</description><image>img/KOKOLUX_by_Schouama_10.jpg</image><alt>Huiles naturelles 100 pour cent pures et soins KOKOLUX de qualité</alt></item>
+				<item><titre>Pourquoi choisir KOKOLUX ?</titre><description>&lt;b&gt;Adapté aux cheveux africains&lt;/b&gt;&lt;br&gt;Des produits pensés pour les cheveux crépus, bouclés et frisés.</description><image>img/KOKOLUX_by_Schouama_11.jpg</image><alt>Soins naturels adaptés aux cheveux crépus bouclés et frisés africains</alt></item>
+				<item><titre>Pourquoi choisir KOKOLUX ?</titre><description>&lt;b&gt;Qualité accessible&lt;/b&gt;&lt;br&gt;Des soins efficaces à des prix accessibles.</description><image>img/KOKOLUX_by_Schouama_12.jpg</image><alt>Soins capillaires naturels efficaces et accessibles par KOKOLUX</alt></item>
+				<item><titre>Pourquoi choisir KOKOLUX ?</titre><description>&lt;b&gt;Fabrication et sélection sérieuses&lt;/b&gt;&lt;br&gt;Une attention particulière portée à la pureté et à l'efficacité des produits.</description><image>img/KOKOLUX_by_Schouama_13.jpg</image><alt>Sélection rigoureuse et fabrication sérieuse des huiles naturelles KOKOLUX</alt></item>
+			</section>
+
+			<section>
+				<id>kokolux_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur KOKOLUX by Schouama ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237687097558?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28KOKOLUX%20by%20Schouama%20Pourquoi%20nous%20choisir%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20KOKOLUX%20by%20Schouama%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="kokoluxconseils">
+			<parent>kokolux</parent>
+			<menu_label>Conseils d'utilisation</menu_label>
+			<url>kokolux_by_schouama/conseils_d_utilisation_des_produits_kokolux_by_schouama</url>
+			<cible>kokolux_conseils</cible>
+			<seo>
+				<title>Conseils d'utilisation KOKOLUX : Huile de coco et palmiste pour cheveux et peau | Atelier KHEM</title>
+				<description>Comment utiliser les huiles KOKOLUX by Schouama : conseils pour l'huile de coco et l'huile de palmiste pour les cheveux, la peau et la cuisine. Bain d'huile, hydratation, massage, soin du cuir chevelu : tout ce qu'il faut savoir.</description>
+				<keywords>conseils utilisation huile de coco, bain d'huile cheveux, soin cuir chevelu huile palmiste, hydratation peau huile coco, utilisation huile végétale cuisine, KOKOLUX conseils</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>kokolux_conseils</id>
+				<type>information</type>
+				<label>KOKOLUX by Schouama</label>
+				<titre>Conseils d'utilisations</titre>
+				<description>Mode d'emploi complet des huiles KOKOLUX by Schouama : comment utiliser l'huile de coco et l'huile de palmiste pour les cheveux (bain d'huile, pointes, cuir chevelu), la peau (hydratation, massage) et la cuisine. Des gestes simples pour des résultats visibles.</description>
+				<item><titre>Conseils d'utilisation</titre><description>&lt;b&gt;Pour les cheveux / Huile de coco&lt;/b&gt;&lt;br&gt;Utiliser en bain d'huile avant shampoing, appliquer sur les pointes pour limiter la casse ou masser le cuir chevelu pour nourrir les racines.</description><image>img/KOKOLUX_by_Schouama_14.jpg</image><alt>Utilisation de l'huile de coco pour nourrir cheveux et cuir chevelu</alt></item>
+				<item><titre>Conseils d'utilisation</titre><description>&lt;b&gt;Pour les cheveux / Huile de palmiste&lt;/b&gt;&lt;br&gt;Utiliser en soin capillaire pour nourrir les cheveux en profondeur, assouplir la fibre capillaire et protéger le cuir chevelu.</description><image>img/KOKOLUX_by_Schouama_15.jpg</image><alt>Huile de palmiste pour soin capillaire africain et cheveux nourris</alt></item>
+				<item><titre>Conseils d'utilisation</titre><description>&lt;b&gt;Pour la peau / Huile de coco&lt;/b&gt;&lt;br&gt;Appliquer après la douche sur peau légèrement humide, utiliser comme huile de massage ou hydrater les zones sèches au quotidien.</description><image>img/KOKOLUX_by_Schouama_16.jpg</image><alt>Huile de coco naturelle pour hydratation de la peau et massage corporel</alt></item>
+				<item><titre>Conseils d'utilisation</titre><description>&lt;b&gt;Pour la peau / Huile de palmiste&lt;/b&gt;&lt;br&gt;Appliquer sur les zones sèches pour nourrir et adoucir la peau ou utiliser comme huile de soin corporelle.</description><image>img/KOKOLUX_by_Schouama_17.jpg</image><alt>Huile de palmiste naturelle pour nourrir et adoucir la peau</alt></item>
+				<item><titre>Conseils d'utilisation</titre><description>&lt;b&gt;Pour la cuisine / Huile de coco&lt;/b&gt;&lt;br&gt;Peut être utilisée dans diverses préparations culinaires selon vos habitudes et recettes.</description><image>img/KOKOLUX_by_Schouama_18.jpg</image><alt>Huile de coco naturelle utilisée en cuisine et recettes maison</alt></item>
+			</section>
+
+			<section>
+				<id>kokolux_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur KOKOLUX by Schouama ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237687097558?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28KOKOLUX%20by%20Schouama%20Conseils%20d'utilisation%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20conseils%20d'utilisation%20des%20produits%20KOKOLUX%20by%20Schouama%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="kokoluxtarifs">
+			<parent>kokolux</parent>
+			<menu_label>Nos tarifs</menu_label>
+			<url>kokolux_by_schouama/les_tarifs_des_produits_kokolux_by_schouama</url>
+			<cible>kokolux_tarifs</cible>
+			<seo>
+				<title>Tarifs KOKOLUX by Schouama : Prix huile de coco et palmiste au Cameroun | Atelier KHEM</title>
+				<description>Découvrez les tarifs des produits KOKOLUX by Schouama : huile de coco vierge 0,5L à 8.000 FCFA avec offre duo à 15.000 FCFA, et huile de palmiste. Des soins naturels de qualité à des prix accessibles, disponibles au Cameroun.</description>
+				<keywords>prix huile de coco Cameroun, tarif KOKOLUX, huile de coco 8000 FCFA, acheter huile naturelle Cameroun, offre duo huile coco palmiste, tarif soins naturels africains</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>kokolux_tarifs</id>
+				<type>information</type>
+				<label>KOKOLUX by Schouama</label>
+				<titre>Nos tarifs</titre>
+				<description>Des soins naturels de qualité à des prix pensés pour être accessibles au quotidien. KOKOLUX by Schouama propose l'huile de coco vierge 0,5L à 8.000 FCFA (offre duo à 15.000 FCFA) et l'huile de palmiste à tarif attractif. Commande directe via WhatsApp.</description>
+				<item><titre>Des soins naturels accessibles</titre><description>Chez &lt;b&gt;KOKOLUX by Schouama&lt;/b&gt;, nous croyons que la qualité et le naturel doivent rester accessibles.</description><image>img/KOKOLUX_by_Schouama_19.jpg</image><alt>Soins naturels accessibles KOKOLUX huiles végétales de qualité</alt></item>
+				<item><titre>Des soins naturels accessibles</titre><description>Nous proposons des huiles soigneusement sélectionnées à des prix pensés pour le quotidien.</description><image>img/KOKOLUX_by_Schouama_20.jpg</image><alt>Huiles naturelles KOKOLUX à prix accessibles pour le quotidien</alt></item>
+				<item><titre>Tarifs</titre><description><![CDATA[
+				<section class="kokolux-pricing">
+				  <div class="pricing-grid">
+					<div class="product-card featured">
+					  <div class="product-icon">🥥</div>
+					  <h3>Huile de Coco Vierge</h3>
+					  <div class="volume">Bouteille de 0,5 litre</div>
+
+					  <div class="price">
+						<span class="amount">8.000</span>
+						<span class="currency">FCFA</span>
+					  </div>
+
+					  <div class="offer">
+						<strong>Offre Duo</strong><br>
+						Les 2 bouteilles à <span>15.000 FCFA</span>
+					  </div>
+					</div>
+
+					<div class="product-card featured">
+					  <div class="product-icon">🥥</div>
+					  <h3>Huile de Coco Vierge</h3>
+					  <div class="volume">Flacon Pipette de 50 ml</div>
+
+					  <div class="price">
+						<span class="amount">2.500</span>
+						<span class="currency">FCFA</span>
+					  </div>
+					</div>
+
+					<div class="product-card featured">
+					  <div class="product-icon">🌴</div>
+					  <h3>Huile de Palmiste</h3>
+					  <div class="volume">Bouteille de 0,5 litre</div>
+
+					  <div class="price">
+						<span class="amount">2.500</span>
+						<span class="currency">FCFA</span>
+					  </div>
+					</div>
+
+				  </div>
+				</section>
+				]]></description></item>
+			</section>
+
+			<section>
+				<id>kokolux_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur KOKOLUX by Schouama ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237687097558?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28KOKOLUX%20by%20Schouama%20Nos%20Tarifs%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20tarifs%20de%20KOKOLUX%20by%20Schouama%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<!-- ┌─────────────────────────────────────┐
+		     │  ACTIVITÉ 4 : L'ALCHIMISTE          │
+		     └─────────────────────────────────────┘ -->
+		<page id="lalchimiste">
+			<parent>accueil</parent>
+			<menu_label>L'Alchimiste</menu_label>
+			<url>l_alchimiste/</url>
+			<cible>lalchimiste_hero</cible>
+			<seo>
+				<title>L'Alchimiste : Bières, Vins et Liqueurs artisanales au Cameroun | Atelier KHEM</title>
+				<description>L'Alchimiste fabrique des bières, vins et liqueurs artisanales à partir d'ingrédients locaux camerounais : bissap, ananas, mangue, feuilles d'avocatier, citronnier et bien d'autres. Production artisanale, formations disponibles.</description>
+				<keywords>boissons artisanales Cameroun, bière artisanale bissap, vin d'avocatier, liqueur artisanale, L'Alchimiste KHEM, fabrication boissons fermentées, formation brassage artisanal</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>lalchimiste_hero</id>
+				<type>hero</type>
+				<badge>L'Alchimiste</badge>
+				<image>img/Logo_L_Alchimiste.jpg</image>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Brasser</span><br><span style="color:#FF8A3D;">Fermenter</span><br><span style="color:#2D6CDF;">Créer</span>]]></titre>
+				<description>Bières, vins et liqueurs artisanales&lt;br&gt;issus des saveurs du Cameroun</description>
+				<bouton><texte>Découvrez-nous</texte><lien>#lalchimiste_histoire</lien></bouton>
+				<bouton><texte>Contactez-nous</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28L'Alchimiste%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20L'Alchimiste%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+
+			<section>
+				<id>lalchimiste_histoire</id>
+				<type>information</type>
+				<label>L'Alchimiste</label>
+				<titre>Notre histoire</titre>
+				<description>L'Alchimiste est la marque de boissons artisanales de l'Atelier KHEM. Née de la passion pour la fermentation et la valorisation des fruits et plantes du Cameroun, elle propose des créations uniques aux saveurs authentiques et locales.</description>
+				<item><titre>Notre histoire</titre><description>&lt;b&gt;L'Alchimiste&lt;/b&gt; est la marque de boissons artisanales de l'Atelier KHEM, née de la passion pour la fermentation et la transformation des fruits et plantes du Cameroun en boissons uniques et savoureuses.</description><image>img/L_Alchimiste_01.jpg</image><alt>L'Alchimiste marque de boissons artisanales camerounaises fermentées</alt></item>
+				<item><titre>Notre histoire</titre><description>À travers une approche artisanale rigoureuse, &lt;b&gt;L'Alchimiste&lt;/b&gt; sélectionne les meilleurs ingrédients locaux pour créer des bières, vins et liqueurs aux saveurs authentiques et originales.</description><image>img/L_Alchimiste_02.jpg</image><alt>Sélection d'ingrédients locaux pour boissons artisanales L'Alchimiste</alt></item>
+				<item><titre>Notre histoire</titre><description>Notre mission est de valoriser les richesses naturelles du Cameroun en proposant des boissons artisanales accessibles, originales et de qualité, tout en partageant notre savoir-faire à travers des formations.</description><image>img/L_Alchimiste_03.jpg</image><alt>Mission de L'Alchimiste valoriser les ressources naturelles camerounaises</alt></item>
+			</section>
+
+			<section>
+				<id>lalchimiste_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur L'Alchimiste ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28L'Alchimiste%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20L'Alchimiste%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="lalchimisterecettes">
+			<parent>lalchimiste</parent>
+			<menu_label>Nos recettes</menu_label>
+			<url>l_alchimiste/les_recettes_de_l_alchimiste</url>
+			<cible>lalchimiste_recettes</cible>
+			<seo>
+				<title>Recettes L'Alchimiste : Bissap, Ananas, Mangue, Vin d'Avocatier et plus | Atelier KHEM</title>
+				<description>Les recettes artisanales de L'Alchimiste : bière de bissap, bière d'ananas, vin de mangue, vin d'avocatier, vin de citronnier, liqueur Zizi Pan Pan et d'autres créations uniques à base d'ingrédients locaux camerounais.</description>
+				<keywords>bière bissap artisanale, vin d'avocatier Cameroun, bière ananas artisanale, liqueur Zizi Pan Pan, recettes boissons fermentées Cameroun, L'Alchimiste recettes, boissons locales artisanales</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>lalchimiste_recettes</id>
+				<type>information</type>
+				<label>L'Alchimiste</label>
+				<titre>Nos recettes</titre>
+				<description>8 recettes artisanales et plus, élaborées à partir des fruits et plantes du Cameroun. Du classique bissap au mystérieux vin d'avocatier, en passant par l'ananas, la mangue et le légendaire Zizi Pan Pan : chaque création est une découverte gustative unique.</description>
+				<item><titre>Des saveurs artisanales uniques</titre><description>&lt;b&gt;L'Alchimiste&lt;/b&gt; vous propose une gamme originale de bières, vins et liqueurs artisanales élaborées à partir d'ingrédients locaux soigneusement sélectionnés.</description><image>img/L_Alchimiste_04.jpg</image><alt>Bières vins et liqueurs artisanales élaborées avec ingrédients locaux</alt></item>
+				<item><titre>Bissap / Foléré</titre><description>Une recette rafraîchissante aux notes florales et légèrement acidulées, appréciée pour son goût authentique et sa belle couleur naturelle.</description><image>img/L_Alchimiste_05.jpg</image><alt>Boisson artisanale au bissap foléré aux notes florales et acidulées</alt></item>
+				<item><titre>Ananas</titre><description>Une saveur fruitée et exotique offrant une boisson douce, parfumée et pleine de fraîcheur.</description><image>img/L_Alchimiste_06.jpg</image><alt>Bière ou vin artisanal à l'ananas aux saveurs exotiques et fruitées</alt></item>
+				<item><titre>Mangue</titre><description>Une recette gourmande et tropicale aux arômes sucrés et généreux.</description><image>img/L_Alchimiste_07.jpg</image><alt>Boisson artisanale à la mangue tropicale douce et parfumée</alt></item>
+				<item><titre>Zizi Pan Pan (Aphrodisiaque)</titre><description>Une préparation artisanale originale aux saveurs intenses et au caractère unique.</description><image>img/L_Alchimiste_08.jpg</image><alt>Liqueur artisanale Zizi Pan Pan aphrodisiaque aux saveurs puissantes</alt></item>
+				<item><titre>Vin d'avocatier</titre><description>Une création artisanale élaborée à partir de feuilles d'avocatier pour une expérience authentique et atypique.</description><image>img/L_Alchimiste_09.jpg</image><alt>Vin artisanal d'avocatier élaboré à partir de feuilles naturelles</alt></item>
+				<item><titre>Vin de citronnier</titre><description>Une recette aux notes végétales et citronnées, équilibrée et rafraîchissante.</description><image>img/L_Alchimiste_10.jpg</image><alt>Vin artisanal de citronnier aux notes végétales et citronnées</alt></item>
+				<item><titre>Et bien d'autres saveurs</titre><description>&lt;b&gt;L'Alchimiste&lt;/b&gt; développe régulièrement de nouvelles recettes artisanales selon les saisons, les inspirations et les produits disponibles.</description><image>img/L_Alchimiste_11.jpg</image><alt>Nouvelles recettes artisanales L'Alchimiste inspirées des produits locaux</alt></item>
+			</section>
+
+			<section>
+				<id>lalchimiste_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur L'Alchimiste ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28L'Alchimiste%20Nos%20recettes%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20recettes%20de%20L'Alchimiste%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="lalchimistetarifs">
+			<parent>lalchimiste</parent>
+			<menu_label>Nos tarifs</menu_label>
+			<url>l_alchimiste/les_tarifs_de_l_alchimiste</url>
+			<cible>lalchimiste_tarifs</cible>
+			<seo>
+				<title>Tarifs L'Alchimiste : Prix boissons artisanales bouteilles et bidons | Atelier KHEM</title>
+				<description>Prix des boissons artisanales de L'Alchimiste : bouteille 50cl de 500 à 1.500 FCFA selon la recette (bissap, ananas, Zizi Pan Pan…), bidon 15 litres à partir de 10.000 FCFA pour vos événements. Commande sur WhatsApp.</description>
+				<keywords>prix boissons artisanales Cameroun, tarif bière bissap, bidon boisson événement, Zizi Pan Pan prix, L'Alchimiste tarifs, commander boissons artisanales Cameroun</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>lalchimiste_tarifs</id>
+				<type>information</type>
+				<label>L'Alchimiste</label>
+				<titre>Nos tarifs</titre>
+				<description>Des boissons artisanales accessibles à partir de 500 FCFA la bouteille 50cl. Pour vos événements, L'Alchimiste propose des bidons de 15 litres à partir de 10.000 FCFA. Des tarifs pensés pour que chacun puisse découvrir et apprécier nos créations.</description>
+				<item><titre>Bouteille 50 cl</titre><description>• Bissap : 500 FCFA&lt;br&gt;• Ananas, Mangue, Vin d'avocatier ou de citronnier : 750 FCFA&lt;br&gt;• Zizi Pan Pan : 1.500 FCFA</description><image>img/L_Alchimiste_12.jpg</image><alt>Tarifs bouteilles bières vins et liqueurs artisanales L'Alchimiste</alt></item>
+				<item><titre>Bidon de 15 litres</titre><description>Pour vos événements, &lt;b&gt;L'Alchimiste&lt;/b&gt; propose sur commande des bidons de 15 litres de bières ou de vins artisanaux à prix exceptionnel (exemple : Bissap 15 litres à 10.000 FCFA).</description><image>img/L_Alchimiste_13.jpg</image><alt>Bidons de quinze litres de boissons artisanales pour événements et fêtes</alt></item>
+			</section>
+
+			<section>
+				<id>lalchimiste_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur L'Alchimiste ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28L'Alchimiste%20Nos%20tarifs%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20tarifs%20de%20L'Alchimiste%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="lalchimisteformation">
+			<parent>lalchimiste</parent>
+			<menu_label>Formation</menu_label>
+			<url>l_alchimiste/la_formation_de_l_alchimiste</url>
+			<cible>lalchimiste_formation</cible>
+			<seo>
+				<title>Formation bières, vins et liqueurs artisanales : L'Alchimiste | Atelier KHEM</title>
+				<description>Apprenez à fabriquer vos propres boissons artisanales avec L'Alchimiste : formation en ligne à 50.000 FCFA ou en présentiel sur devis. Techniques de fermentation, recettes artisanales, accessible aux débutants. Formation disponible au Cameroun.</description>
+				<keywords>formation fabrication bière artisanale Cameroun, formation vin artisanal, apprendre fermentation, cours brassage artisanal, formation boissons alcoolisées Cameroun, L'Alchimiste formation</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>lalchimiste_formation</id>
+				<type>information</type>
+				<label>L'Alchimiste</label>
+				<titre>Formation</titre>
+				<description>L'Alchimiste vous enseigne l'art de la fabrication artisanale de bières, vins et liqueurs. Une formation pratique accessible aux débutants comme aux passionnés, disponible en ligne à 50.000 FCFA ou en présentiel sur devis.</description>
+				<item><titre>Formation</titre><description>Apprenez à fabriquer vos propres boissons artisanales !&lt;br&gt;&lt;b&gt;L'Alchimiste&lt;/b&gt; propose une formation dédiée à la fabrication de bières, vins et liqueurs artisanales.</description><image>img/L_Alchimiste_14.jpg</image><alt>Formation fabrication de bières vins et liqueurs artisanales</alt></item>
+				<item><titre>Formation</titre><description>Accessible aux débutants comme aux passionnés, la formation permet d'apprendre les techniques de fabrication, les recettes artisanales et les bases de la fermentation.</description><image>img/L_Alchimiste_15.jpg</image><alt>Apprentissage des techniques artisanales de fermentation et boissons naturelles</alt></item>
+				<item><titre>Formation</titre><description>Formats disponibles :&lt;br&gt;• Formation en ligne : 50.000 FCFA&lt;br&gt;• Formation en présentiel : sur devis&lt;br&gt;&lt;i&gt;Tarif selon le lieu et le nombre de participants.&lt;/i&gt;</description><image>img/L_Alchimiste_16.jpg</image><alt>Formation artisanale en ligne et présentielle boissons alcoolisées naturelles</alt></item>
+			</section>
+
+			<section>
+				<id>lalchimiste_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur L'Alchimiste ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28L'Alchimiste%20Formation%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20la%20formation%20de%20L'Alchimiste%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="lalchimistepourquoi">
+			<parent>lalchimiste</parent>
+			<menu_label>Pourquoi nous choisir ?</menu_label>
+			<url>l_alchimiste/pourquoi_choisir_l_alchimiste</url>
+			<cible>lalchimiste_pourquoi</cible>
+			<seo>
+				<title>Pourquoi choisir L'Alchimiste ? Artisanat local, recettes uniques, formation | Atelier KHEM</title>
+				<description>L'Alchimiste se distingue par une fabrication 100% artisanale à base d'ingrédients locaux camerounais, des recettes originales introuvables ailleurs, une production sur commande et une formation accessible pour apprendre à fabriquer soi-même ses boissons.</description>
+				<keywords>pourquoi choisir L'Alchimiste, avantages boissons artisanales, fabrication locale Cameroun, boissons originales sur commande, formation brassage artisanal Cameroun</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>lalchimiste_pourquoi</id>
+				<type>information</type>
+				<label>L'Alchimiste</label>
+				<titre>Pourquoi choisir L'Alchimiste ?</titre>
+				<description>4 raisons de choisir L'Alchimiste : une fabrication artisanale rigoureuse à partir d'ingrédients locaux, des recettes uniques et authentiques, une production disponible sur commande, et la possibilité de se former pour fabriquer soi-même ses boissons artisanales.</description>
+				<item><titre>Pourquoi choisir L'Alchimiste ?</titre><description>&lt;b&gt;L'Alchimiste&lt;/b&gt;, c'est une fabrication artisanale à partir d'ingrédients locaux, des recettes originales aux saveurs authentiques, une production sur commande et la possibilité de se former à la fabrication artisanale.</description><image>img/L_Alchimiste_17.jpg</image><alt>L'Alchimiste fabrication artisanale locale recettes authentiques et formation</alt></item>
+			</section>
+
+			<section>
+				<id>lalchimiste_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur L'Alchimiste ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28L'Alchimiste%20Pourquoi%20nous%20choisir%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20L'Alchimiste%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<!-- ┌─────────────────────────────────────┐
+		     │  ACTIVITÉ 5 : BTCS BY KHEM          │
+		     └─────────────────────────────────────┘ -->
+		<page id="btcs">
+			<parent>accueil</parent>
+			<menu_label>BTCS by KHEM</menu_label>
+			<url>btcs_by_khem/</url>
+			<cible>btcs_hero</cible>
+			<seo>
+				<title>BTCS by KHEM : Briques de Terre Compressées Stabilisées au Cameroun | Atelier KHEM</title>
+				<description>BTCS by KHEM fabrique des briques de terre compressées stabilisées (BTCS) au Cameroun. Construction écologique, durable et économique. Fabrication de briques, location de machines BTCS, maçonnerie et formations professionnelles.</description>
+				<keywords>BTCS Cameroun, briques terre compressée stabilisée, construction écologique Cameroun, éco-construction Afrique, BTCS by KHEM, briques locales durables, location machine BTCS, formation maçonnerie BTCS</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>btcs_hero</id>
+				<type>hero</type>
+				<badge>BTCS by KHEM</badge>
+				<image>img/Logo_BTCS_by_KHEM.jpg</image>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Construction</span><br><span style="color:#FF8A3D;">Écologique</span><br><span style="color:#2D6CDF;">Durable</span>]]></titre>
+				<description>Construire durablement grâce aux briques de terre compressée stabilisée</description>
+				<bouton><texte>Découvrez-nous</texte><lien>#btcs_quoi</lien></bouton>
+				<bouton><texte>Contactez-nous</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28BTCS%20by%20KHEM%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20BTCS%20by%20KHEM%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+
+			<section>
+				<id>btcs_quoi</id>
+				<type>information</type>
+				<label>BTCS by KHEM</label>
+				<titre>BTCS, c'est quoi ?</titre>
+				<description><![CDATA[Les <b>BTCS</b> révolutionnent la <b>construction durable</b> en valorisant la terre locale pour créer des bâtiments solides, confortables et respectueux de l'environnement. Découvrez pourquoi les <b>briques de terre compressées stabilisées</b> séduisent de plus en plus de particuliers et de professionnels.]]></description>
+				<item><titre>BTCS, c'est quoi ?</titre><description>Les BTCS (Briques de Terre Compressées Stabilisées) sont des briques fabriquées à partir de terre compressée et stabilisée afin d'offrir une excellente résistance et une construction plus respectueuse de l'environnement.</description><image>img/BTCS_by_KHEM_01.jpg</image><alt>Briques de terre compressées stabilisées BTCS pour construction écologique</alt></item>
+				<item><titre>BTCS, c'est quoi ?</titre><description>Appréciées pour leur solidité, leur confort thermique et leur aspect naturel, les BTCS représentent une alternative durable aux matériaux de construction classiques.</description><image>img/BTCS_by_KHEM_02.jpg</image><alt>Construction durable en BTCS avec confort thermique et aspect naturel</alt></item>
+			</section>
+
+			<section>
+				<id>btcs_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur BTCS by KHEM ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28BTCS%20by%20KHEM%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20BTCS%20by%20KHEM%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="btcsfabrication">
+			<parent>btcs</parent>
+			<menu_label>Fabrication de BTCS</menu_label>
+			<url>btcs_by_khem/fabrication_de_briques_de_terre_compressees_stabilisees_BTCS_by_KHEM</url>
+			<cible>btcs_fabrication</cible>
+			<seo>
+				<title>Fabrication de Briques BTCS au Cameroun : BTCS by KHEM | Atelier KHEM</title>
+				<description>BTCS by KHEM fabrique des briques de terre compressées stabilisées sur mesure pour particuliers, professionnels et chantiers au Cameroun. Des briques résistantes, durables, esthétiques et fabriquées localement à partir de ressources disponibles sur place.</description>
+				<keywords>fabrication briques BTCS Cameroun, briques terre locale, construction durable Cameroun, briques compressées stabilisées, BTCS fabrication, matériaux construction écologiques Afrique</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>btcs_fabrication</id>
+				<type>information</type>
+				<label>BTCS by KHEM</label>
+				<titre>Fabrication de BTCS</titre>
+				<description>BTCS by KHEM fabrique des briques de terre compressées stabilisées adaptées à tous les chantiers : maisons individuelles, projets communautaires ou constructions professionnelles. Des briques résistantes et durables fabriquées localement à partir des ressources du terroir.</description>
+				<item><titre>Fabrication de BTCS</titre><description>Des briques fabriquées avec soin.&lt;br&gt;&lt;b&gt;BTCS by KHEM&lt;/b&gt; propose la fabrication de briques de terre compressées stabilisées adaptées aux besoins des particuliers, professionnels et chantiers de construction.</description><image>img/BTCS_by_KHEM_03.jpg</image><alt>Fabrication artisanale de briques BTCS pour maisons et chantiers</alt></item>
+				<item><titre>Fabrication de BTCS</titre><description>Nos briques sont conçues pour offrir résistance, durabilité et esthétique naturelle tout en valorisant les ressources locales.</description><image>img/BTCS_by_KHEM_04.jpg</image><alt>Briques BTCS résistantes durables et écologiques fabriquées localement</alt></item>
+			</section>
+
+			<section>
+				<id>btcs_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur BTCS by KHEM ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28BTCS%20by%20KHEM%20Fabrication%20de%20BTCS%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20la%20fabrication%20de%20BTCS%20by%20KHEM%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="btcslocation">
+			<parent>btcs</parent>
+			<menu_label>Location de machines</menu_label>
+			<url>btcs_by_khem/location_de_machine_pour_la_fabrication_de_briques_de_terre_compressees_stabilisees_BTCS_by_KHEM</url>
+			<cible>btcs_location</cible>
+			<seo>
+				<title>Location de machines BTCS au Cameroun : Fabriquez vos briques sur place | Atelier KHEM</title>
+				<description>BTCS by KHEM propose la location de machines de fabrication de briques BTCS pour vos chantiers et projets de construction au Cameroun. Produisez vos briques directement sur site, réduisez vos coûts et valorisez la terre locale.</description>
+				<keywords>location machine BTCS Cameroun, machine fabrication briques, louer machine BTCS, production briques sur chantier, machine BTCS by KHEM, construction locale Cameroun</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>btcs_location</id>
+				<type>information</type>
+				<label>BTCS by KHEM</label>
+				<titre>Location de machines pour la fabrication de BTCS</titre>
+				<description>Vous souhaitez produire vos propres briques BTCS directement sur votre chantier ? BTCS by KHEM met à votre disposition ses machines de fabrication en location. Une solution économique et pratique pour les chantiers, entrepreneurs et projets communautaires au Cameroun.</description>
+				<item><titre>Location de machines</titre><description>Nous proposons la location de machines de fabrication de BTCS pour vos projets de construction, vos productions locales ou vos chantiers.</description><image>img/BTCS_by_KHEM_05.jpg</image><alt>Location de machines de fabrication de briques BTCS pour construction</alt></item>
+				<item><titre>Location de machines</titre><description>Une solution pratique et à moindre coût pour produire vos briques directement sur site.</description><image>img/BTCS_by_KHEM_06.jpg</image><alt>Production locale de briques BTCS directement sur chantier grâce aux machines</alt></item>
+			</section>
+
+			<section>
+				<id>btcs_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur BTCS by KHEM ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28BTCS%20by%20KHEM%20Location%20de%20machines%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20la%20location%20de%20machines%20à%20BTCS%20by%20KHEM%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="btcsformation">
+			<parent>btcs</parent>
+			<menu_label>Formations</menu_label>
+			<url>btcs_by_khem/formation_a_la_fabrication_de_briques_de_terre_compressees_stabilisees_et_a_la_maconnerie_BTCS_by_KHEM</url>
+			<cible>btcs_formation</cible>
+			<seo>
+				<title>Formation BTCS : Fabrication de briques et maçonnerie en terre compressée | Atelier KHEM</title>
+				<description>BTCS by KHEM propose des formations professionnelles à la fabrication de briques de terre compressées stabilisées (BTCS) et aux techniques de maçonnerie. Formations pratiques accessibles aux débutants et professionnels au Cameroun.</description>
+				<keywords>formation BTCS Cameroun, formation maçonnerie terre compressée, apprendre fabrication briques BTCS, formation construction écologique, formation BTCS by KHEM, formation éco-construction Afrique</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>btcs_formation</id>
+				<type>information</type>
+				<label>BTCS by KHEM</label>
+				<titre>Formation BTCS by KHEM</titre>
+				<description>Maîtrisez la fabrication et la pose des briques BTCS grâce aux formations pratiques de BTCS by KHEM. Deux modules disponibles : fabrication de briques BTCS et techniques de maçonnerie en BTCS. Accessibles à tous les niveaux.</description>
+				<item><titre>Formations</titre><description>Apprenez la fabrication et la maçonnerie en BTCS.&lt;br&gt;&lt;b&gt;BTCS by KHEM&lt;/b&gt; propose des formations dédiées à la fabrication de briques BTCS ainsi qu'aux techniques de maçonnerie adaptées à ce type de construction.</description><image>img/BTCS_by_KHEM_07.jpg</image><alt>Formation fabrication et maçonnerie en briques BTCS écologiques</alt></item>
+				<item><titre>Formations</titre><description>Les formations permettent d'acquérir les bases techniques nécessaires pour produire et utiliser les BTCS efficacement sur différents types de projets.</description><image>img/BTCS_by_KHEM_08.jpg</image><alt>Apprentissage des techniques de construction et fabrication de BTCS</alt></item>
+				<item><titre>Formations</titre><description>Formations disponibles :&lt;br&gt;• Fabrication de BTCS&lt;br&gt;• Maçonnerie en BTCS</description><image>img/BTCS_by_KHEM_09.jpg</image><alt>Formations professionnelles en fabrication et maçonnerie BTCS</alt></item>
+			</section>
+
+			<section>
+				<id>btcs_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur BTCS by KHEM ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28BTCS%20by%20KHEM%20Formations%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20formations%20BTCS%20by%20KHEM%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="btcspourquoi">
+			<parent>btcs</parent>
+			<menu_label>Pourquoi nous choisir ?</menu_label>
+			<url>btcs_by_khem/pourquoi_choisir_BTCS_by_KHEM</url>
+			<cible>btcs_pourquoi</cible>
+			<seo>
+				<title>Pourquoi choisir BTCS by KHEM ? Construction écologique, locale et économique | Atelier KHEM</title>
+				<description>BTCS by KHEM propose des solutions de construction durables et économiques au Cameroun : briques résistantes fabriquées localement, machines adaptées, formations pratiques et accompagnement personnalisé pour tous vos projets de construction en BTCS.</description>
+				<keywords>pourquoi BTCS construction, avantages briques BTCS, construction écologique économique Cameroun, alternative parpaing Cameroun, BTCS durable local, choisir BTCS by KHEM</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>btcs_pourquoi</id>
+				<type>information</type>
+				<label>BTCS by KHEM</label>
+				<titre>Pourquoi choisir BTCS by KHEM ?</titre>
+				<description>BTCS by KHEM offre une solution de construction complète et accessible : briques écologiques résistantes fabriquées sur place, machines en location, formations pratiques et suivi personnalisé. Une alternative durable et économique aux matériaux de construction classiques au Cameroun.</description>
+				<item><titre>Pourquoi nous choisir ?</titre><description>&lt;b&gt;BTCS by KHEM&lt;/b&gt; propose des solutions de construction écologiques, économiques et durables avec des briques résistantes, une fabrication locale, des machines adaptées et des formations pratiques pour accompagner vos projets.</description><image>img/BTCS_by_KHEM_10.jpg</image><alt>Solutions de construction écologique durable et économique en BTCS</alt></item>
+			</section>
+
+			<section>
+				<id>btcs_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur BTCS by KHEM ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28BTCS%20by%20KHEM%20Pourquoi%20nous%20choisir%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20BTCS%20by%20KHEM%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<page id="btcstarifs">
+			<parent>btcs</parent>
+			<menu_label>Nos tarifs</menu_label>
+			<url>btcs_by_khem/les_tarifs_de_BTCS_by_KHEM</url>
+			<cible>btcs_tarifs</cible>
+			<seo>
+				<title>Tarifs BTCS by KHEM : Briques, Location de machines et Formations | Atelier KHEM</title>
+				<description>Demandez un devis personnalisé à BTCS by KHEM pour la fabrication de briques BTCS, la location de machines ou les formations. Les tarifs varient selon les quantités, les besoins et les prestations. Contactez-nous via WhatsApp.</description>
+				<keywords>tarif BTCS Cameroun, prix briques terre compressée, devis BTCS, prix location machine BTCS, tarif formation BTCS, coût construction BTCS, BTCS by KHEM prix</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>btcs_tarifs</id>
+				<type>information</type>
+				<label>BTCS by KHEM</label>
+				<titre>Nos tarifs</titre>
+				<description>Les tarifs de BTCS by KHEM sont établis sur devis selon vos besoins spécifiques : quantité de briques, type de machine, durée de location ou modalités de formation. Contactez-nous directement pour obtenir une estimation personnalisée et adaptée à votre projet.</description>
+				<item><titre>Tarifs</titre><description>&lt;b&gt;Besoin d'un devis ?&lt;/b&gt;&lt;br&gt;Les tarifs varient selon les besoins, les quantités, les machines et les prestations demandées. Contactez-nous pour obtenir plus d'informations ou un devis personnalisé.</description><image>img/BTCS_by_KHEM_11.jpg</image><alt>Devis et tarifs personnalisés pour fabrication formation et machines BTCS</alt></item>
+			</section>
+
+			<section>
+				<id>btcs_cta</id>
+				<type>cta</type>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Vous souhaitez</span> <span style="color:#FF8A3D;">en savoir plus</span> <span style="color:#2D6CDF;">sur BTCS by KHEM ?</span>]]></titre>
+				<description>Découvrez nos produits ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28BTCS%20by%20KHEM%20Nos%20tarifs%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20les%20tarifs%20de%20BTCS%20by%20KHEM%0A%0A</lien><target>_blank</target></bouton>
+			</section>
+		</page>
+
+		<!-- ══════════════════════════════════
+		     PAGE : CONTACT
+		     ══════════════════════════════════ -->
+		<page id="contact">
+			<parent>accueil</parent>
+			<menu_label>Contactez-nous</menu_label>
+			<url>contact/</url>
+			<cible>contactez_nous</cible>
+			<seo>
+				<title>Contact : Atelier KHEM</title>
+				<description>Contactez Atelier KHEM par WhatsApp ou email pour vos projets de création, artisanat et innovation au Cameroun.</description>
+				<keywords>contact Atelier KHEM, WhatsApp Cameroun, création graphique commande, rhum arrangé commande</keywords>
+				<author>Atelier KHEM</author>
+				<ogImage>https://atelier-khem.github.io/img/og-cover.jpg</ogImage>
+			</seo>
+
+			<section>
+				<id>contactez_nous</id>
+				<type>hero</type>
+				<badge>Contactez-nous</badge>
+				<image>img/Logo.jpg</image>
+				<titre><![CDATA[<span style="color:#1FAF8C;">Transformons</span><br><span style="color:#FF8A3D;">vos</span><br><span style="color:#2D6CDF;">ambitions</span>]]></titre>
+				<description>Que vous souhaitiez commander, collaborer ou simplement en savoir plus, nous sommes disponibles via WhatsApp ou par email.</description>
+				<bouton><texte>WhatsApp : +237 693 47 42 53</texte><lien>https://wa.me/237693474253?text=%5BEn%20provenance%20du%20site%20%2AAtelier%20KHEM%2A%20%28Contact%29%5D%0A%0ABonjour%2C%0A%0AJ%27aimerai%20plus%20de%20renseignements%20sur%20l'Atelier%20KHEM%0A%0A</lien><target>_blank</target></bouton>
+				<bouton><texte>atelier.khem@gmail.com</texte><lien>mailto:atelier.khem@gmail.com</lien></bouton>
+			</section>
+		</page>
+
+		<!-- ══════════════════════════════════
+		     PAGE : 404
+		     ══════════════════════════════════ -->
+		<page id="404">
+			<url>404/</url>
+			<seo>
+				<title>Page introuvable : Atelier KHEM</title>
+				<description>La page que vous cherchez n'existe pas.</description>
+			</seo>
+			<section>
+				<type>hero</type>
+				<badge>Erreur 404</badge>
+				<titre>Page introuvable</titre>
+				<description>La page que vous cherchez n'existe pas ou a été déplacée.</description>
+				<bouton><texte>Retour à l'accueil</texte><lien>/</lien></bouton>
+			</section>
+			<section>
+				<type>cta</type>
+				<titre>Vous cherchez quelque chose ?</titre>
+				<description>Explorez nos activités ou contactez-nous directement.</description>
+				<bouton><texte>Nous contacter</texte><lien>/contact/</lien></bouton>
+			</section>
+		</page>
+
+	</pages>
+</atelier>
