@@ -32,16 +32,20 @@
       const versions = SITE_CONFIG.versions;
       const params   = new URLSearchParams(window.location.search);
 
-      // ?version=xxx prioritaire (pratique en dev)
-      let target = params.get("version");
-      if (!target || !versions[target]) {
-        target = localStorage.getItem(key);
-      }
-      if (!target || !versions[target]) {
+      // Si mono-version, ignorer localStorage et aller directement au défaut
+      let target;
+      if (SITE_CONFIG.multiVersion === false) {
         target = SITE_CONFIG.defaultVersion;
+      } else {
+        target = params.get("version");
+        if (!target || !versions[target]) {
+          target = localStorage.getItem(key);
+        }
+        if (!target || !versions[target]) {
+          target = SITE_CONFIG.defaultVersion;
+        }
+        localStorage.setItem(key, target);
       }
-
-      localStorage.setItem(key, target);
       window.location.replace("/" + versions[target].folder + "/");
     })();
   </script>
